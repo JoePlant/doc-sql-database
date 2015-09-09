@@ -18,7 +18,7 @@ from
 	UNION ALL
 		select 
 			'    <Column columnId="' + cast(c.column_id as varchar) + '" name="' + c.name + '"/>"' as [xml],
-			cast(t.object_id as varchar) +'.' + cast(c.column_id as varchar(2)) as [sort_order]
+			cast(t.object_id as varchar) + '.' + right('000' + cast(c.column_id as varchar), 3) as [sort_order]
 			--* 
 		from sys.tables t 
 		inner join
@@ -43,7 +43,7 @@ from
 			+ '" refTableId="' + CAST(fkc.referenced_object_id as varchar)
 			+ '" refColumnId="' + CAST(fkc.referenced_column_id as varchar)
 			+ '"/>' as [tableXml],
-			cast(fkc.parent_object_id as varchar) + '.00.' + cast(fkc.parent_column_id as varchar) as [sort_order]
+			cast(fkc.parent_object_id as varchar) + '.00.' + + right('000' + cast(fkc.parent_column_id as varchar), 3) as [sort_order]
 		from 
 			sys.foreign_key_columns fkc
 		inner join 
