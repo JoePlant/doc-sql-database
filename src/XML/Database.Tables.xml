@@ -1,3 +1,4 @@
+<Database name='AdventureWorks'>
 <Tables>
   <Table tableId="1010102639" name="SalesOrderHeader">"
     <ForeignKey name="FK_SalesOrderHeader_Customer_CustomerID" columnId="11" refTableId="709577566" refColumnId="1"/>
@@ -719,3 +720,4 @@
     <Column columnId="16" name="ModifiedDate"/>"
   </Table>"
 </Tables>
+</Database>
