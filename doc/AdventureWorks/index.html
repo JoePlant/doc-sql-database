@@ -1,0 +1,1511 @@
+﻿<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en" xmlns:dotml="http://www.martin-loetzsch.de/DOTML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdventureWorks</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/database.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy">
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a class="navbar-brand" href="#">AdventureWorks</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#top">Home</a>
+            </li>
+            <li>
+              <a href="#tables">Tables  <span class="badge">71</span></a>
+            </li>
+            <li>
+              <a href="#adapters">Relationships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <a id="top" name="top">
+    </a>
+    <div class="container">
+      <div class="col-md-3 scrollspy" role="complimentary">
+        <ul class="nav hidden-print hidden-xs hidden-sm" data-spy="affix">
+          <li>
+            <a href="#summary">Summary</a>
+          </li>
+          <li>
+            <a href="#tables">Tables</a>
+            <ul class="nav">
+              <li class="">
+                <a href="#1509580416">Person</a>
+              </li>
+              <li class="">
+                <a href="#981578535">Employee</a>
+              </li>
+              <li class="">
+                <a href="#1298103665">SalesPerson</a>
+              </li>
+              <li class="">
+                <a href="#1666104976">SalesTerritory</a>
+              </li>
+              <li class="">
+                <a href="#341576255">BusinessEntity</a>
+              </li>
+              <li class="">
+                <a href="#85575343">Address</a>
+              </li>
+              <li class="">
+                <a href="#709577566">Customer</a>
+              </li>
+              <li class="">
+                <a href="#690101499">PurchaseOrderHeader</a>
+              </li>
+              <li class="">
+                <a href="#158623608">SpecialOfferProduct</a>
+              </li>
+              <li class="">
+                <a href="#206623779">StateProvince</a>
+              </li>
+              <li class="">
+                <a href="#478624748">UnitMeasure</a>
+              </li>
+              <li class="">
+                <a href="#213575799">BillOfMaterials</a>
+              </li>
+              <li class="">
+                <a href="#389576426">BusinessEntityAddress</a>
+              </li>
+              <li class="">
+                <a href="#437576597">BusinessEntityContact</a>
+              </li>
+              <li class="">
+                <a href="#549576996">CountryRegion</a>
+              </li>
+              <li class="">
+                <a href="#645577338">Currency</a>
+              </li>
+              <li class="">
+                <a href="#677577452">CurrencyRate</a>
+              </li>
+              <li class="">
+                <a href="#1189579276">EmployeeDepartmentHistory</a>
+              </li>
+              <li class="">
+                <a href="#162099618">ProductModel</a>
+              </li>
+              <li class="">
+                <a href="#242099903">ProductModelProductDescriptionCulture</a>
+              </li>
+              <li class="">
+                <a href="#466100701">ProductVendor</a>
+              </li>
+              <li class="">
+                <a href="#898102240">SalesOrderDetail</a>
+              </li>
+              <li class="">
+                <a href="#270624007">Store</a>
+              </li>
+              <li class="">
+                <a href="#510624862">Vendor</a>
+              </li>
+              <li class="">
+                <a href="#590625147">WorkOrder</a>
+              </li>
+              <li class="">
+                <a href="#517576882">CountryRegionCurrency</a>
+              </li>
+              <li class="">
+                <a href="#581577110">CreditCard</a>
+              </li>
+              <li class="">
+                <a href="#789577851">Document</a>
+              </li>
+              <li class="">
+                <a href="#1365579903">Location</a>
+              </li>
+              <li class="">
+                <a href="#1621580815">PersonCreditCard</a>
+              </li>
+              <li class="">
+                <a href="#1653580929">PersonPhone</a>
+              </li>
+              <li class="">
+                <a href="#2117582582">ProductDocument</a>
+              </li>
+              <li class="">
+                <a href="#2099048">ProductInventory</a>
+              </li>
+              <li class="">
+                <a href="#210099789">ProductModelIllustration</a>
+              </li>
+              <li class="">
+                <a href="#306100131">ProductProductPhoto</a>
+              </li>
+              <li class="">
+                <a href="#418100530">ProductSubcategory</a>
+              </li>
+              <li class="">
+                <a href="#594101157">PurchaseOrderDetail</a>
+              </li>
+              <li class="">
+                <a href="#1266103551">SalesOrderHeaderSalesReason</a>
+              </li>
+              <li class="">
+                <a href="#1842105603">SalesTerritoryHistory</a>
+              </li>
+              <li class="">
+                <a href="#1970106059">ShipMethod</a>
+              </li>
+              <li class="">
+                <a href="#670625432">WorkOrderRouting</a>
+              </li>
+              <li class="">
+                <a href="#1717581157">Product</a>
+              </li>
+              <li class="">
+                <a href="#1010102639">SalesOrderHeader</a>
+              </li>
+              <li class="">
+                <a href="#133575514">AddressType</a>
+              </li>
+              <li class="">
+                <a href="#485576768">ContactType</a>
+              </li>
+              <li class="">
+                <a href="#613577224">Culture</a>
+              </li>
+              <li class="">
+                <a href="#757577737">Department</a>
+              </li>
+              <li class="">
+                <a href="#933578364">EmailAddress</a>
+              </li>
+              <li class="">
+                <a href="#1237579447">EmployeePayHistory</a>
+              </li>
+              <li class="">
+                <a href="#1301579675">Illustration</a>
+              </li>
+              <li class="">
+                <a href="#1333579789">JobCandidate</a>
+              </li>
+              <li class="">
+                <a href="#1461580245">Password</a>
+              </li>
+              <li class="">
+                <a href="#1685581043">PhoneNumberType</a>
+              </li>
+              <li class="">
+                <a href="#1957582012">ProductCategory</a>
+              </li>
+              <li class="">
+                <a href="#2005582183">ProductCostHistory</a>
+              </li>
+              <li class="">
+                <a href="#2069582411">ProductDescription</a>
+              </li>
+              <li class="">
+                <a href="#98099390">ProductListPriceHistory</a>
+              </li>
+              <li class="">
+                <a href="#274100017">ProductPhoto</a>
+              </li>
+              <li class="">
+                <a href="#354100302">ProductReview</a>
+              </li>
+              <li class="">
+                <a href="#1490104349">SalesPersonQuotaHistory</a>
+              </li>
+              <li class="">
+                <a href="#1554104577">SalesReason</a>
+              </li>
+              <li class="">
+                <a href="#1586104691">SalesTaxRate</a>
+              </li>
+              <li class="">
+                <a href="#1906105831">ScrapReason</a>
+              </li>
+              <li class="">
+                <a href="#1938105945">Shift</a>
+              </li>
+              <li class="">
+                <a href="#2082106458">ShoppingCartItem</a>
+              </li>
+              <li class="">
+                <a href="#14623095">SpecialOffer</a>
+              </li>
+              <li class="">
+                <a href="#318624178">TransactionHistory</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9" role="main">
+        <a name="summary">
+        </a>
+        <h3>Summary</h3>
+      
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+    
+      
+        
+        
+        
+        
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+        
+        
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+        
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+        
+      
+      
+      
+      
+      
+    
+      
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+        
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+    
+      
+        
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <a name="tables"></a><h3>Tables</h3><a id="85575343" name="85575343"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Address</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>AddressID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_Address_BillToAddressID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a><a href="#1010102639" title="FK_SalesOrderHeader_Address_ShipToAddressID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a><a href="#389576426" title="FK_BusinessEntityAddress_Address_AddressID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntityAddress</a></div></td></tr><tr><td>2</td><td>AddressLine1</td><td>na</td><td></td></tr><tr><td>3</td><td>AddressLine2</td><td>na</td><td></td></tr><tr><td>4</td><td>City</td><td>na</td><td></td></tr><tr><td>5</td><td>StateProvinceID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#206623779" title="FK_Address_StateProvince_StateProvinceID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> StateProvince</a></div></td></tr><tr><td>6</td><td>PostalCode</td><td>na</td><td></td></tr><tr><td>7</td><td>SpatialLocation</td><td>na</td><td></td></tr><tr><td>8</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>9</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="133575514" name="133575514"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>AddressType</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>AddressTypeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#389576426" title="FK_BusinessEntityAddress_AddressType_AddressTypeID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntityAddress</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="181575685" name="181575685"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>AWBuildVersion</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SystemInformationID</td><td>na</td><td></td></tr><tr><td>2</td><td>Database Version</td><td>na</td><td></td></tr><tr><td>3</td><td>VersionDate</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="213575799" name="213575799"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>BillOfMaterials</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BillOfMaterialsID</td><td>na</td><td></td></tr><tr><td>2</td><td>ProductAssemblyID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_BillOfMaterials_Product_ProductAssemblyID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>3</td><td>ComponentID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_BillOfMaterials_Product_ComponentID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>4</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>5</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>6</td><td>UnitMeasureCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#478624748" title="FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> UnitMeasure</a></div></td></tr><tr><td>7</td><td>BOMLevel</td><td>na</td><td></td></tr><tr><td>8</td><td>PerAssemblyQty</td><td>na</td><td></td></tr><tr><td>9</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="341576255" name="341576255"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>BusinessEntity</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_Person_BusinessEntity_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a><a href="#270624007" title="FK_Store_BusinessEntity_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Store</a><a href="#389576426" title="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntityAddress</a><a href="#437576597" title="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntityContact</a><a href="#510624862" title="FK_Vendor_BusinessEntity_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Vendor</a></div></td></tr><tr><td>2</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="389576426" name="389576426"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>BusinessEntityAddress</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#341576255" title="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntity</a></div></td></tr><tr><td>2</td><td>AddressID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#85575343" title="FK_BusinessEntityAddress_Address_AddressID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Address</a></div></td></tr><tr><td>3</td><td>AddressTypeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#133575514" title="FK_BusinessEntityAddress_AddressType_AddressTypeID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> AddressType</a></div></td></tr><tr><td>4</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="437576597" name="437576597"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>BusinessEntityContact</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#341576255" title="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntity</a></div></td></tr><tr><td>2</td><td>PersonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_BusinessEntityContact_Person_PersonID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>3</td><td>ContactTypeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#485576768" title="FK_BusinessEntityContact_ContactType_ContactTypeID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ContactType</a></div></td></tr><tr><td>4</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="485576768" name="485576768"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ContactType</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ContactTypeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#437576597" title="FK_BusinessEntityContact_ContactType_ContactTypeID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntityContact</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="549576996" name="549576996"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>CountryRegion</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CountryRegionCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1666104976" title="FK_SalesTerritory_CountryRegion_CountryRegionCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritory</a><a href="#206623779" title="FK_StateProvince_CountryRegion_CountryRegionCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> StateProvince</a><a href="#517576882" title="FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CountryRegionCurrency</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="517576882" name="517576882"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>CountryRegionCurrency</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CountryRegionCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#549576996" title="FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CountryRegion</a></div></td></tr><tr><td>2</td><td>CurrencyCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#645577338" title="FK_CountryRegionCurrency_Currency_CurrencyCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Currency</a></div></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="581577110" name="581577110"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>CreditCard</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CreditCardID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_CreditCard_CreditCardID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a><a href="#1621580815" title="FK_PersonCreditCard_CreditCard_CreditCardID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PersonCreditCard</a></div></td></tr><tr><td>2</td><td>CardType</td><td>na</td><td></td></tr><tr><td>3</td><td>CardNumber</td><td>na</td><td></td></tr><tr><td>4</td><td>ExpMonth</td><td>na</td><td></td></tr><tr><td>5</td><td>ExpYear</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="613577224" name="613577224"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Culture</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CultureID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#242099903" title="FK_ProductModelProductDescriptionCulture_Culture_CultureID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModelProductDescriptionCulture</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="645577338" name="645577338"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Currency</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CurrencyCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#517576882" title="FK_CountryRegionCurrency_Currency_CurrencyCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CountryRegionCurrency</a><a href="#677577452" title="FK_CurrencyRate_Currency_FromCurrencyCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CurrencyRate</a><a href="#677577452" title="FK_CurrencyRate_Currency_ToCurrencyCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CurrencyRate</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="677577452" name="677577452"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>CurrencyRate</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CurrencyRateID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a></div></td></tr><tr><td>2</td><td>CurrencyRateDate</td><td>na</td><td></td></tr><tr><td>3</td><td>FromCurrencyCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#645577338" title="FK_CurrencyRate_Currency_FromCurrencyCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Currency</a></div></td></tr><tr><td>4</td><td>ToCurrencyCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#645577338" title="FK_CurrencyRate_Currency_ToCurrencyCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Currency</a></div></td></tr><tr><td>5</td><td>AverageRate</td><td>na</td><td></td></tr><tr><td>6</td><td>EndOfDayRate</td><td>na</td><td></td></tr><tr><td>7</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="709577566" name="709577566"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Customer</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>CustomerID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_Customer_CustomerID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a></div></td></tr><tr><td>2</td><td>PersonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_Customer_Person_PersonID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>3</td><td>StoreID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#270624007" title="FK_Customer_Store_StoreID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Store</a></div></td></tr><tr><td>4</td><td>TerritoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1666104976" title="FK_Customer_SalesTerritory_TerritoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritory</a></div></td></tr><tr><td>5</td><td>AccountNumber</td><td>na</td><td></td></tr><tr><td>6</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>7</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2105058535" name="2105058535"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>DatabaseLog</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>DatabaseLogID</td><td>na</td><td></td></tr><tr><td>2</td><td>PostTime</td><td>na</td><td></td></tr><tr><td>3</td><td>DatabaseUser</td><td>na</td><td></td></tr><tr><td>4</td><td>Event</td><td>na</td><td></td></tr><tr><td>5</td><td>Schema</td><td>na</td><td></td></tr><tr><td>6</td><td>Object</td><td>na</td><td></td></tr><tr><td>7</td><td>TSQL</td><td>na</td><td></td></tr><tr><td>8</td><td>XmlEvent</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="757577737" name="757577737"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Department</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>DepartmentID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1189579276" title="FK_EmployeeDepartmentHistory_Department_DepartmentID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> EmployeeDepartmentHistory</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>GroupName</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="789577851" name="789577851"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Document</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>DocumentNode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#2117582582" title="FK_ProductDocument_Document_DocumentNode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductDocument</a></div></td></tr><tr><td>2</td><td>DocumentLevel</td><td>na</td><td></td></tr><tr><td>3</td><td>Title</td><td>na</td><td></td></tr><tr><td>4</td><td>Owner</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#981578535" title="FK_Document_Employee_Owner" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a></div></td></tr><tr><td>5</td><td>FolderFlag</td><td>na</td><td></td></tr><tr><td>6</td><td>FileName</td><td>na</td><td></td></tr><tr><td>7</td><td>FileExtension</td><td>na</td><td></td></tr><tr><td>8</td><td>Revision</td><td>na</td><td></td></tr><tr><td>9</td><td>ChangeNumber</td><td>na</td><td></td></tr><tr><td>10</td><td>Status</td><td>na</td><td></td></tr><tr><td>11</td><td>DocumentSummary</td><td>na</td><td></td></tr><tr><td>12</td><td>Document</td><td>na</td><td></td></tr><tr><td>13</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>14</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="933578364" name="933578364"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>EmailAddress</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_EmailAddress_Person_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>2</td><td>EmailAddressID</td><td>na</td><td></td></tr><tr><td>3</td><td>EmailAddress</td><td>na</td><td></td></tr><tr><td>4</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="981578535" name="981578535"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Employee</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1189579276" title="FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> EmployeeDepartmentHistory</a><a href="#1237579447" title="FK_EmployeePayHistory_Employee_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> EmployeePayHistory</a><a href="#1298103665" title="FK_SalesPerson_Employee_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPerson</a><a href="#1333579789" title="FK_JobCandidate_Employee_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> JobCandidate</a><a href="#690101499" title="FK_PurchaseOrderHeader_Employee_EmployeeID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PurchaseOrderHeader</a><a href="#789577851" title="FK_Document_Employee_Owner" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Document</a><a href="#1509580416" title="FK_Employee_Person_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>2</td><td>NationalIDNumber</td><td>na</td><td></td></tr><tr><td>3</td><td>LoginID</td><td>na</td><td></td></tr><tr><td>4</td><td>OrganizationNode</td><td>na</td><td></td></tr><tr><td>5</td><td>OrganizationLevel</td><td>na</td><td></td></tr><tr><td>6</td><td>JobTitle</td><td>na</td><td></td></tr><tr><td>7</td><td>BirthDate</td><td>na</td><td></td></tr><tr><td>8</td><td>MaritalStatus</td><td>na</td><td></td></tr><tr><td>9</td><td>Gender</td><td>na</td><td></td></tr><tr><td>10</td><td>HireDate</td><td>na</td><td></td></tr><tr><td>11</td><td>SalariedFlag</td><td>na</td><td></td></tr><tr><td>12</td><td>VacationHours</td><td>na</td><td></td></tr><tr><td>13</td><td>SickLeaveHours</td><td>na</td><td></td></tr><tr><td>14</td><td>CurrentFlag</td><td>na</td><td></td></tr><tr><td>15</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>16</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1189579276" name="1189579276"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>EmployeeDepartmentHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#981578535" title="FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a></div></td></tr><tr><td>2</td><td>DepartmentID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#757577737" title="FK_EmployeeDepartmentHistory_Department_DepartmentID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Department</a></div></td></tr><tr><td>3</td><td>ShiftID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1938105945" title="FK_EmployeeDepartmentHistory_Shift_ShiftID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Shift</a></div></td></tr><tr><td>4</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>5</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1237579447" name="1237579447"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>EmployeePayHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#981578535" title="FK_EmployeePayHistory_Employee_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a></div></td></tr><tr><td>2</td><td>RateChangeDate</td><td>na</td><td></td></tr><tr><td>3</td><td>Rate</td><td>na</td><td></td></tr><tr><td>4</td><td>PayFrequency</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2137058649" name="2137058649"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ErrorLog</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ErrorLogID</td><td>na</td><td></td></tr><tr><td>2</td><td>ErrorTime</td><td>na</td><td></td></tr><tr><td>3</td><td>UserName</td><td>na</td><td></td></tr><tr><td>4</td><td>ErrorNumber</td><td>na</td><td></td></tr><tr><td>5</td><td>ErrorSeverity</td><td>na</td><td></td></tr><tr><td>6</td><td>ErrorState</td><td>na</td><td></td></tr><tr><td>7</td><td>ErrorProcedure</td><td>na</td><td></td></tr><tr><td>8</td><td>ErrorLine</td><td>na</td><td></td></tr><tr><td>9</td><td>ErrorMessage</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1301579675" name="1301579675"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Illustration</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>IllustrationID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#210099789" title="FK_ProductModelIllustration_Illustration_IllustrationID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModelIllustration</a></div></td></tr><tr><td>2</td><td>Diagram</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1333579789" name="1333579789"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>JobCandidate</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>JobCandidateID</td><td>na</td><td></td></tr><tr><td>2</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#981578535" title="FK_JobCandidate_Employee_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a></div></td></tr><tr><td>3</td><td>Resume</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1365579903" name="1365579903"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Location</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>LocationID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#2099048" title="FK_ProductInventory_Location_LocationID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductInventory</a><a href="#670625432" title="FK_WorkOrderRouting_Location_LocationID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> WorkOrderRouting</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>CostRate</td><td>na</td><td></td></tr><tr><td>4</td><td>Availability</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1461580245" name="1461580245"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Password</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_Password_Person_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>2</td><td>PasswordHash</td><td>na</td><td></td></tr><tr><td>3</td><td>PasswordSalt</td><td>na</td><td></td></tr><tr><td>4</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1509580416" name="1509580416"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Person</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1461580245" title="FK_Password_Person_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Password</a><a href="#1621580815" title="FK_PersonCreditCard_Person_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PersonCreditCard</a><a href="#1653580929" title="FK_PersonPhone_Person_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PersonPhone</a><a href="#437576597" title="FK_BusinessEntityContact_Person_PersonID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntityContact</a><a href="#709577566" title="FK_Customer_Person_PersonID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Customer</a><a href="#933578364" title="FK_EmailAddress_Person_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> EmailAddress</a><a href="#981578535" title="FK_Employee_Person_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a><a href="#341576255" title="FK_Person_BusinessEntity_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntity</a></div></td></tr><tr><td>2</td><td>PersonType</td><td>na</td><td></td></tr><tr><td>3</td><td>NameStyle</td><td>na</td><td></td></tr><tr><td>4</td><td>Title</td><td>na</td><td></td></tr><tr><td>5</td><td>FirstName</td><td>na</td><td></td></tr><tr><td>6</td><td>MiddleName</td><td>na</td><td></td></tr><tr><td>7</td><td>LastName</td><td>na</td><td></td></tr><tr><td>8</td><td>Suffix</td><td>na</td><td></td></tr><tr><td>9</td><td>EmailPromotion</td><td>na</td><td></td></tr><tr><td>10</td><td>AdditionalContactInfo</td><td>na</td><td></td></tr><tr><td>11</td><td>Demographics</td><td>na</td><td></td></tr><tr><td>12</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>13</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1621580815" name="1621580815"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>PersonCreditCard</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_PersonCreditCard_Person_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>2</td><td>CreditCardID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#581577110" title="FK_PersonCreditCard_CreditCard_CreditCardID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CreditCard</a></div></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1653580929" name="1653580929"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>PersonPhone</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1509580416" title="FK_PersonPhone_Person_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Person</a></div></td></tr><tr><td>2</td><td>PhoneNumber</td><td>na</td><td></td></tr><tr><td>3</td><td>PhoneNumberTypeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1685581043" title="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PhoneNumberType</a></div></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1685581043" name="1685581043"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>PhoneNumberType</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>PhoneNumberTypeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1653580929" title="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PersonPhone</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1717581157" name="1717581157"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Product</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#158623608" title="FK_SpecialOfferProduct_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SpecialOfferProduct</a><a href="#2005582183" title="FK_ProductCostHistory_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductCostHistory</a><a href="#2082106458" title="FK_ShoppingCartItem_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ShoppingCartItem</a><a href="#2099048" title="FK_ProductInventory_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductInventory</a><a href="#2117582582" title="FK_ProductDocument_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductDocument</a><a href="#213575799" title="FK_BillOfMaterials_Product_ProductAssemblyID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BillOfMaterials</a><a href="#213575799" title="FK_BillOfMaterials_Product_ComponentID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BillOfMaterials</a><a href="#306100131" title="FK_ProductProductPhoto_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductProductPhoto</a><a href="#318624178" title="FK_TransactionHistory_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> TransactionHistory</a><a href="#354100302" title="FK_ProductReview_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductReview</a><a href="#466100701" title="FK_ProductVendor_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductVendor</a><a href="#590625147" title="FK_WorkOrder_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> WorkOrder</a><a href="#594101157" title="FK_PurchaseOrderDetail_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PurchaseOrderDetail</a><a href="#98099390" title="FK_ProductListPriceHistory_Product_ProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductListPriceHistory</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ProductNumber</td><td>na</td><td></td></tr><tr><td>4</td><td>MakeFlag</td><td>na</td><td></td></tr><tr><td>5</td><td>FinishedGoodsFlag</td><td>na</td><td></td></tr><tr><td>6</td><td>Color</td><td>na</td><td></td></tr><tr><td>7</td><td>SafetyStockLevel</td><td>na</td><td></td></tr><tr><td>8</td><td>ReorderPoint</td><td>na</td><td></td></tr><tr><td>9</td><td>StandardCost</td><td>na</td><td></td></tr><tr><td>10</td><td>ListPrice</td><td>na</td><td></td></tr><tr><td>11</td><td>Size</td><td>na</td><td></td></tr><tr><td>12</td><td>SizeUnitMeasureCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#478624748" title="FK_Product_UnitMeasure_SizeUnitMeasureCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> UnitMeasure</a></div></td></tr><tr><td>13</td><td>WeightUnitMeasureCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#478624748" title="FK_Product_UnitMeasure_WeightUnitMeasureCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> UnitMeasure</a></div></td></tr><tr><td>14</td><td>Weight</td><td>na</td><td></td></tr><tr><td>15</td><td>DaysToManufacture</td><td>na</td><td></td></tr><tr><td>16</td><td>ProductLine</td><td>na</td><td></td></tr><tr><td>17</td><td>Class</td><td>na</td><td></td></tr><tr><td>18</td><td>Style</td><td>na</td><td></td></tr><tr><td>19</td><td>ProductSubcategoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#418100530" title="FK_Product_ProductSubcategory_ProductSubcategoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductSubcategory</a></div></td></tr><tr><td>20</td><td>ProductModelID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#162099618" title="FK_Product_ProductModel_ProductModelID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModel</a></div></td></tr><tr><td>21</td><td>SellStartDate</td><td>na</td><td></td></tr><tr><td>22</td><td>SellEndDate</td><td>na</td><td></td></tr><tr><td>23</td><td>DiscontinuedDate</td><td>na</td><td></td></tr><tr><td>24</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>25</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1957582012" name="1957582012"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductCategory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductCategoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#418100530" title="FK_ProductSubcategory_ProductCategory_ProductCategoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductSubcategory</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2005582183" name="2005582183"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductCostHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductCostHistory_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>3</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>4</td><td>StandardCost</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2069582411" name="2069582411"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductDescription</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductDescriptionID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#242099903" title="FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModelProductDescriptionCulture</a></div></td></tr><tr><td>2</td><td>Description</td><td>na</td><td></td></tr><tr><td>3</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2117582582" name="2117582582"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductDocument</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductDocument_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>DocumentNode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#789577851" title="FK_ProductDocument_Document_DocumentNode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Document</a></div></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2099048" name="2099048"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductInventory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductInventory_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>LocationID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1365579903" title="FK_ProductInventory_Location_LocationID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Location</a></div></td></tr><tr><td>3</td><td>Shelf</td><td>na</td><td></td></tr><tr><td>4</td><td>Bin</td><td>na</td><td></td></tr><tr><td>5</td><td>Quantity</td><td>na</td><td></td></tr><tr><td>6</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>7</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="98099390" name="98099390"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductListPriceHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductListPriceHistory_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>3</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>4</td><td>ListPrice</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="162099618" name="162099618"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductModel</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductModelID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_Product_ProductModel_ProductModelID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a><a href="#210099789" title="FK_ProductModelIllustration_ProductModel_ProductModelID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModelIllustration</a><a href="#242099903" title="FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModelProductDescriptionCulture</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>CatalogDescription</td><td>na</td><td></td></tr><tr><td>4</td><td>Instructions</td><td>na</td><td></td></tr><tr><td>5</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="210099789" name="210099789"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductModelIllustration</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductModelID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#162099618" title="FK_ProductModelIllustration_ProductModel_ProductModelID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModel</a></div></td></tr><tr><td>2</td><td>IllustrationID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1301579675" title="FK_ProductModelIllustration_Illustration_IllustrationID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Illustration</a></div></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="242099903" name="242099903"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductModelProductDescriptionCulture</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductModelID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#162099618" title="FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductModel</a></div></td></tr><tr><td>2</td><td>ProductDescriptionID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#2069582411" title="FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductDescription</a></div></td></tr><tr><td>3</td><td>CultureID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#613577224" title="FK_ProductModelProductDescriptionCulture_Culture_CultureID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Culture</a></div></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="274100017" name="274100017"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductPhoto</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductPhotoID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#306100131" title="FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductProductPhoto</a></div></td></tr><tr><td>2</td><td>ThumbNailPhoto</td><td>na</td><td></td></tr><tr><td>3</td><td>ThumbnailPhotoFileName</td><td>na</td><td></td></tr><tr><td>4</td><td>LargePhoto</td><td>na</td><td></td></tr><tr><td>5</td><td>LargePhotoFileName</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="306100131" name="306100131"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductProductPhoto</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductProductPhoto_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>ProductPhotoID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#274100017" title="FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductPhoto</a></div></td></tr><tr><td>3</td><td>Primary</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="354100302" name="354100302"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductReview</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductReviewID</td><td>na</td><td></td></tr><tr><td>2</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductReview_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>3</td><td>ReviewerName</td><td>na</td><td></td></tr><tr><td>4</td><td>ReviewDate</td><td>na</td><td></td></tr><tr><td>5</td><td>EmailAddress</td><td>na</td><td></td></tr><tr><td>6</td><td>Rating</td><td>na</td><td></td></tr><tr><td>7</td><td>Comments</td><td>na</td><td></td></tr><tr><td>8</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="418100530" name="418100530"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductSubcategory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductSubcategoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_Product_ProductSubcategory_ProductSubcategoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>ProductCategoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1957582012" title="FK_ProductSubcategory_ProductCategory_ProductCategoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductCategory</a></div></td></tr><tr><td>3</td><td>Name</td><td>na</td><td></td></tr><tr><td>4</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="466100701" name="466100701"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ProductVendor</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ProductVendor_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>2</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#510624862" title="FK_ProductVendor_Vendor_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Vendor</a></div></td></tr><tr><td>3</td><td>AverageLeadTime</td><td>na</td><td></td></tr><tr><td>4</td><td>StandardPrice</td><td>na</td><td></td></tr><tr><td>5</td><td>LastReceiptCost</td><td>na</td><td></td></tr><tr><td>6</td><td>LastReceiptDate</td><td>na</td><td></td></tr><tr><td>7</td><td>MinOrderQty</td><td>na</td><td></td></tr><tr><td>8</td><td>MaxOrderQty</td><td>na</td><td></td></tr><tr><td>9</td><td>OnOrderQty</td><td>na</td><td></td></tr><tr><td>10</td><td>UnitMeasureCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#478624748" title="FK_ProductVendor_UnitMeasure_UnitMeasureCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> UnitMeasure</a></div></td></tr><tr><td>11</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="594101157" name="594101157"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>PurchaseOrderDetail</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>PurchaseOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#690101499" title="FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PurchaseOrderHeader</a></div></td></tr><tr><td>2</td><td>PurchaseOrderDetailID</td><td>na</td><td></td></tr><tr><td>3</td><td>DueDate</td><td>na</td><td></td></tr><tr><td>4</td><td>OrderQty</td><td>na</td><td></td></tr><tr><td>5</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_PurchaseOrderDetail_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>6</td><td>UnitPrice</td><td>na</td><td></td></tr><tr><td>7</td><td>LineTotal</td><td>na</td><td></td></tr><tr><td>8</td><td>ReceivedQty</td><td>na</td><td></td></tr><tr><td>9</td><td>RejectedQty</td><td>na</td><td></td></tr><tr><td>10</td><td>StockedQty</td><td>na</td><td></td></tr><tr><td>11</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="690101499" name="690101499"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>PurchaseOrderHeader</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>PurchaseOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#594101157" title="FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PurchaseOrderDetail</a></div></td></tr><tr><td>2</td><td>RevisionNumber</td><td>na</td><td></td></tr><tr><td>3</td><td>Status</td><td>na</td><td></td></tr><tr><td>4</td><td>EmployeeID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#981578535" title="FK_PurchaseOrderHeader_Employee_EmployeeID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a></div></td></tr><tr><td>5</td><td>VendorID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#510624862" title="FK_PurchaseOrderHeader_Vendor_VendorID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Vendor</a></div></td></tr><tr><td>6</td><td>ShipMethodID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1970106059" title="FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ShipMethod</a></div></td></tr><tr><td>7</td><td>OrderDate</td><td>na</td><td></td></tr><tr><td>8</td><td>ShipDate</td><td>na</td><td></td></tr><tr><td>9</td><td>SubTotal</td><td>na</td><td></td></tr><tr><td>10</td><td>TaxAmt</td><td>na</td><td></td></tr><tr><td>11</td><td>Freight</td><td>na</td><td></td></tr><tr><td>12</td><td>TotalDue</td><td>na</td><td></td></tr><tr><td>13</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="898102240" name="898102240"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesOrderDetail</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SalesOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a></div></td></tr><tr><td>2</td><td>SalesOrderDetailID</td><td>na</td><td></td></tr><tr><td>3</td><td>CarrierTrackingNumber</td><td>na</td><td></td></tr><tr><td>4</td><td>OrderQty</td><td>na</td><td></td></tr><tr><td>5</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#158623608" title="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SpecialOfferProduct</a></div></td></tr><tr><td>6</td><td>SpecialOfferID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#158623608" title="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SpecialOfferProduct</a></div></td></tr><tr><td>7</td><td>UnitPrice</td><td>na</td><td></td></tr><tr><td>8</td><td>UnitPriceDiscount</td><td>na</td><td></td></tr><tr><td>9</td><td>LineTotal</td><td>na</td><td></td></tr><tr><td>10</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>11</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1010102639" name="1010102639"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesOrderHeader</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SalesOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1266103551" title="FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeaderSalesReason</a><a href="#898102240" title="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderDetail</a></div></td></tr><tr><td>2</td><td>RevisionNumber</td><td>na</td><td></td></tr><tr><td>3</td><td>OrderDate</td><td>na</td><td></td></tr><tr><td>4</td><td>DueDate</td><td>na</td><td></td></tr><tr><td>5</td><td>ShipDate</td><td>na</td><td></td></tr><tr><td>6</td><td>Status</td><td>na</td><td></td></tr><tr><td>7</td><td>OnlineOrderFlag</td><td>na</td><td></td></tr><tr><td>8</td><td>SalesOrderNumber</td><td>na</td><td></td></tr><tr><td>9</td><td>PurchaseOrderNumber</td><td>na</td><td></td></tr><tr><td>10</td><td>AccountNumber</td><td>na</td><td></td></tr><tr><td>11</td><td>CustomerID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#709577566" title="FK_SalesOrderHeader_Customer_CustomerID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Customer</a></div></td></tr><tr><td>12</td><td>SalesPersonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1298103665" title="FK_SalesOrderHeader_SalesPerson_SalesPersonID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPerson</a></div></td></tr><tr><td>13</td><td>TerritoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1666104976" title="FK_SalesOrderHeader_SalesTerritory_TerritoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritory</a></div></td></tr><tr><td>14</td><td>BillToAddressID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#85575343" title="FK_SalesOrderHeader_Address_BillToAddressID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Address</a></div></td></tr><tr><td>15</td><td>ShipToAddressID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#85575343" title="FK_SalesOrderHeader_Address_ShipToAddressID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Address</a></div></td></tr><tr><td>16</td><td>ShipMethodID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1970106059" title="FK_SalesOrderHeader_ShipMethod_ShipMethodID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ShipMethod</a></div></td></tr><tr><td>17</td><td>CreditCardID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#581577110" title="FK_SalesOrderHeader_CreditCard_CreditCardID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CreditCard</a></div></td></tr><tr><td>18</td><td>CreditCardApprovalCode</td><td>na</td><td></td></tr><tr><td>19</td><td>CurrencyRateID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#677577452" title="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CurrencyRate</a></div></td></tr><tr><td>20</td><td>SubTotal</td><td>na</td><td></td></tr><tr><td>21</td><td>TaxAmt</td><td>na</td><td></td></tr><tr><td>22</td><td>Freight</td><td>na</td><td></td></tr><tr><td>23</td><td>TotalDue</td><td>na</td><td></td></tr><tr><td>24</td><td>Comment</td><td>na</td><td></td></tr><tr><td>25</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>26</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1266103551" name="1266103551"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesOrderHeaderSalesReason</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SalesOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a></div></td></tr><tr><td>2</td><td>SalesReasonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1554104577" title="FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesReason</a></div></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1298103665" name="1298103665"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesPerson</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_SalesPerson_SalesPersonID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a><a href="#1490104349" title="FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPersonQuotaHistory</a><a href="#1842105603" title="FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritoryHistory</a><a href="#270624007" title="FK_Store_SalesPerson_SalesPersonID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Store</a><a href="#981578535" title="FK_SalesPerson_Employee_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Employee</a></div></td></tr><tr><td>2</td><td>TerritoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1666104976" title="FK_SalesPerson_SalesTerritory_TerritoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritory</a></div></td></tr><tr><td>3</td><td>SalesQuota</td><td>na</td><td></td></tr><tr><td>4</td><td>Bonus</td><td>na</td><td></td></tr><tr><td>5</td><td>CommissionPct</td><td>na</td><td></td></tr><tr><td>6</td><td>SalesYTD</td><td>na</td><td></td></tr><tr><td>7</td><td>SalesLastYear</td><td>na</td><td></td></tr><tr><td>8</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>9</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1490104349" name="1490104349"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesPersonQuotaHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1298103665" title="FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPerson</a></div></td></tr><tr><td>2</td><td>QuotaDate</td><td>na</td><td></td></tr><tr><td>3</td><td>SalesQuota</td><td>na</td><td></td></tr><tr><td>4</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1554104577" name="1554104577"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesReason</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SalesReasonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1266103551" title="FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeaderSalesReason</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ReasonType</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1586104691" name="1586104691"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesTaxRate</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SalesTaxRateID</td><td>na</td><td></td></tr><tr><td>2</td><td>StateProvinceID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#206623779" title="FK_SalesTaxRate_StateProvince_StateProvinceID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> StateProvince</a></div></td></tr><tr><td>3</td><td>TaxType</td><td>na</td><td></td></tr><tr><td>4</td><td>TaxRate</td><td>na</td><td></td></tr><tr><td>5</td><td>Name</td><td>na</td><td></td></tr><tr><td>6</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>7</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1666104976" name="1666104976"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesTerritory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>TerritoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_SalesTerritory_TerritoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a><a href="#1298103665" title="FK_SalesPerson_SalesTerritory_TerritoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPerson</a><a href="#1842105603" title="FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritoryHistory</a><a href="#206623779" title="FK_StateProvince_SalesTerritory_TerritoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> StateProvince</a><a href="#709577566" title="FK_Customer_SalesTerritory_TerritoryID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Customer</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>CountryRegionCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#549576996" title="FK_SalesTerritory_CountryRegion_CountryRegionCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CountryRegion</a></div></td></tr><tr><td>4</td><td>Group</td><td>na</td><td></td></tr><tr><td>5</td><td>SalesYTD</td><td>na</td><td></td></tr><tr><td>6</td><td>SalesLastYear</td><td>na</td><td></td></tr><tr><td>7</td><td>CostYTD</td><td>na</td><td></td></tr><tr><td>8</td><td>CostLastYear</td><td>na</td><td></td></tr><tr><td>9</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>10</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1842105603" name="1842105603"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SalesTerritoryHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1298103665" title="FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPerson</a></div></td></tr><tr><td>2</td><td>TerritoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1666104976" title="FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritory</a></div></td></tr><tr><td>3</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>4</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>5</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1906105831" name="1906105831"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ScrapReason</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ScrapReasonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#590625147" title="FK_WorkOrder_ScrapReason_ScrapReasonID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> WorkOrder</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1938105945" name="1938105945"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Shift</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ShiftID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1189579276" title="FK_EmployeeDepartmentHistory_Shift_ShiftID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> EmployeeDepartmentHistory</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>StartTime</td><td>na</td><td></td></tr><tr><td>4</td><td>EndTime</td><td>na</td><td></td></tr><tr><td>5</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="1970106059" name="1970106059"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ShipMethod</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ShipMethodID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1010102639" title="FK_SalesOrderHeader_ShipMethod_ShipMethodID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderHeader</a><a href="#690101499" title="FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PurchaseOrderHeader</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ShipBase</td><td>na</td><td></td></tr><tr><td>4</td><td>ShipRate</td><td>na</td><td></td></tr><tr><td>5</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="2082106458" name="2082106458"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>ShoppingCartItem</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>ShoppingCartItemID</td><td>na</td><td></td></tr><tr><td>2</td><td>ShoppingCartID</td><td>na</td><td></td></tr><tr><td>3</td><td>Quantity</td><td>na</td><td></td></tr><tr><td>4</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_ShoppingCartItem_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>5</td><td>DateCreated</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="14623095" name="14623095"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SpecialOffer</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SpecialOfferID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#158623608" title="FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SpecialOfferProduct</a></div></td></tr><tr><td>2</td><td>Description</td><td>na</td><td></td></tr><tr><td>3</td><td>DiscountPct</td><td>na</td><td></td></tr><tr><td>4</td><td>Type</td><td>na</td><td></td></tr><tr><td>5</td><td>Category</td><td>na</td><td></td></tr><tr><td>6</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>7</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>8</td><td>MinQty</td><td>na</td><td></td></tr><tr><td>9</td><td>MaxQty</td><td>na</td><td></td></tr><tr><td>10</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>11</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="158623608" name="158623608"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>SpecialOfferProduct</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>SpecialOfferID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#898102240" title="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderDetail</a><a href="#14623095" title="FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SpecialOffer</a></div></td></tr><tr><td>2</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#898102240" title="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesOrderDetail</a><a href="#1717581157" title="FK_SpecialOfferProduct_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>3</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>4</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="206623779" name="206623779"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>StateProvince</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>StateProvinceID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1586104691" title="FK_SalesTaxRate_StateProvince_StateProvinceID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTaxRate</a><a href="#85575343" title="FK_Address_StateProvince_StateProvinceID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Address</a></div></td></tr><tr><td>2</td><td>StateProvinceCode</td><td>na</td><td></td></tr><tr><td>3</td><td>CountryRegionCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#549576996" title="FK_StateProvince_CountryRegion_CountryRegionCode" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> CountryRegion</a></div></td></tr><tr><td>4</td><td>IsOnlyStateProvinceFlag</td><td>na</td><td></td></tr><tr><td>5</td><td>Name</td><td>na</td><td></td></tr><tr><td>6</td><td>TerritoryID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1666104976" title="FK_StateProvince_SalesTerritory_TerritoryID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesTerritory</a></div></td></tr><tr><td>7</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>8</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="270624007" name="270624007"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Store</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#709577566" title="FK_Customer_Store_StoreID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Customer</a><a href="#341576255" title="FK_Store_BusinessEntity_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntity</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>SalesPersonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1298103665" title="FK_Store_SalesPerson_SalesPersonID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> SalesPerson</a></div></td></tr><tr><td>4</td><td>Demographics</td><td>na</td><td></td></tr><tr><td>5</td><td>rowguid</td><td>na</td><td></td></tr><tr><td>6</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="318624178" name="318624178"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>TransactionHistory</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>TransactionID</td><td>na</td><td></td></tr><tr><td>2</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_TransactionHistory_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>3</td><td>ReferenceOrderID</td><td>na</td><td></td></tr><tr><td>4</td><td>ReferenceOrderLineID</td><td>na</td><td></td></tr><tr><td>5</td><td>TransactionDate</td><td>na</td><td></td></tr><tr><td>6</td><td>TransactionType</td><td>na</td><td></td></tr><tr><td>7</td><td>Quantity</td><td>na</td><td></td></tr><tr><td>8</td><td>ActualCost</td><td>na</td><td></td></tr><tr><td>9</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="398624463" name="398624463"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>TransactionHistoryArchive</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>TransactionID</td><td>na</td><td></td></tr><tr><td>2</td><td>ProductID</td><td>na</td><td></td></tr><tr><td>3</td><td>ReferenceOrderID</td><td>na</td><td></td></tr><tr><td>4</td><td>ReferenceOrderLineID</td><td>na</td><td></td></tr><tr><td>5</td><td>TransactionDate</td><td>na</td><td></td></tr><tr><td>6</td><td>TransactionType</td><td>na</td><td></td></tr><tr><td>7</td><td>Quantity</td><td>na</td><td></td></tr><tr><td>8</td><td>ActualCost</td><td>na</td><td></td></tr><tr><td>9</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="478624748" name="478624748"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>UnitMeasure</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>UnitMeasureCode</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_Product_UnitMeasure_SizeUnitMeasureCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a><a href="#1717581157" title="FK_Product_UnitMeasure_WeightUnitMeasureCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a><a href="#213575799" title="FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BillOfMaterials</a><a href="#466100701" title="FK_ProductVendor_UnitMeasure_UnitMeasureCode" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductVendor</a></div></td></tr><tr><td>2</td><td>Name</td><td>na</td><td></td></tr><tr><td>3</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="510624862" name="510624862"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>Vendor</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>BusinessEntityID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#466100701" title="FK_ProductVendor_Vendor_BusinessEntityID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ProductVendor</a><a href="#690101499" title="FK_PurchaseOrderHeader_Vendor_VendorID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> PurchaseOrderHeader</a><a href="#341576255" title="FK_Vendor_BusinessEntity_BusinessEntityID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> BusinessEntity</a></div></td></tr><tr><td>2</td><td>AccountNumber</td><td>na</td><td></td></tr><tr><td>3</td><td>Name</td><td>na</td><td></td></tr><tr><td>4</td><td>CreditRating</td><td>na</td><td></td></tr><tr><td>5</td><td>PreferredVendorStatus</td><td>na</td><td></td></tr><tr><td>6</td><td>ActiveFlag</td><td>na</td><td></td></tr><tr><td>7</td><td>PurchasingWebServiceURL</td><td>na</td><td></td></tr><tr><td>8</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="590625147" name="590625147"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>WorkOrder</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>WorkOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#670625432" title="FK_WorkOrderRouting_WorkOrder_WorkOrderID" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> WorkOrderRouting</a></div></td></tr><tr><td>2</td><td>ProductID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1717581157" title="FK_WorkOrder_Product_ProductID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Product</a></div></td></tr><tr><td>3</td><td>OrderQty</td><td>na</td><td></td></tr><tr><td>4</td><td>StockedQty</td><td>na</td><td></td></tr><tr><td>5</td><td>ScrappedQty</td><td>na</td><td></td></tr><tr><td>6</td><td>StartDate</td><td>na</td><td></td></tr><tr><td>7</td><td>EndDate</td><td>na</td><td></td></tr><tr><td>8</td><td>DueDate</td><td>na</td><td></td></tr><tr><td>9</td><td>ScrapReasonID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1906105831" title="FK_WorkOrder_ScrapReason_ScrapReasonID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> ScrapReason</a></div></td></tr><tr><td>10</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div><a id="670625432" name="670625432"></a><div class="panel panel-primary"><div class="panel-heading">Table: <strong>WorkOrderRouting</strong></div><div class="panel-body"><div class="container"><div class="row"><div class="col-xs-8 col-md-6"><table class="table table-hover table-border"><tr><th>#</th><th>Column</th><th>DataType</th><th></th></tr><tr><td>1</td><td>WorkOrderID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#590625147" title="FK_WorkOrderRouting_WorkOrder_WorkOrderID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> WorkOrder</a></div></td></tr><tr><td>2</td><td>ProductID</td><td>na</td><td></td></tr><tr><td>3</td><td>OperationSequence</td><td>na</td><td></td></tr><tr><td>4</td><td>LocationID</td><td>na</td><td><div class="btn-group-vertical" role="group"><a href="#1365579903" title="FK_WorkOrderRouting_Location_LocationID" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Location</a></div></td></tr><tr><td>5</td><td>ScheduledStartDate</td><td>na</td><td></td></tr><tr><td>6</td><td>ScheduledEndDate</td><td>na</td><td></td></tr><tr><td>7</td><td>ActualStartDate</td><td>na</td><td></td></tr><tr><td>8</td><td>ActualEndDate</td><td>na</td><td></td></tr><tr><td>9</td><td>ActualResourceHrs</td><td>na</td><td></td></tr><tr><td>10</td><td>PlannedCost</td><td>na</td><td></td></tr><tr><td>11</td><td>ActualCost</td><td>na</td><td></td></tr><tr><td>12</td><td>ModifiedDate</td><td>na</td><td></td></tr></table></div><div class="col-xs-4 col-md-6"><p>Relationships</p></div></div></div></div></div></div>
+      <hr>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">AdventureWorks</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#tables">Tables  <span class="badge">71</span></a>
+            </li>
+            <li>
+              <a href="#adapters">Relationships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="lib/jquery/jquery.min.js">
+    </script>
+    <script src="lib/bootstrap/js/bootstrap.min.js">
+    </script>
+  </body>
+</html>
