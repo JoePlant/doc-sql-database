@@ -44,7 +44,9 @@
 					<td>
 						<xsl:value-of select='@name'/>
 					</td>
-					<td>na</td>
+					<td>
+						<xsl:apply-templates select="." mode='data-type'/>
+					</td>
 					<td>
 						<xsl:if test='count(Key | Reference) > 0'>
 							<div class="btn-group-vertical" role="group" >							
@@ -56,6 +58,27 @@
 				</tr>
 			</xsl:for-each>
 		</table>
+	</xsl:template>
+	
+	<xsl:template match='Column[not(@type)]' mode='data-type'>na</xsl:template>
+	<xsl:template match='Column[@type]' mode='data-type'>
+		<xsl:value-of select='@type'/>
+		<xsl:choose>
+			<xsl:when test='(@type="varchar") or (@type="nvarchar")'>
+				<xsl:value-of select='concat("(", @maxLength, ")")'/>
+			</xsl:when>
+			<xsl:when test='(@type="char") or (@type="nchar")'>
+				<xsl:value-of select='concat("(", @maxLength, ")")'/>
+			</xsl:when>
+			<xsl:when test='(@type="numeric") or (@type="decimal")'>
+				<xsl:value-of select='concat("(", @precision, ",", @scale, ")")'/>
+			</xsl:when>
+			<xsl:when test='(@type="float") or (@type="decimal")'>
+				<xsl:value-of select='concat("(", @precision, ")")'/>
+			</xsl:when>
+			<xsl:otherwise>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match='Reference' mode='list-group-link'>	
