@@ -36,7 +36,7 @@ Other SQL versions may have slightly different formats.
 ## Deployment
 
 The purpose of this project is to allow a simple SQL script to be run on a SQL server database to extract the schema into an XML document.
-The database schema is then visualised using 
+The xml document is then converted to a HTML web page showing the table structure and relationships. 
 
 ## Built With
 
