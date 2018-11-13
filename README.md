@@ -1,23 +1,27 @@
 # doc-sql-database
 
-Create an interactive HTML webpage showing a Database schema.
-The purpose of the separate SQL script will mean that sometimes the SQL server is not local and you need something simple to dump the schema.
+Create an interactive HTML webpage after running a SQL Query to create a XML representation of the schema.
 
-A SQL script is provided that will create a xml document showing the tables, columns, and relationships for the current database. 
-The xml document can be transformed using XSLT into a static HTML page.
+## Why was this built?
+
+I needed a way to understand SQL Server Schemas for databases that I didn't have direct access to either due to its size or the location.
+The SQL Script is relatively simple to run and it can be transported as a simple text file for me to then generate the schema report.
+
 
 ## Getting Started
 
-Get a copy of the SQL script [generate-table-xml.sql](src/SQL/generate-table-xml.sql)
-Running this in SQL Server Management Studio will provide row by row xml document that can be easily copy/pasted into a text document.
-The XSLT scripts can be used to convert the XML into a static web page showing the table structure.
+* Get a copy of the SQL script [generate-table-xml.sql](src/SQL/generate-table-xml.sql)
+* Open ```SQL Server Management Studio``` to run the SQL script in the Query Window.
+* Change the database 
+* Run the script and copy / paste the output into a text file called ```database.xml```
+* Using the Batch file in the [src](/src) run the script pointing to the ```database.xml``` and where it should be created
 
 ## Example Output
 
 ### AdventureWorks database
 
-* [XML format](doc/AdventureWorks.Tables.xml)
-* [Example HTML report](doc/AdventureWorks/index.html)
+* [XML format](https://joeplant.github.io/doc-sql-database/doc/AdventureWorks.Tables.xml)
+* [Example HTML report](https://joeplant.github.io/doc-sql-database/doc/AdventureWorks/index.html)
 
 ### Prerequisites
 
@@ -48,4 +52,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Inspiration
