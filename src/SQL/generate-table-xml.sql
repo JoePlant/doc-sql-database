@@ -6,11 +6,30 @@ select
 	tableXml
 from 
 	(
-	select 
-			'<Database name="'+ DB_NAME() +'">' as [tableXml],
+		select 
+			'<Database name="'+ db.name 
+			+ '" collation="' + db.collation_name 
+			+ '" compatibilityLevel="' + cast(db.compatibility_level as varchar)
+			+ '" createDate="' + cast(db.create_date as varchar)
+			+ '">' as [tableXml],
 			'0.1' as [sort_order]
+		from 
+			sys.databases db
+		where 
+			database_id = DB_ID()
 	UNION ALL
+		select
+			'  <File name="' + mf.name 
+			+ '" type="' + case when mf.type = 0 then 'Data' else 'Log' end 
+			+ '" physical="' + mf.physical_name 
+			+ '"/>' as [tableXml],
+			'0.1.0' + cast(mf.file_id as varchar) as [sort_order]
+		from 
+			sys.master_files mf
+		where 
+			database_id = DB_ID()
 
+	UNION ALL
 		select 
 			'  <Tables>' as [tableXml],
 			'0.2' as [sort_order]
@@ -22,6 +41,22 @@ from
 			sys.tables t
 	UNION ALL
 		select 
+			'      <Rows count="' + cast(p.rows as varchar) + '"/>' as [xml],
+			cast(t.object_id as varchar) + '.00' as [sort_order] 
+		from
+			sys.tables t	
+		inner join
+			sys.indexes i ON t.object_id = i.object_id
+		inner join
+			sys.partitions p ON i.object_id = p.object_id AND i.index_id = p.index_id
+		where 
+			t.name not like 'dt%' 
+			and i.object_id > 255 
+			and i.index_id <= 1
+		group by 
+			t.object_id, p.rows	
+	UNION ALL
+		select 
 			'      <Column columnId="' + cast(c.column_id as varchar) 
 			+ '" name="' + c.name 
 			+ '" type="' + ty.name 
@@ -29,7 +64,7 @@ from
 			+ '" precision="' + cast(c.precision as varchar)
 			+ '" scale="' + cast(c.scale as varchar)
 			+ '"/>' as [xml],
-			cast(t.object_id as varchar) + '.' + right('000' + cast(c.column_id as varchar), 3) as [sort_order]
+			cast(t.object_id as varchar) + '.' + right('00000' + cast(c.column_id as varchar), 3) as [sort_order]
 			--* 
 		from sys.tables t 
 		inner join
@@ -52,15 +87,16 @@ from
 	UNION ALL
 		select
 			'</Database>' as [tableXml],
-			'99999999999999.9999' as [sort_order]	UNION ALL
+			'99999999999999.9999' as [sort_order]	
+	UNION ALL
 		select	
-			'    <ForeignKey name="' + fk.name 
+			'      <ForeignKey name="' + fk.name 
 			--+ '" tableId="' + cast(fkc.parent_object_id as varchar) 
 			+ '" columnId="' + cast(fkc.parent_column_id as varchar)
 			+ '" refTableId="' + CAST(fkc.referenced_object_id as varchar)
 			+ '" refColumnId="' + CAST(fkc.referenced_column_id as varchar)
 			+ '"/>' as [tableXml],
-			cast(fkc.parent_object_id as varchar) + '.00.' + + right('000' + cast(fkc.parent_column_id as varchar), 3) as [sort_order]
+			cast(fkc.parent_object_id as varchar) + '.000.' + right('000' + cast(fkc.parent_column_id as varchar), 3) as [sort_order]
 		from 
 			sys.foreign_key_columns fkc
 		inner join 
