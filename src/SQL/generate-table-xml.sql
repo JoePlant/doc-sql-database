@@ -35,10 +35,15 @@ from
 			'0.2' as [sort_order]
 	UNION ALL
 		select 
-			'    <Table tableId="' + cast(object_id as varchar) + '" name="' + t.name + '">' as [tableXml],
+			'    <Table tableId="' + cast(object_id as varchar) 
+			+ '" schema="' + s.name
+			+ '" name="' + t.name 
+			+ '">' as [tableXml],
 			cast(object_id as varchar) + '.0' as [sort_order]
 		from 
 			sys.tables t
+		inner join
+			sys.schemas s on s.schema_id = t.schema_id
 	UNION ALL
 		select 
 			'      <Rows count="' + cast(p.rows as varchar) + '"/>' as [xml],
