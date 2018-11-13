@@ -44,7 +44,7 @@ The database schema is then visualised using
 
 ## Authors
 
-* **Joseph Plant** - *Initial work* - [JoePlant](https://github.com/JoePlant)
+* **Joe Plant** - *Initial work* - [JoePlant](https://github.com/JoePlant)
 
 ## License
 
