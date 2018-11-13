@@ -69,6 +69,7 @@
 		<ul class="nav hidden-print hidden-xs hidden-sm" data-spy="affix">
 			<li>
 				<a href="#summary">Summary</a>
+				<xsl:apply-templates select='/Database/Tables'/>
 			</li>
 			<li>
 				<a href='#tables'>Tables</a>
@@ -83,8 +84,9 @@
 	</div>
 	<div class='col-md-9' role='main' >
 		<a name='summary'/>
+		<xsl:apply-templates select='/Database' mode='summary'/>
 		<h3>Summary</h3>
-			<xsl:apply-templates select='/Database/Tables/Table' mode='summary'/>
+			<xsl:apply-templates select='/Database/Tables' mode='summary'/>
 		<a name='tables'/>
 		<h3>Tables</h3>
 		<xsl:apply-templates select='/Database/Tables/Table' mode='table'/>
@@ -132,5 +134,6 @@
 		</xsl:otherwise>
 	</xsl:choose>
   </xsl:template>
+  
 
 </xsl:stylesheet>
