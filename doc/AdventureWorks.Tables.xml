@@ -1,723 +1,797 @@
-<Database name='AdventureWorks'>
-<Tables>
-  <Table tableId="1010102639" name="SalesOrderHeader">"
-    <ForeignKey name="FK_SalesOrderHeader_Customer_CustomerID" columnId="11" refTableId="709577566" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_SalesPerson_SalesPersonID" columnId="12" refTableId="1298103665" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_SalesTerritory_TerritoryID" columnId="13" refTableId="1666104976" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_Address_BillToAddressID" columnId="14" refTableId="85575343" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_Address_ShipToAddressID" columnId="15" refTableId="85575343" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_ShipMethod_ShipMethodID" columnId="16" refTableId="1970106059" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_CreditCard_CreditCardID" columnId="17" refTableId="581577110" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" columnId="19" refTableId="677577452" refColumnId="1"/>
-    <Column columnId="1" name="SalesOrderID"/>"
-    <Column columnId="2" name="RevisionNumber"/>"
-    <Column columnId="3" name="OrderDate"/>"
-    <Column columnId="4" name="DueDate"/>"
-    <Column columnId="5" name="ShipDate"/>"
-    <Column columnId="6" name="Status"/>"
-    <Column columnId="7" name="OnlineOrderFlag"/>"
-    <Column columnId="8" name="SalesOrderNumber"/>"
-    <Column columnId="9" name="PurchaseOrderNumber"/>"
-    <Column columnId="10" name="AccountNumber"/>"
-    <Column columnId="11" name="CustomerID"/>"
-    <Column columnId="12" name="SalesPersonID"/>"
-    <Column columnId="13" name="TerritoryID"/>"
-    <Column columnId="14" name="BillToAddressID"/>"
-    <Column columnId="15" name="ShipToAddressID"/>"
-    <Column columnId="16" name="ShipMethodID"/>"
-    <Column columnId="17" name="CreditCardID"/>"
-    <Column columnId="18" name="CreditCardApprovalCode"/>"
-    <Column columnId="19" name="CurrencyRateID"/>"
-    <Column columnId="20" name="SubTotal"/>"
-    <Column columnId="21" name="TaxAmt"/>"
-    <Column columnId="22" name="Freight"/>"
-    <Column columnId="23" name="TotalDue"/>"
-    <Column columnId="24" name="Comment"/>"
-    <Column columnId="25" name="rowguid"/>"
-    <Column columnId="26" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1189579276" name="EmployeeDepartmentHistory">"
-    <ForeignKey name="FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" columnId="1" refTableId="981578535" refColumnId="1"/>
-    <ForeignKey name="FK_EmployeeDepartmentHistory_Department_DepartmentID" columnId="2" refTableId="757577737" refColumnId="1"/>
-    <ForeignKey name="FK_EmployeeDepartmentHistory_Shift_ShiftID" columnId="3" refTableId="1938105945" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="DepartmentID"/>"
-    <Column columnId="3" name="ShiftID"/>"
-    <Column columnId="4" name="StartDate"/>"
-    <Column columnId="5" name="EndDate"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1237579447" name="EmployeePayHistory">"
-    <ForeignKey name="FK_EmployeePayHistory_Employee_BusinessEntityID" columnId="1" refTableId="981578535" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="RateChangeDate"/>"
-    <Column columnId="3" name="Rate"/>"
-    <Column columnId="4" name="PayFrequency"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1266103551" name="SalesOrderHeaderSalesReason">"
-    <ForeignKey name="FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" columnId="1" refTableId="1010102639" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" columnId="2" refTableId="1554104577" refColumnId="1"/>
-    <Column columnId="1" name="SalesOrderID"/>"
-    <Column columnId="2" name="SalesReasonID"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1298103665" name="SalesPerson">"
-    <ForeignKey name="FK_SalesPerson_Employee_BusinessEntityID" columnId="1" refTableId="981578535" refColumnId="1"/>
-    <ForeignKey name="FK_SalesPerson_SalesTerritory_TerritoryID" columnId="2" refTableId="1666104976" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="TerritoryID"/>"
-    <Column columnId="3" name="SalesQuota"/>"
-    <Column columnId="4" name="Bonus"/>"
-    <Column columnId="5" name="CommissionPct"/>"
-    <Column columnId="6" name="SalesYTD"/>"
-    <Column columnId="7" name="SalesLastYear"/>"
-    <Column columnId="8" name="rowguid"/>"
-    <Column columnId="9" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1301579675" name="Illustration">"
-    <Column columnId="1" name="IllustrationID"/>"
-    <Column columnId="2" name="Diagram"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1333579789" name="JobCandidate">"
-    <ForeignKey name="FK_JobCandidate_Employee_BusinessEntityID" columnId="2" refTableId="981578535" refColumnId="1"/>
-    <Column columnId="1" name="JobCandidateID"/>"
-    <Column columnId="2" name="BusinessEntityID"/>"
-    <Column columnId="3" name="Resume"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="133575514" name="AddressType">"
-    <Column columnId="1" name="AddressTypeID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="rowguid"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1365579903" name="Location">"
-    <Column columnId="1" name="LocationID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="CostRate"/>"
-    <Column columnId="4" name="Availability"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1461580245" name="Password">"
-    <ForeignKey name="FK_Password_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="PasswordHash"/>"
-    <Column columnId="3" name="PasswordSalt"/>"
-    <Column columnId="4" name="rowguid"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="14623095" name="SpecialOffer">"
-    <Column columnId="1" name="SpecialOfferID"/>"
-    <Column columnId="2" name="Description"/>"
-    <Column columnId="3" name="DiscountPct"/>"
-    <Column columnId="4" name="Type"/>"
-    <Column columnId="5" name="Category"/>"
-    <Column columnId="6" name="StartDate"/>"
-    <Column columnId="7" name="EndDate"/>"
-    <Column columnId="8" name="MinQty"/>"
-    <Column columnId="9" name="MaxQty"/>"
-    <Column columnId="10" name="rowguid"/>"
-    <Column columnId="11" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1490104349" name="SalesPersonQuotaHistory">"
-    <ForeignKey name="FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" columnId="1" refTableId="1298103665" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="QuotaDate"/>"
-    <Column columnId="3" name="SalesQuota"/>"
-    <Column columnId="4" name="rowguid"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1509580416" name="Person">"
-    <ForeignKey name="FK_Person_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="PersonType"/>"
-    <Column columnId="3" name="NameStyle"/>"
-    <Column columnId="4" name="Title"/>"
-    <Column columnId="5" name="FirstName"/>"
-    <Column columnId="6" name="MiddleName"/>"
-    <Column columnId="7" name="LastName"/>"
-    <Column columnId="8" name="Suffix"/>"
-    <Column columnId="9" name="EmailPromotion"/>"
-    <Column columnId="10" name="AdditionalContactInfo"/>"
-    <Column columnId="11" name="Demographics"/>"
-    <Column columnId="12" name="rowguid"/>"
-    <Column columnId="13" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1554104577" name="SalesReason">"
-    <Column columnId="1" name="SalesReasonID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ReasonType"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1586104691" name="SalesTaxRate">"
-    <ForeignKey name="FK_SalesTaxRate_StateProvince_StateProvinceID" columnId="2" refTableId="206623779" refColumnId="1"/>
-    <Column columnId="1" name="SalesTaxRateID"/>"
-    <Column columnId="2" name="StateProvinceID"/>"
-    <Column columnId="3" name="TaxType"/>"
-    <Column columnId="4" name="TaxRate"/>"
-    <Column columnId="5" name="Name"/>"
-    <Column columnId="6" name="rowguid"/>"
-    <Column columnId="7" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="158623608" name="SpecialOfferProduct">"
-    <ForeignKey name="FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" columnId="1" refTableId="14623095" refColumnId="1"/>
-    <ForeignKey name="FK_SpecialOfferProduct_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="SpecialOfferID"/>"
-    <Column columnId="2" name="ProductID"/>"
-    <Column columnId="3" name="rowguid"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="162099618" name="ProductModel">"
-    <Column columnId="1" name="ProductModelID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="CatalogDescription"/>"
-    <Column columnId="4" name="Instructions"/>"
-    <Column columnId="5" name="rowguid"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1621580815" name="PersonCreditCard">"
-    <ForeignKey name="FK_PersonCreditCard_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
-    <ForeignKey name="FK_PersonCreditCard_CreditCard_CreditCardID" columnId="2" refTableId="581577110" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="CreditCardID"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1653580929" name="PersonPhone">"
-    <ForeignKey name="FK_PersonPhone_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
-    <ForeignKey name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" columnId="3" refTableId="1685581043" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="PhoneNumber"/>"
-    <Column columnId="3" name="PhoneNumberTypeID"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1666104976" name="SalesTerritory">"
-    <ForeignKey name="FK_SalesTerritory_CountryRegion_CountryRegionCode" columnId="3" refTableId="549576996" refColumnId="1"/>
-    <Column columnId="1" name="TerritoryID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="CountryRegionCode"/>"
-    <Column columnId="4" name="Group"/>"
-    <Column columnId="5" name="SalesYTD"/>"
-    <Column columnId="6" name="SalesLastYear"/>"
-    <Column columnId="7" name="CostYTD"/>"
-    <Column columnId="8" name="CostLastYear"/>"
-    <Column columnId="9" name="rowguid"/>"
-    <Column columnId="10" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1685581043" name="PhoneNumberType">"
-    <Column columnId="1" name="PhoneNumberTypeID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1717581157" name="Product">"
-    <ForeignKey name="FK_Product_UnitMeasure_SizeUnitMeasureCode" columnId="12" refTableId="478624748" refColumnId="1"/>
-    <ForeignKey name="FK_Product_UnitMeasure_WeightUnitMeasureCode" columnId="13" refTableId="478624748" refColumnId="1"/>
-    <ForeignKey name="FK_Product_ProductSubcategory_ProductSubcategoryID" columnId="19" refTableId="418100530" refColumnId="1"/>
-    <ForeignKey name="FK_Product_ProductModel_ProductModelID" columnId="20" refTableId="162099618" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ProductNumber"/>"
-    <Column columnId="4" name="MakeFlag"/>"
-    <Column columnId="5" name="FinishedGoodsFlag"/>"
-    <Column columnId="6" name="Color"/>"
-    <Column columnId="7" name="SafetyStockLevel"/>"
-    <Column columnId="8" name="ReorderPoint"/>"
-    <Column columnId="9" name="StandardCost"/>"
-    <Column columnId="10" name="ListPrice"/>"
-    <Column columnId="11" name="Size"/>"
-    <Column columnId="12" name="SizeUnitMeasureCode"/>"
-    <Column columnId="13" name="WeightUnitMeasureCode"/>"
-    <Column columnId="14" name="Weight"/>"
-    <Column columnId="15" name="DaysToManufacture"/>"
-    <Column columnId="16" name="ProductLine"/>"
-    <Column columnId="17" name="Class"/>"
-    <Column columnId="18" name="Style"/>"
-    <Column columnId="19" name="ProductSubcategoryID"/>"
-    <Column columnId="20" name="ProductModelID"/>"
-    <Column columnId="21" name="SellStartDate"/>"
-    <Column columnId="22" name="SellEndDate"/>"
-    <Column columnId="23" name="DiscontinuedDate"/>"
-    <Column columnId="24" name="rowguid"/>"
-    <Column columnId="25" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="181575685" name="AWBuildVersion">"
-    <Column columnId="1" name="SystemInformationID"/>"
-    <Column columnId="2" name="Database Version"/>"
-    <Column columnId="3" name="VersionDate"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1842105603" name="SalesTerritoryHistory">"
-    <ForeignKey name="FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" columnId="1" refTableId="1298103665" refColumnId="1"/>
-    <ForeignKey name="FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" columnId="2" refTableId="1666104976" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="TerritoryID"/>"
-    <Column columnId="3" name="StartDate"/>"
-    <Column columnId="4" name="EndDate"/>"
-    <Column columnId="5" name="rowguid"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1906105831" name="ScrapReason">"
-    <Column columnId="1" name="ScrapReasonID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1938105945" name="Shift">"
-    <Column columnId="1" name="ShiftID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="StartTime"/>"
-    <Column columnId="4" name="EndTime"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1957582012" name="ProductCategory">"
-    <Column columnId="1" name="ProductCategoryID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="rowguid"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="1970106059" name="ShipMethod">"
-    <Column columnId="1" name="ShipMethodID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ShipBase"/>"
-    <Column columnId="4" name="ShipRate"/>"
-    <Column columnId="5" name="rowguid"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="2005582183" name="ProductCostHistory">"
-    <ForeignKey name="FK_ProductCostHistory_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="StartDate"/>"
-    <Column columnId="3" name="EndDate"/>"
-    <Column columnId="4" name="StandardCost"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="206623779" name="StateProvince">"
-    <ForeignKey name="FK_StateProvince_CountryRegion_CountryRegionCode" columnId="3" refTableId="549576996" refColumnId="1"/>
-    <ForeignKey name="FK_StateProvince_SalesTerritory_TerritoryID" columnId="6" refTableId="1666104976" refColumnId="1"/>
-    <Column columnId="1" name="StateProvinceID"/>"
-    <Column columnId="2" name="StateProvinceCode"/>"
-    <Column columnId="3" name="CountryRegionCode"/>"
-    <Column columnId="4" name="IsOnlyStateProvinceFlag"/>"
-    <Column columnId="5" name="Name"/>"
-    <Column columnId="6" name="TerritoryID"/>"
-    <Column columnId="7" name="rowguid"/>"
-    <Column columnId="8" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="2069582411" name="ProductDescription">"
-    <Column columnId="1" name="ProductDescriptionID"/>"
-    <Column columnId="2" name="Description"/>"
-    <Column columnId="3" name="rowguid"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="2082106458" name="ShoppingCartItem">"
-    <ForeignKey name="FK_ShoppingCartItem_Product_ProductID" columnId="4" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="ShoppingCartItemID"/>"
-    <Column columnId="2" name="ShoppingCartID"/>"
-    <Column columnId="3" name="Quantity"/>"
-    <Column columnId="4" name="ProductID"/>"
-    <Column columnId="5" name="DateCreated"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="2099048" name="ProductInventory">"
-    <ForeignKey name="FK_ProductInventory_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_ProductInventory_Location_LocationID" columnId="2" refTableId="1365579903" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="LocationID"/>"
-    <Column columnId="3" name="Shelf"/>"
-    <Column columnId="4" name="Bin"/>"
-    <Column columnId="5" name="Quantity"/>"
-    <Column columnId="6" name="rowguid"/>"
-    <Column columnId="7" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="210099789" name="ProductModelIllustration">"
-    <ForeignKey name="FK_ProductModelIllustration_ProductModel_ProductModelID" columnId="1" refTableId="162099618" refColumnId="1"/>
-    <ForeignKey name="FK_ProductModelIllustration_Illustration_IllustrationID" columnId="2" refTableId="1301579675" refColumnId="1"/>
-    <Column columnId="1" name="ProductModelID"/>"
-    <Column columnId="2" name="IllustrationID"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="2105058535" name="DatabaseLog">"
-    <Column columnId="1" name="DatabaseLogID"/>"
-    <Column columnId="2" name="PostTime"/>"
-    <Column columnId="3" name="DatabaseUser"/>"
-    <Column columnId="4" name="Event"/>"
-    <Column columnId="5" name="Schema"/>"
-    <Column columnId="6" name="Object"/>"
-    <Column columnId="7" name="TSQL"/>"
-    <Column columnId="8" name="XmlEvent"/>"
-  </Table>"
-  <Table tableId="2117582582" name="ProductDocument">"
-    <ForeignKey name="FK_ProductDocument_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_ProductDocument_Document_DocumentNode" columnId="2" refTableId="789577851" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="DocumentNode"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="213575799" name="BillOfMaterials">"
-    <ForeignKey name="FK_BillOfMaterials_Product_ProductAssemblyID" columnId="2" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_BillOfMaterials_Product_ComponentID" columnId="3" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" columnId="6" refTableId="478624748" refColumnId="1"/>
-    <Column columnId="1" name="BillOfMaterialsID"/>"
-    <Column columnId="2" name="ProductAssemblyID"/>"
-    <Column columnId="3" name="ComponentID"/>"
-    <Column columnId="4" name="StartDate"/>"
-    <Column columnId="5" name="EndDate"/>"
-    <Column columnId="6" name="UnitMeasureCode"/>"
-    <Column columnId="7" name="BOMLevel"/>"
-    <Column columnId="8" name="PerAssemblyQty"/>"
-    <Column columnId="9" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="2137058649" name="ErrorLog">"
-    <Column columnId="1" name="ErrorLogID"/>"
-    <Column columnId="2" name="ErrorTime"/>"
-    <Column columnId="3" name="UserName"/>"
-    <Column columnId="4" name="ErrorNumber"/>"
-    <Column columnId="5" name="ErrorSeverity"/>"
-    <Column columnId="6" name="ErrorState"/>"
-    <Column columnId="7" name="ErrorProcedure"/>"
-    <Column columnId="8" name="ErrorLine"/>"
-    <Column columnId="9" name="ErrorMessage"/>"
-  </Table>"
-  <Table tableId="242099903" name="ProductModelProductDescriptionCulture">"
-    <ForeignKey name="FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" columnId="1" refTableId="162099618" refColumnId="1"/>
-    <ForeignKey name="FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" columnId="2" refTableId="2069582411" refColumnId="1"/>
-    <ForeignKey name="FK_ProductModelProductDescriptionCulture_Culture_CultureID" columnId="3" refTableId="613577224" refColumnId="1"/>
-    <Column columnId="1" name="ProductModelID"/>"
-    <Column columnId="2" name="ProductDescriptionID"/>"
-    <Column columnId="3" name="CultureID"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="270624007" name="Store">"
-    <ForeignKey name="FK_Store_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
-    <ForeignKey name="FK_Store_SalesPerson_SalesPersonID" columnId="3" refTableId="1298103665" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="SalesPersonID"/>"
-    <Column columnId="4" name="Demographics"/>"
-    <Column columnId="5" name="rowguid"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="274100017" name="ProductPhoto">"
-    <Column columnId="1" name="ProductPhotoID"/>"
-    <Column columnId="2" name="ThumbNailPhoto"/>"
-    <Column columnId="3" name="ThumbnailPhotoFileName"/>"
-    <Column columnId="4" name="LargePhoto"/>"
-    <Column columnId="5" name="LargePhotoFileName"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="306100131" name="ProductProductPhoto">"
-    <ForeignKey name="FK_ProductProductPhoto_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" columnId="2" refTableId="274100017" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="ProductPhotoID"/>"
-    <Column columnId="3" name="Primary"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="318624178" name="TransactionHistory">"
-    <ForeignKey name="FK_TransactionHistory_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="TransactionID"/>"
-    <Column columnId="2" name="ProductID"/>"
-    <Column columnId="3" name="ReferenceOrderID"/>"
-    <Column columnId="4" name="ReferenceOrderLineID"/>"
-    <Column columnId="5" name="TransactionDate"/>"
-    <Column columnId="6" name="TransactionType"/>"
-    <Column columnId="7" name="Quantity"/>"
-    <Column columnId="8" name="ActualCost"/>"
-    <Column columnId="9" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="341576255" name="BusinessEntity">"
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="rowguid"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="354100302" name="ProductReview">"
-    <ForeignKey name="FK_ProductReview_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="ProductReviewID"/>"
-    <Column columnId="2" name="ProductID"/>"
-    <Column columnId="3" name="ReviewerName"/>"
-    <Column columnId="4" name="ReviewDate"/>"
-    <Column columnId="5" name="EmailAddress"/>"
-    <Column columnId="6" name="Rating"/>"
-    <Column columnId="7" name="Comments"/>"
-    <Column columnId="8" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="389576426" name="BusinessEntityAddress">"
-    <ForeignKey name="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
-    <ForeignKey name="FK_BusinessEntityAddress_Address_AddressID" columnId="2" refTableId="85575343" refColumnId="1"/>
-    <ForeignKey name="FK_BusinessEntityAddress_AddressType_AddressTypeID" columnId="3" refTableId="133575514" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="AddressID"/>"
-    <Column columnId="3" name="AddressTypeID"/>"
-    <Column columnId="4" name="rowguid"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="398624463" name="TransactionHistoryArchive">"
-    <Column columnId="1" name="TransactionID"/>"
-    <Column columnId="2" name="ProductID"/>"
-    <Column columnId="3" name="ReferenceOrderID"/>"
-    <Column columnId="4" name="ReferenceOrderLineID"/>"
-    <Column columnId="5" name="TransactionDate"/>"
-    <Column columnId="6" name="TransactionType"/>"
-    <Column columnId="7" name="Quantity"/>"
-    <Column columnId="8" name="ActualCost"/>"
-    <Column columnId="9" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="418100530" name="ProductSubcategory">"
-    <ForeignKey name="FK_ProductSubcategory_ProductCategory_ProductCategoryID" columnId="2" refTableId="1957582012" refColumnId="1"/>
-    <Column columnId="1" name="ProductSubcategoryID"/>"
-    <Column columnId="2" name="ProductCategoryID"/>"
-    <Column columnId="3" name="Name"/>"
-    <Column columnId="4" name="rowguid"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="437576597" name="BusinessEntityContact">"
-    <ForeignKey name="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
-    <ForeignKey name="FK_BusinessEntityContact_Person_PersonID" columnId="2" refTableId="1509580416" refColumnId="1"/>
-    <ForeignKey name="FK_BusinessEntityContact_ContactType_ContactTypeID" columnId="3" refTableId="485576768" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="PersonID"/>"
-    <Column columnId="3" name="ContactTypeID"/>"
-    <Column columnId="4" name="rowguid"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="466100701" name="ProductVendor">"
-    <ForeignKey name="FK_ProductVendor_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_ProductVendor_Vendor_BusinessEntityID" columnId="2" refTableId="510624862" refColumnId="1"/>
-    <ForeignKey name="FK_ProductVendor_UnitMeasure_UnitMeasureCode" columnId="10" refTableId="478624748" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="BusinessEntityID"/>"
-    <Column columnId="3" name="AverageLeadTime"/>"
-    <Column columnId="4" name="StandardPrice"/>"
-    <Column columnId="5" name="LastReceiptCost"/>"
-    <Column columnId="6" name="LastReceiptDate"/>"
-    <Column columnId="7" name="MinOrderQty"/>"
-    <Column columnId="8" name="MaxOrderQty"/>"
-    <Column columnId="9" name="OnOrderQty"/>"
-    <Column columnId="10" name="UnitMeasureCode"/>"
-    <Column columnId="11" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="478624748" name="UnitMeasure">"
-    <Column columnId="1" name="UnitMeasureCode"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="485576768" name="ContactType">"
-    <Column columnId="1" name="ContactTypeID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="510624862" name="Vendor">"
-    <ForeignKey name="FK_Vendor_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="AccountNumber"/>"
-    <Column columnId="3" name="Name"/>"
-    <Column columnId="4" name="CreditRating"/>"
-    <Column columnId="5" name="PreferredVendorStatus"/>"
-    <Column columnId="6" name="ActiveFlag"/>"
-    <Column columnId="7" name="PurchasingWebServiceURL"/>"
-    <Column columnId="8" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="517576882" name="CountryRegionCurrency">"
-    <ForeignKey name="FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" columnId="1" refTableId="549576996" refColumnId="1"/>
-    <ForeignKey name="FK_CountryRegionCurrency_Currency_CurrencyCode" columnId="2" refTableId="645577338" refColumnId="1"/>
-    <Column columnId="1" name="CountryRegionCode"/>"
-    <Column columnId="2" name="CurrencyCode"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="549576996" name="CountryRegion">"
-    <Column columnId="1" name="CountryRegionCode"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="581577110" name="CreditCard">"
-    <Column columnId="1" name="CreditCardID"/>"
-    <Column columnId="2" name="CardType"/>"
-    <Column columnId="3" name="CardNumber"/>"
-    <Column columnId="4" name="ExpMonth"/>"
-    <Column columnId="5" name="ExpYear"/>"
-    <Column columnId="6" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="590625147" name="WorkOrder">"
-    <ForeignKey name="FK_WorkOrder_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
-    <ForeignKey name="FK_WorkOrder_ScrapReason_ScrapReasonID" columnId="9" refTableId="1906105831" refColumnId="1"/>
-    <Column columnId="1" name="WorkOrderID"/>"
-    <Column columnId="2" name="ProductID"/>"
-    <Column columnId="3" name="OrderQty"/>"
-    <Column columnId="4" name="StockedQty"/>"
-    <Column columnId="5" name="ScrappedQty"/>"
-    <Column columnId="6" name="StartDate"/>"
-    <Column columnId="7" name="EndDate"/>"
-    <Column columnId="8" name="DueDate"/>"
-    <Column columnId="9" name="ScrapReasonID"/>"
-    <Column columnId="10" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="594101157" name="PurchaseOrderDetail">"
-    <ForeignKey name="FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" columnId="1" refTableId="690101499" refColumnId="1"/>
-    <ForeignKey name="FK_PurchaseOrderDetail_Product_ProductID" columnId="5" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="PurchaseOrderID"/>"
-    <Column columnId="2" name="PurchaseOrderDetailID"/>"
-    <Column columnId="3" name="DueDate"/>"
-    <Column columnId="4" name="OrderQty"/>"
-    <Column columnId="5" name="ProductID"/>"
-    <Column columnId="6" name="UnitPrice"/>"
-    <Column columnId="7" name="LineTotal"/>"
-    <Column columnId="8" name="ReceivedQty"/>"
-    <Column columnId="9" name="RejectedQty"/>"
-    <Column columnId="10" name="StockedQty"/>"
-    <Column columnId="11" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="613577224" name="Culture">"
-    <Column columnId="1" name="CultureID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="645577338" name="Currency">"
-    <Column columnId="1" name="CurrencyCode"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="670625432" name="WorkOrderRouting">"
-    <ForeignKey name="FK_WorkOrderRouting_WorkOrder_WorkOrderID" columnId="1" refTableId="590625147" refColumnId="1"/>
-    <ForeignKey name="FK_WorkOrderRouting_Location_LocationID" columnId="4" refTableId="1365579903" refColumnId="1"/>
-    <Column columnId="1" name="WorkOrderID"/>"
-    <Column columnId="2" name="ProductID"/>"
-    <Column columnId="3" name="OperationSequence"/>"
-    <Column columnId="4" name="LocationID"/>"
-    <Column columnId="5" name="ScheduledStartDate"/>"
-    <Column columnId="6" name="ScheduledEndDate"/>"
-    <Column columnId="7" name="ActualStartDate"/>"
-    <Column columnId="8" name="ActualEndDate"/>"
-    <Column columnId="9" name="ActualResourceHrs"/>"
-    <Column columnId="10" name="PlannedCost"/>"
-    <Column columnId="11" name="ActualCost"/>"
-    <Column columnId="12" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="677577452" name="CurrencyRate">"
-    <ForeignKey name="FK_CurrencyRate_Currency_FromCurrencyCode" columnId="3" refTableId="645577338" refColumnId="1"/>
-    <ForeignKey name="FK_CurrencyRate_Currency_ToCurrencyCode" columnId="4" refTableId="645577338" refColumnId="1"/>
-    <Column columnId="1" name="CurrencyRateID"/>"
-    <Column columnId="2" name="CurrencyRateDate"/>"
-    <Column columnId="3" name="FromCurrencyCode"/>"
-    <Column columnId="4" name="ToCurrencyCode"/>"
-    <Column columnId="5" name="AverageRate"/>"
-    <Column columnId="6" name="EndOfDayRate"/>"
-    <Column columnId="7" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="690101499" name="PurchaseOrderHeader">"
-    <ForeignKey name="FK_PurchaseOrderHeader_Employee_EmployeeID" columnId="4" refTableId="981578535" refColumnId="1"/>
-    <ForeignKey name="FK_PurchaseOrderHeader_Vendor_VendorID" columnId="5" refTableId="510624862" refColumnId="1"/>
-    <ForeignKey name="FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" columnId="6" refTableId="1970106059" refColumnId="1"/>
-    <Column columnId="1" name="PurchaseOrderID"/>"
-    <Column columnId="2" name="RevisionNumber"/>"
-    <Column columnId="3" name="Status"/>"
-    <Column columnId="4" name="EmployeeID"/>"
-    <Column columnId="5" name="VendorID"/>"
-    <Column columnId="6" name="ShipMethodID"/>"
-    <Column columnId="7" name="OrderDate"/>"
-    <Column columnId="8" name="ShipDate"/>"
-    <Column columnId="9" name="SubTotal"/>"
-    <Column columnId="10" name="TaxAmt"/>"
-    <Column columnId="11" name="Freight"/>"
-    <Column columnId="12" name="TotalDue"/>"
-    <Column columnId="13" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="709577566" name="Customer">"
-    <ForeignKey name="FK_Customer_Person_PersonID" columnId="2" refTableId="1509580416" refColumnId="1"/>
-    <ForeignKey name="FK_Customer_Store_StoreID" columnId="3" refTableId="270624007" refColumnId="1"/>
-    <ForeignKey name="FK_Customer_SalesTerritory_TerritoryID" columnId="4" refTableId="1666104976" refColumnId="1"/>
-    <Column columnId="1" name="CustomerID"/>"
-    <Column columnId="2" name="PersonID"/>"
-    <Column columnId="3" name="StoreID"/>"
-    <Column columnId="4" name="TerritoryID"/>"
-    <Column columnId="5" name="AccountNumber"/>"
-    <Column columnId="6" name="rowguid"/>"
-    <Column columnId="7" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="757577737" name="Department">"
-    <Column columnId="1" name="DepartmentID"/>"
-    <Column columnId="2" name="Name"/>"
-    <Column columnId="3" name="GroupName"/>"
-    <Column columnId="4" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="789577851" name="Document">"
-    <ForeignKey name="FK_Document_Employee_Owner" columnId="4" refTableId="981578535" refColumnId="1"/>
-    <Column columnId="1" name="DocumentNode"/>"
-    <Column columnId="2" name="DocumentLevel"/>"
-    <Column columnId="3" name="Title"/>"
-    <Column columnId="4" name="Owner"/>"
-    <Column columnId="5" name="FolderFlag"/>"
-    <Column columnId="6" name="FileName"/>"
-    <Column columnId="7" name="FileExtension"/>"
-    <Column columnId="8" name="Revision"/>"
-    <Column columnId="9" name="ChangeNumber"/>"
-    <Column columnId="10" name="Status"/>"
-    <Column columnId="11" name="DocumentSummary"/>"
-    <Column columnId="12" name="Document"/>"
-    <Column columnId="13" name="rowguid"/>"
-    <Column columnId="14" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="85575343" name="Address">"
-    <ForeignKey name="FK_Address_StateProvince_StateProvinceID" columnId="5" refTableId="206623779" refColumnId="1"/>
-    <Column columnId="1" name="AddressID"/>"
-    <Column columnId="2" name="AddressLine1"/>"
-    <Column columnId="3" name="AddressLine2"/>"
-    <Column columnId="4" name="City"/>"
-    <Column columnId="5" name="StateProvinceID"/>"
-    <Column columnId="6" name="PostalCode"/>"
-    <Column columnId="7" name="SpatialLocation"/>"
-    <Column columnId="8" name="rowguid"/>"
-    <Column columnId="9" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="898102240" name="SalesOrderDetail">"
-    <ForeignKey name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" columnId="1" refTableId="1010102639" refColumnId="1"/>
-    <ForeignKey name="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" columnId="5" refTableId="158623608" refColumnId="2"/>
-    <ForeignKey name="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" columnId="6" refTableId="158623608" refColumnId="1"/>
-    <Column columnId="1" name="SalesOrderID"/>"
-    <Column columnId="2" name="SalesOrderDetailID"/>"
-    <Column columnId="3" name="CarrierTrackingNumber"/>"
-    <Column columnId="4" name="OrderQty"/>"
-    <Column columnId="5" name="ProductID"/>"
-    <Column columnId="6" name="SpecialOfferID"/>"
-    <Column columnId="7" name="UnitPrice"/>"
-    <Column columnId="8" name="UnitPriceDiscount"/>"
-    <Column columnId="9" name="LineTotal"/>"
-    <Column columnId="10" name="rowguid"/>"
-    <Column columnId="11" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="933578364" name="EmailAddress">"
-    <ForeignKey name="FK_EmailAddress_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="EmailAddressID"/>"
-    <Column columnId="3" name="EmailAddress"/>"
-    <Column columnId="4" name="rowguid"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="98099390" name="ProductListPriceHistory">"
-    <ForeignKey name="FK_ProductListPriceHistory_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
-    <Column columnId="1" name="ProductID"/>"
-    <Column columnId="2" name="StartDate"/>"
-    <Column columnId="3" name="EndDate"/>"
-    <Column columnId="4" name="ListPrice"/>"
-    <Column columnId="5" name="ModifiedDate"/>"
-  </Table>"
-  <Table tableId="981578535" name="Employee">"
-    <ForeignKey name="FK_Employee_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
-    <Column columnId="1" name="BusinessEntityID"/>"
-    <Column columnId="2" name="NationalIDNumber"/>"
-    <Column columnId="3" name="LoginID"/>"
-    <Column columnId="4" name="OrganizationNode"/>"
-    <Column columnId="5" name="OrganizationLevel"/>"
-    <Column columnId="6" name="JobTitle"/>"
-    <Column columnId="7" name="BirthDate"/>"
-    <Column columnId="8" name="MaritalStatus"/>"
-    <Column columnId="9" name="Gender"/>"
-    <Column columnId="10" name="HireDate"/>"
-    <Column columnId="11" name="SalariedFlag"/>"
-    <Column columnId="12" name="VacationHours"/>"
-    <Column columnId="13" name="SickLeaveHours"/>"
-    <Column columnId="14" name="CurrentFlag"/>"
-    <Column columnId="15" name="rowguid"/>"
-    <Column columnId="16" name="ModifiedDate"/>"
-  </Table>"
-</Tables>
+<Database name="AdventureWorks2008R2" collation="SQL_Latin1_General_CP1_CI_AS" compatibilityLevel="100" createDate="2012-03-29 13:00:00">
+  <File name="AdventureWorks2008R2_Data" type="Data" physical="C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\AdventureWorks2008R2_Data.mdf"/>
+  <File name="AdventureWorks2008R2_Log" type="Log" physical="C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\AdventureWorks2008R2_log.LDF"/>
+  <Tables>
+    <Table tableId="1010102639" schema="Sales" name="SalesOrderHeader">
+      <Rows count="31465"/>
+      <ForeignKey name="FK_SalesOrderHeader_Customer_CustomerID" columnId="11" refTableId="709577566" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_SalesPerson_SalesPersonID" columnId="12" refTableId="1298103665" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_SalesTerritory_TerritoryID" columnId="13" refTableId="1666104976" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_Address_BillToAddressID" columnId="14" refTableId="85575343" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_Address_ShipToAddressID" columnId="15" refTableId="85575343" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_ShipMethod_ShipMethodID" columnId="16" refTableId="1970106059" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_CreditCard_CreditCardID" columnId="17" refTableId="581577110" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" columnId="19" refTableId="677577452" refColumnId="1"/>
+      <Column columnId="1" name="SalesOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="RevisionNumber" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="3" name="OrderDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="4" name="DueDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="5" name="ShipDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="6" name="Status" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="7" name="OnlineOrderFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="8" name="SalesOrderNumber" type="nvarchar" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="9" name="PurchaseOrderNumber" type="OrderNumber" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="10" name="AccountNumber" type="AccountNumber" maxLength="30" precision="0" scale="0"/>
+      <Column columnId="11" name="CustomerID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="12" name="SalesPersonID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="13" name="TerritoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="14" name="BillToAddressID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="15" name="ShipToAddressID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="16" name="ShipMethodID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="17" name="CreditCardID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="18" name="CreditCardApprovalCode" type="varchar" maxLength="15" precision="0" scale="0"/>
+      <Column columnId="19" name="CurrencyRateID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="20" name="SubTotal" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="21" name="TaxAmt" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="22" name="Freight" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="23" name="TotalDue" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="24" name="Comment" type="nvarchar" maxLength="256" precision="0" scale="0"/>
+      <Column columnId="25" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="26" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1189579276" schema="HumanResources" name="EmployeeDepartmentHistory">
+      <Rows count="296"/>
+      <ForeignKey name="FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" columnId="1" refTableId="981578535" refColumnId="1"/>
+      <ForeignKey name="FK_EmployeeDepartmentHistory_Department_DepartmentID" columnId="2" refTableId="757577737" refColumnId="1"/>
+      <ForeignKey name="FK_EmployeeDepartmentHistory_Shift_ShiftID" columnId="3" refTableId="1938105945" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="DepartmentID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="3" name="ShiftID" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="4" name="StartDate" type="date" maxLength="3" precision="10" scale="0"/>
+      <Column columnId="5" name="EndDate" type="date" maxLength="3" precision="10" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1237579447" schema="HumanResources" name="EmployeePayHistory">
+      <Rows count="316"/>
+      <ForeignKey name="FK_EmployeePayHistory_Employee_BusinessEntityID" columnId="1" refTableId="981578535" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="RateChangeDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="Rate" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="4" name="PayFrequency" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1266103551" schema="Sales" name="SalesOrderHeaderSalesReason">
+      <Rows count="27647"/>
+      <ForeignKey name="FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" columnId="1" refTableId="1010102639" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" columnId="2" refTableId="1554104577" refColumnId="1"/>
+      <Column columnId="1" name="SalesOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="SalesReasonID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1298103665" schema="Sales" name="SalesPerson">
+      <Rows count="17"/>
+      <ForeignKey name="FK_SalesPerson_Employee_BusinessEntityID" columnId="1" refTableId="981578535" refColumnId="1"/>
+      <ForeignKey name="FK_SalesPerson_SalesTerritory_TerritoryID" columnId="2" refTableId="1666104976" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="TerritoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="SalesQuota" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="4" name="Bonus" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="5" name="CommissionPct" type="smallmoney" maxLength="4" precision="10" scale="4"/>
+      <Column columnId="6" name="SalesYTD" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="7" name="SalesLastYear" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="8" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="9" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1301579675" schema="Production" name="Illustration">
+      <Rows count="5"/>
+      <Column columnId="1" name="IllustrationID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Diagram" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1333579789" schema="HumanResources" name="JobCandidate">
+      <Rows count="13"/>
+      <ForeignKey name="FK_JobCandidate_Employee_BusinessEntityID" columnId="2" refTableId="981578535" refColumnId="1"/>
+      <Column columnId="1" name="JobCandidateID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="Resume" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="133575514" schema="Person" name="AddressType">
+      <Rows count="6"/>
+      <Column columnId="1" name="AddressTypeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1365579903" schema="Production" name="Location">
+      <Rows count="14"/>
+      <Column columnId="1" name="LocationID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="CostRate" type="smallmoney" maxLength="4" precision="10" scale="4"/>
+      <Column columnId="4" name="Availability" type="decimal" maxLength="5" precision="8" scale="2"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1461580245" schema="Person" name="Password">
+      <Rows count="19972"/>
+      <ForeignKey name="FK_Password_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PasswordHash" type="varchar" maxLength="128" precision="0" scale="0"/>
+      <Column columnId="3" name="PasswordSalt" type="varchar" maxLength="10" precision="0" scale="0"/>
+      <Column columnId="4" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="14623095" schema="Sales" name="SpecialOffer">
+      <Rows count="16"/>
+      <Column columnId="1" name="SpecialOfferID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Description" type="nvarchar" maxLength="510" precision="0" scale="0"/>
+      <Column columnId="3" name="DiscountPct" type="smallmoney" maxLength="4" precision="10" scale="4"/>
+      <Column columnId="4" name="Type" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="5" name="Category" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="6" name="StartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="7" name="EndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="8" name="MinQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="9" name="MaxQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="10" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="11" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1490104349" schema="Sales" name="SalesPersonQuotaHistory">
+      <Rows count="163"/>
+      <ForeignKey name="FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" columnId="1" refTableId="1298103665" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="QuotaDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="SalesQuota" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="4" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1509580416" schema="Person" name="Person">
+      <Rows count="19972"/>
+      <ForeignKey name="FK_Person_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PersonType" type="nchar" maxLength="4" precision="0" scale="0"/>
+      <Column columnId="3" name="NameStyle" type="NameStyle" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="4" name="Title" type="nvarchar" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="FirstName" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="6" name="MiddleName" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="7" name="LastName" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="8" name="Suffix" type="nvarchar" maxLength="20" precision="0" scale="0"/>
+      <Column columnId="9" name="EmailPromotion" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="10" name="AdditionalContactInfo" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="11" name="Demographics" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="12" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="13" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1554104577" schema="Sales" name="SalesReason">
+      <Rows count="10"/>
+      <Column columnId="1" name="SalesReasonID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ReasonType" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1586104691" schema="Sales" name="SalesTaxRate">
+      <Rows count="29"/>
+      <ForeignKey name="FK_SalesTaxRate_StateProvince_StateProvinceID" columnId="2" refTableId="206623779" refColumnId="1"/>
+      <Column columnId="1" name="SalesTaxRateID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="StateProvinceID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="TaxType" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="4" name="TaxRate" type="smallmoney" maxLength="4" precision="10" scale="4"/>
+      <Column columnId="5" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="6" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="7" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="158623608" schema="Sales" name="SpecialOfferProduct">
+      <Rows count="538"/>
+      <ForeignKey name="FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" columnId="1" refTableId="14623095" refColumnId="1"/>
+      <ForeignKey name="FK_SpecialOfferProduct_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="SpecialOfferID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="162099618" schema="Production" name="ProductModel">
+      <Rows count="128"/>
+      <Column columnId="1" name="ProductModelID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="CatalogDescription" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="4" name="Instructions" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="5" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1621580815" schema="Sales" name="PersonCreditCard">
+      <Rows count="19118"/>
+      <ForeignKey name="FK_PersonCreditCard_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
+      <ForeignKey name="FK_PersonCreditCard_CreditCard_CreditCardID" columnId="2" refTableId="581577110" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="CreditCardID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1653580929" schema="Person" name="PersonPhone">
+      <Rows count="19972"/>
+      <ForeignKey name="FK_PersonPhone_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
+      <ForeignKey name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" columnId="3" refTableId="1685581043" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PhoneNumber" type="Phone" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="3" name="PhoneNumberTypeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1666104976" schema="Sales" name="SalesTerritory">
+      <Rows count="10"/>
+      <ForeignKey name="FK_SalesTerritory_CountryRegion_CountryRegionCode" columnId="3" refTableId="549576996" refColumnId="1"/>
+      <Column columnId="1" name="TerritoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="CountryRegionCode" type="nvarchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="4" name="Group" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="5" name="SalesYTD" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="6" name="SalesLastYear" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="7" name="CostYTD" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="8" name="CostLastYear" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="9" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="10" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1685581043" schema="Person" name="PhoneNumberType">
+      <Rows count="3"/>
+      <Column columnId="1" name="PhoneNumberTypeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1717581157" schema="Production" name="Product">
+      <Rows count="504"/>
+      <ForeignKey name="FK_Product_UnitMeasure_SizeUnitMeasureCode" columnId="12" refTableId="478624748" refColumnId="1"/>
+      <ForeignKey name="FK_Product_UnitMeasure_WeightUnitMeasureCode" columnId="13" refTableId="478624748" refColumnId="1"/>
+      <ForeignKey name="FK_Product_ProductSubcategory_ProductSubcategoryID" columnId="19" refTableId="418100530" refColumnId="1"/>
+      <ForeignKey name="FK_Product_ProductModel_ProductModelID" columnId="20" refTableId="162099618" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ProductNumber" type="nvarchar" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="4" name="MakeFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="5" name="FinishedGoodsFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="6" name="Color" type="nvarchar" maxLength="30" precision="0" scale="0"/>
+      <Column columnId="7" name="SafetyStockLevel" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="8" name="ReorderPoint" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="9" name="StandardCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="10" name="ListPrice" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="11" name="Size" type="nvarchar" maxLength="10" precision="0" scale="0"/>
+      <Column columnId="12" name="SizeUnitMeasureCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="13" name="WeightUnitMeasureCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="14" name="Weight" type="decimal" maxLength="5" precision="8" scale="2"/>
+      <Column columnId="15" name="DaysToManufacture" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="16" name="ProductLine" type="nchar" maxLength="4" precision="0" scale="0"/>
+      <Column columnId="17" name="Class" type="nchar" maxLength="4" precision="0" scale="0"/>
+      <Column columnId="18" name="Style" type="nchar" maxLength="4" precision="0" scale="0"/>
+      <Column columnId="19" name="ProductSubcategoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="20" name="ProductModelID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="21" name="SellStartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="22" name="SellEndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="23" name="DiscontinuedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="24" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="25" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="181575685" schema="dbo" name="AWBuildVersion">
+      <Rows count="1"/>
+      <Column columnId="1" name="SystemInformationID" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="2" name="Database Version" type="nvarchar" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="3" name="VersionDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1842105603" schema="Sales" name="SalesTerritoryHistory">
+      <Rows count="17"/>
+      <ForeignKey name="FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" columnId="1" refTableId="1298103665" refColumnId="1"/>
+      <ForeignKey name="FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" columnId="2" refTableId="1666104976" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="TerritoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="StartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="4" name="EndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="5" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1906105831" schema="Production" name="ScrapReason">
+      <Rows count="16"/>
+      <Column columnId="1" name="ScrapReasonID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1938105945" schema="HumanResources" name="Shift">
+      <Rows count="3"/>
+      <Column columnId="1" name="ShiftID" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="StartTime" type="time" maxLength="5" precision="16" scale="7"/>
+      <Column columnId="4" name="EndTime" type="time" maxLength="5" precision="16" scale="7"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1957582012" schema="Production" name="ProductCategory">
+      <Rows count="4"/>
+      <Column columnId="1" name="ProductCategoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="1970106059" schema="Purchasing" name="ShipMethod">
+      <Rows count="5"/>
+      <Column columnId="1" name="ShipMethodID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ShipBase" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="4" name="ShipRate" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="5" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="2005582183" schema="Production" name="ProductCostHistory">
+      <Rows count="395"/>
+      <ForeignKey name="FK_ProductCostHistory_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="StartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="EndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="4" name="StandardCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="206623779" schema="Person" name="StateProvince">
+      <Rows count="181"/>
+      <ForeignKey name="FK_StateProvince_CountryRegion_CountryRegionCode" columnId="3" refTableId="549576996" refColumnId="1"/>
+      <ForeignKey name="FK_StateProvince_SalesTerritory_TerritoryID" columnId="6" refTableId="1666104976" refColumnId="1"/>
+      <Column columnId="1" name="StateProvinceID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="StateProvinceCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="3" name="CountryRegionCode" type="nvarchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="4" name="IsOnlyStateProvinceFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="5" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="6" name="TerritoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="7" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="8" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="2069582411" schema="Production" name="ProductDescription">
+      <Rows count="762"/>
+      <Column columnId="1" name="ProductDescriptionID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Description" type="nvarchar" maxLength="800" precision="0" scale="0"/>
+      <Column columnId="3" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="2082106458" schema="Sales" name="ShoppingCartItem">
+      <Rows count="3"/>
+      <ForeignKey name="FK_ShoppingCartItem_Product_ProductID" columnId="4" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="ShoppingCartItemID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ShoppingCartID" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="Quantity" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="DateCreated" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="2099048" schema="Production" name="ProductInventory">
+      <Rows count="1069"/>
+      <ForeignKey name="FK_ProductInventory_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_ProductInventory_Location_LocationID" columnId="2" refTableId="1365579903" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="LocationID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="3" name="Shelf" type="nvarchar" maxLength="20" precision="0" scale="0"/>
+      <Column columnId="4" name="Bin" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="5" name="Quantity" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="6" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="7" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="210099789" schema="Production" name="ProductModelIllustration">
+      <Rows count="7"/>
+      <ForeignKey name="FK_ProductModelIllustration_ProductModel_ProductModelID" columnId="1" refTableId="162099618" refColumnId="1"/>
+      <ForeignKey name="FK_ProductModelIllustration_Illustration_IllustrationID" columnId="2" refTableId="1301579675" refColumnId="1"/>
+      <Column columnId="1" name="ProductModelID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="IllustrationID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="2105058535" schema="dbo" name="DatabaseLog">
+      <Rows count="1597"/>
+      <Column columnId="1" name="DatabaseLogID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PostTime" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="DatabaseUser" type="sysname" maxLength="256" precision="0" scale="0"/>
+      <Column columnId="4" name="Event" type="sysname" maxLength="256" precision="0" scale="0"/>
+      <Column columnId="5" name="Schema" type="sysname" maxLength="256" precision="0" scale="0"/>
+      <Column columnId="6" name="Object" type="sysname" maxLength="256" precision="0" scale="0"/>
+      <Column columnId="7" name="TSQL" type="nvarchar" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="8" name="XmlEvent" type="xml" maxLength="-1" precision="0" scale="0"/>
+    </Table>
+    <Table tableId="2117582582" schema="Production" name="ProductDocument">
+      <Rows count="32"/>
+      <ForeignKey name="FK_ProductDocument_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_ProductDocument_Document_DocumentNode" columnId="2" refTableId="789577851" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="DocumentNode" type="hierarchyid" maxLength="892" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="213575799" schema="Production" name="BillOfMaterials">
+      <Rows count="2679"/>
+      <ForeignKey name="FK_BillOfMaterials_Product_ProductAssemblyID" columnId="2" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_BillOfMaterials_Product_ComponentID" columnId="3" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" columnId="6" refTableId="478624748" refColumnId="1"/>
+      <Column columnId="1" name="BillOfMaterialsID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductAssemblyID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ComponentID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="StartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="5" name="EndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="6" name="UnitMeasureCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="7" name="BOMLevel" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="8" name="PerAssemblyQty" type="decimal" maxLength="5" precision="8" scale="2"/>
+      <Column columnId="9" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="2137058649" schema="dbo" name="ErrorLog">
+      <Rows count="0"/>
+      <Column columnId="1" name="ErrorLogID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ErrorTime" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="UserName" type="sysname" maxLength="256" precision="0" scale="0"/>
+      <Column columnId="4" name="ErrorNumber" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="ErrorSeverity" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="6" name="ErrorState" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="7" name="ErrorProcedure" type="nvarchar" maxLength="252" precision="0" scale="0"/>
+      <Column columnId="8" name="ErrorLine" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="9" name="ErrorMessage" type="nvarchar" maxLength="8000" precision="0" scale="0"/>
+    </Table>
+    <Table tableId="242099903" schema="Production" name="ProductModelProductDescriptionCulture">
+      <Rows count="762"/>
+      <ForeignKey name="FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" columnId="1" refTableId="162099618" refColumnId="1"/>
+      <ForeignKey name="FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" columnId="2" refTableId="2069582411" refColumnId="1"/>
+      <ForeignKey name="FK_ProductModelProductDescriptionCulture_Culture_CultureID" columnId="3" refTableId="613577224" refColumnId="1"/>
+      <Column columnId="1" name="ProductModelID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductDescriptionID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="CultureID" type="nchar" maxLength="12" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="270624007" schema="Sales" name="Store">
+      <Rows count="701"/>
+      <ForeignKey name="FK_Store_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
+      <ForeignKey name="FK_Store_SalesPerson_SalesPersonID" columnId="3" refTableId="1298103665" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="SalesPersonID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="Demographics" type="xml" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="5" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="274100017" schema="Production" name="ProductPhoto">
+      <Rows count="101"/>
+      <Column columnId="1" name="ProductPhotoID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ThumbNailPhoto" type="varbinary" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="3" name="ThumbnailPhotoFileName" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="LargePhoto" type="varbinary" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="5" name="LargePhotoFileName" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="306100131" schema="Production" name="ProductProductPhoto">
+      <Rows count="504"/>
+      <ForeignKey name="FK_ProductProductPhoto_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" columnId="2" refTableId="274100017" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductPhotoID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="Primary" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="318624178" schema="Production" name="TransactionHistory">
+      <Rows count="113443"/>
+      <ForeignKey name="FK_TransactionHistory_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="TransactionID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ReferenceOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="ReferenceOrderLineID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="TransactionDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="6" name="TransactionType" type="nchar" maxLength="2" precision="0" scale="0"/>
+      <Column columnId="7" name="Quantity" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="8" name="ActualCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="9" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="341576255" schema="Person" name="BusinessEntity">
+      <Rows count="20777"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="354100302" schema="Production" name="ProductReview">
+      <Rows count="4"/>
+      <ForeignKey name="FK_ProductReview_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="ProductReviewID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ReviewerName" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="ReviewDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="5" name="EmailAddress" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="6" name="Rating" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="7" name="Comments" type="nvarchar" maxLength="7700" precision="0" scale="0"/>
+      <Column columnId="8" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="389576426" schema="Person" name="BusinessEntityAddress">
+      <Rows count="19614"/>
+      <ForeignKey name="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
+      <ForeignKey name="FK_BusinessEntityAddress_Address_AddressID" columnId="2" refTableId="85575343" refColumnId="1"/>
+      <ForeignKey name="FK_BusinessEntityAddress_AddressType_AddressTypeID" columnId="3" refTableId="133575514" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="AddressID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="AddressTypeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="398624463" schema="Production" name="TransactionHistoryArchive">
+      <Rows count="89253"/>
+      <Column columnId="1" name="TransactionID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ReferenceOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="ReferenceOrderLineID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="TransactionDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="6" name="TransactionType" type="nchar" maxLength="2" precision="0" scale="0"/>
+      <Column columnId="7" name="Quantity" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="8" name="ActualCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="9" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="418100530" schema="Production" name="ProductSubcategory">
+      <Rows count="37"/>
+      <ForeignKey name="FK_ProductSubcategory_ProductCategory_ProductCategoryID" columnId="2" refTableId="1957582012" refColumnId="1"/>
+      <Column columnId="1" name="ProductSubcategoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductCategoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="437576597" schema="Person" name="BusinessEntityContact">
+      <Rows count="909"/>
+      <ForeignKey name="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
+      <ForeignKey name="FK_BusinessEntityContact_Person_PersonID" columnId="2" refTableId="1509580416" refColumnId="1"/>
+      <ForeignKey name="FK_BusinessEntityContact_ContactType_ContactTypeID" columnId="3" refTableId="485576768" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PersonID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="ContactTypeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="466100701" schema="Purchasing" name="ProductVendor">
+      <Rows count="460"/>
+      <ForeignKey name="FK_ProductVendor_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_ProductVendor_Vendor_BusinessEntityID" columnId="2" refTableId="510624862" refColumnId="1"/>
+      <ForeignKey name="FK_ProductVendor_UnitMeasure_UnitMeasureCode" columnId="10" refTableId="478624748" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="AverageLeadTime" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="StandardPrice" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="5" name="LastReceiptCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="6" name="LastReceiptDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="7" name="MinOrderQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="8" name="MaxOrderQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="9" name="OnOrderQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="10" name="UnitMeasureCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="11" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="478624748" schema="Production" name="UnitMeasure">
+      <Rows count="38"/>
+      <Column columnId="1" name="UnitMeasureCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="485576768" schema="Person" name="ContactType">
+      <Rows count="20"/>
+      <Column columnId="1" name="ContactTypeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="510624862" schema="Purchasing" name="Vendor">
+      <Rows count="104"/>
+      <ForeignKey name="FK_Vendor_BusinessEntity_BusinessEntityID" columnId="1" refTableId="341576255" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="AccountNumber" type="AccountNumber" maxLength="30" precision="0" scale="0"/>
+      <Column columnId="3" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="CreditRating" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="5" name="PreferredVendorStatus" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="6" name="ActiveFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="7" name="PurchasingWebServiceURL" type="nvarchar" maxLength="2048" precision="0" scale="0"/>
+      <Column columnId="8" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="517576882" schema="Sales" name="CountryRegionCurrency">
+      <Rows count="109"/>
+      <ForeignKey name="FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" columnId="1" refTableId="549576996" refColumnId="1"/>
+      <ForeignKey name="FK_CountryRegionCurrency_Currency_CurrencyCode" columnId="2" refTableId="645577338" refColumnId="1"/>
+      <Column columnId="1" name="CountryRegionCode" type="nvarchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="2" name="CurrencyCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="549576996" schema="Person" name="CountryRegion">
+      <Rows count="238"/>
+      <Column columnId="1" name="CountryRegionCode" type="nvarchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="581577110" schema="Sales" name="CreditCard">
+      <Rows count="19118"/>
+      <Column columnId="1" name="CreditCardID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="CardType" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="CardNumber" type="nvarchar" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="4" name="ExpMonth" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="5" name="ExpYear" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="6" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="590625147" schema="Production" name="WorkOrder">
+      <Rows count="72591"/>
+      <ForeignKey name="FK_WorkOrder_Product_ProductID" columnId="2" refTableId="1717581157" refColumnId="1"/>
+      <ForeignKey name="FK_WorkOrder_ScrapReason_ScrapReasonID" columnId="9" refTableId="1906105831" refColumnId="1"/>
+      <Column columnId="1" name="WorkOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="OrderQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="StockedQty" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="ScrappedQty" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="6" name="StartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="7" name="EndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="8" name="DueDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="9" name="ScrapReasonID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="10" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="594101157" schema="Purchasing" name="PurchaseOrderDetail">
+      <Rows count="8845"/>
+      <ForeignKey name="FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" columnId="1" refTableId="690101499" refColumnId="1"/>
+      <ForeignKey name="FK_PurchaseOrderDetail_Product_ProductID" columnId="5" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="PurchaseOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PurchaseOrderDetailID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="DueDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="4" name="OrderQty" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="5" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="6" name="UnitPrice" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="7" name="LineTotal" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="8" name="ReceivedQty" type="decimal" maxLength="5" precision="8" scale="2"/>
+      <Column columnId="9" name="RejectedQty" type="decimal" maxLength="5" precision="8" scale="2"/>
+      <Column columnId="10" name="StockedQty" type="decimal" maxLength="5" precision="9" scale="2"/>
+      <Column columnId="11" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="613577224" schema="Production" name="Culture">
+      <Rows count="8"/>
+      <Column columnId="1" name="CultureID" type="nchar" maxLength="12" precision="0" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="645577338" schema="Sales" name="Currency">
+      <Rows count="105"/>
+      <Column columnId="1" name="CurrencyCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="670625432" schema="Production" name="WorkOrderRouting">
+      <Rows count="67131"/>
+      <ForeignKey name="FK_WorkOrderRouting_WorkOrder_WorkOrderID" columnId="1" refTableId="590625147" refColumnId="1"/>
+      <ForeignKey name="FK_WorkOrderRouting_Location_LocationID" columnId="4" refTableId="1365579903" refColumnId="1"/>
+      <Column columnId="1" name="WorkOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="OperationSequence" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="4" name="LocationID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="5" name="ScheduledStartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="6" name="ScheduledEndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="7" name="ActualStartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="8" name="ActualEndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="9" name="ActualResourceHrs" type="decimal" maxLength="5" precision="9" scale="4"/>
+      <Column columnId="10" name="PlannedCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="11" name="ActualCost" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="12" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="677577452" schema="Sales" name="CurrencyRate">
+      <Rows count="13532"/>
+      <ForeignKey name="FK_CurrencyRate_Currency_FromCurrencyCode" columnId="3" refTableId="645577338" refColumnId="1"/>
+      <ForeignKey name="FK_CurrencyRate_Currency_ToCurrencyCode" columnId="4" refTableId="645577338" refColumnId="1"/>
+      <Column columnId="1" name="CurrencyRateID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="CurrencyRateDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="FromCurrencyCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="4" name="ToCurrencyCode" type="nchar" maxLength="6" precision="0" scale="0"/>
+      <Column columnId="5" name="AverageRate" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="6" name="EndOfDayRate" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="7" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="690101499" schema="Purchasing" name="PurchaseOrderHeader">
+      <Rows count="4012"/>
+      <ForeignKey name="FK_PurchaseOrderHeader_Employee_EmployeeID" columnId="4" refTableId="981578535" refColumnId="1"/>
+      <ForeignKey name="FK_PurchaseOrderHeader_Vendor_VendorID" columnId="5" refTableId="510624862" refColumnId="1"/>
+      <ForeignKey name="FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" columnId="6" refTableId="1970106059" refColumnId="1"/>
+      <Column columnId="1" name="PurchaseOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="RevisionNumber" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="3" name="Status" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="4" name="EmployeeID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="VendorID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="6" name="ShipMethodID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="7" name="OrderDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="8" name="ShipDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="9" name="SubTotal" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="10" name="TaxAmt" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="11" name="Freight" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="12" name="TotalDue" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="13" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="709577566" schema="Sales" name="Customer">
+      <Rows count="19820"/>
+      <ForeignKey name="FK_Customer_Person_PersonID" columnId="2" refTableId="1509580416" refColumnId="1"/>
+      <ForeignKey name="FK_Customer_Store_StoreID" columnId="3" refTableId="270624007" refColumnId="1"/>
+      <ForeignKey name="FK_Customer_SalesTerritory_TerritoryID" columnId="4" refTableId="1666104976" refColumnId="1"/>
+      <Column columnId="1" name="CustomerID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="PersonID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="StoreID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="4" name="TerritoryID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="AccountNumber" type="varchar" maxLength="10" precision="0" scale="0"/>
+      <Column columnId="6" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="7" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="757577737" schema="HumanResources" name="Department">
+      <Rows count="16"/>
+      <Column columnId="1" name="DepartmentID" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="2" name="Name" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="3" name="GroupName" type="Name" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="789577851" schema="Production" name="Document">
+      <Rows count="13"/>
+      <ForeignKey name="FK_Document_Employee_Owner" columnId="4" refTableId="981578535" refColumnId="1"/>
+      <Column columnId="1" name="DocumentNode" type="hierarchyid" maxLength="892" precision="0" scale="0"/>
+      <Column columnId="2" name="DocumentLevel" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="3" name="Title" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="Owner" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="5" name="FolderFlag" type="bit" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="6" name="FileName" type="nvarchar" maxLength="800" precision="0" scale="0"/>
+      <Column columnId="7" name="FileExtension" type="nvarchar" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="8" name="Revision" type="nchar" maxLength="10" precision="0" scale="0"/>
+      <Column columnId="9" name="ChangeNumber" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="10" name="Status" type="tinyint" maxLength="1" precision="3" scale="0"/>
+      <Column columnId="11" name="DocumentSummary" type="nvarchar" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="12" name="Document" type="varbinary" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="13" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="14" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="85575343" schema="Person" name="Address">
+      <Rows count="19614"/>
+      <ForeignKey name="FK_Address_StateProvince_StateProvinceID" columnId="5" refTableId="206623779" refColumnId="1"/>
+      <Column columnId="1" name="AddressID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="AddressLine1" type="nvarchar" maxLength="120" precision="0" scale="0"/>
+      <Column columnId="3" name="AddressLine2" type="nvarchar" maxLength="120" precision="0" scale="0"/>
+      <Column columnId="4" name="City" type="nvarchar" maxLength="60" precision="0" scale="0"/>
+      <Column columnId="5" name="StateProvinceID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="6" name="PostalCode" type="nvarchar" maxLength="30" precision="0" scale="0"/>
+      <Column columnId="7" name="SpatialLocation" type="geography" maxLength="-1" precision="0" scale="0"/>
+      <Column columnId="8" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="9" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="898102240" schema="Sales" name="SalesOrderDetail">
+      <Rows count="121317"/>
+      <ForeignKey name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" columnId="1" refTableId="1010102639" refColumnId="1"/>
+      <ForeignKey name="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" columnId="5" refTableId="158623608" refColumnId="2"/>
+      <ForeignKey name="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" columnId="6" refTableId="158623608" refColumnId="1"/>
+      <Column columnId="1" name="SalesOrderID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="SalesOrderDetailID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="CarrierTrackingNumber" type="nvarchar" maxLength="50" precision="0" scale="0"/>
+      <Column columnId="4" name="OrderQty" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="5" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="6" name="SpecialOfferID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="7" name="UnitPrice" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="8" name="UnitPriceDiscount" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="9" name="LineTotal" type="numeric" maxLength="17" precision="38" scale="6"/>
+      <Column columnId="10" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="11" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="933578364" schema="Person" name="EmailAddress">
+      <Rows count="19972"/>
+      <ForeignKey name="FK_EmailAddress_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="EmailAddressID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="3" name="EmailAddress" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="4" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="98099390" schema="Production" name="ProductListPriceHistory">
+      <Rows count="395"/>
+      <ForeignKey name="FK_ProductListPriceHistory_Product_ProductID" columnId="1" refTableId="1717581157" refColumnId="1"/>
+      <Column columnId="1" name="ProductID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="StartDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="3" name="EndDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+      <Column columnId="4" name="ListPrice" type="money" maxLength="8" precision="19" scale="4"/>
+      <Column columnId="5" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+    <Table tableId="981578535" schema="HumanResources" name="Employee">
+      <Rows count="290"/>
+      <ForeignKey name="FK_Employee_Person_BusinessEntityID" columnId="1" refTableId="1509580416" refColumnId="1"/>
+      <Column columnId="1" name="BusinessEntityID" type="int" maxLength="4" precision="10" scale="0"/>
+      <Column columnId="2" name="NationalIDNumber" type="nvarchar" maxLength="30" precision="0" scale="0"/>
+      <Column columnId="3" name="LoginID" type="nvarchar" maxLength="512" precision="0" scale="0"/>
+      <Column columnId="4" name="OrganizationNode" type="hierarchyid" maxLength="892" precision="0" scale="0"/>
+      <Column columnId="5" name="OrganizationLevel" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="6" name="JobTitle" type="nvarchar" maxLength="100" precision="0" scale="0"/>
+      <Column columnId="7" name="BirthDate" type="date" maxLength="3" precision="10" scale="0"/>
+      <Column columnId="8" name="MaritalStatus" type="nchar" maxLength="2" precision="0" scale="0"/>
+      <Column columnId="9" name="Gender" type="nchar" maxLength="2" precision="0" scale="0"/>
+      <Column columnId="10" name="HireDate" type="date" maxLength="3" precision="10" scale="0"/>
+      <Column columnId="11" name="SalariedFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="12" name="VacationHours" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="13" name="SickLeaveHours" type="smallint" maxLength="2" precision="5" scale="0"/>
+      <Column columnId="14" name="CurrentFlag" type="Flag" maxLength="1" precision="1" scale="0"/>
+      <Column columnId="15" name="rowguid" type="uniqueidentifier" maxLength="16" precision="0" scale="0"/>
+      <Column columnId="16" name="ModifiedDate" type="datetime" maxLength="8" precision="23" scale="3"/>
+    </Table>
+  </Tables>
 </Database>
+
