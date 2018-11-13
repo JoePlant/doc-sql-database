@@ -57,6 +57,8 @@
 				<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
 			</li>
             <li><a href="#adapters">Relationships</a></li>
+			<p class="navbar-text navbar-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
