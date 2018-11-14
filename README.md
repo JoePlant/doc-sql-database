@@ -14,7 +14,7 @@ The SQL Script is relatively simple to run and it can be transported as a simple
 * Open ```SQL Server Management Studio``` to run the SQL script in the Query Window.
 * Change the database 
 * Run the script and copy / paste the output into a text file called ```database.xml```
-* Using the Batch file in the [src](/src) run the script pointing to the ```database.xml``` and the output directory (see [generate-Adventureworks.cmd](src/generate-Adventureworks.cmd) for an example.
+* Using the Batch file in the [src](/src) run the script pointing to the ```database.xml``` and the output directory (see [generate-Adventureworks.cmd](src/generate-Adventureworks.cmd) for an example).
 
 ## Example Output
 
