@@ -1,3 +1,7 @@
 #Ignore working directory
 
 Working/
+
+#Ignore local projects
+_*/
+src/_*.cmd
