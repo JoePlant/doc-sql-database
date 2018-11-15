@@ -7,8 +7,8 @@ select
 from 
 	(
 		select 
-			'<Database name="'+ db.name 
-			+ '" collation="' + db.collation_name 
+			'<Database name="'+ db.name COLLATE DATABASE_DEFAULT
+			+ '" collation="' + db.collation_name COLLATE DATABASE_DEFAULT
 			+ '" compatibilityLevel="' + cast(db.compatibility_level as varchar)
 			+ '" createDate="' + cast(db.create_date as varchar)
 			+ '">' as [tableXml],
@@ -19,9 +19,9 @@ from
 			database_id = DB_ID()
 	UNION ALL
 		select
-			'  <File name="' + mf.name 
-			+ '" type="' + case when mf.type = 0 then 'Data' else 'Log' end 
-			+ '" physical="' + mf.physical_name 
+			'  <File name="' + mf.name COLLATE DATABASE_DEFAULT
+			+ '" type="' + mf.type_desc COLLATE DATABASE_DEFAULT
+			+ '" physical="' + mf.physical_name COLLATE DATABASE_DEFAULT
 			+ '"/>' as [tableXml],
 			'0.1.0' + cast(mf.file_id as varchar) as [sort_order]
 		from 
@@ -36,8 +36,8 @@ from
 	UNION ALL
 		select 
 			'    <Table tableId="' + cast(object_id as varchar) 
-			+ '" schema="' + s.name
-			+ '" name="' + t.name 
+			+ '" schema="' + s.name COLLATE DATABASE_DEFAULT
+			+ '" name="' + t.name COLLATE DATABASE_DEFAULT
 			+ '">' as [tableXml],
 			cast(object_id as varchar) + '.0' as [sort_order]
 		from 
@@ -63,8 +63,8 @@ from
 	UNION ALL
 		select 
 			'      <Column columnId="' + cast(c.column_id as varchar) 
-			+ '" name="' + c.name 
-			+ '" type="' + ty.name 
+			+ '" name="' + c.name COLLATE DATABASE_DEFAULT
+			+ '" type="' + ty.name COLLATE DATABASE_DEFAULT
 			+ '" maxLength="' + cast(c.max_length as varchar)
 			+ '" precision="' + cast(c.precision as varchar)
 			+ '" scale="' + cast(c.scale as varchar)
@@ -95,7 +95,7 @@ from
 			'99999999999999.9999' as [sort_order]	
 	UNION ALL
 		select	
-			'      <ForeignKey name="' + fk.name 
+			'      <ForeignKey name="' + fk.name COLLATE DATABASE_DEFAULT
 			--+ '" tableId="' + cast(fkc.parent_object_id as varchar) 
 			+ '" columnId="' + cast(fkc.parent_column_id as varchar)
 			+ '" refTableId="' + CAST(fkc.referenced_object_id as varchar)
