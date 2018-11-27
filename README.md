@@ -22,10 +22,13 @@ The SQL Script is relatively simple to run and it can be transported as a simple
 
 * [XML format](https://joeplant.github.io/doc-sql-database/doc/AdventureWorks.Tables.xml)
 * [Example HTML report](https://joeplant.github.io/doc-sql-database/doc/AdventureWorks/index.html)
+* [Relationship diagram](https://joeplant.github.io/doc-sql-database/doc/AdventureWorks/Graphs/db_AdventureWorks2008R2.png)
+
+![Relationship diagram](https://joeplant.github.io/doc-sql-database/doc/AdventureWorks/Graphs/db_AdventureWorks2008R2.png "Relationship Diagram")
 
 ### Prerequisites
 
-This project has been built on Windows and includes the ```nxslt.exe``` binaries for html document creation
+This project has been built on Windows and includes the ```nxslt.exe``` and ```libxml``` binaries for html document creation
 
 
 ## Running the tests
@@ -41,6 +44,7 @@ The xml document is then converted to a HTML web page showing the table structur
 ## Built With
 
 * [Bootstrap](https://getbootstrap.com/docs/3.3/)
+* [dotml](http://www.martin-loetzsch.de/DOTML/)
 
 ## Authors
 
