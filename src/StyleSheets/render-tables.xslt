@@ -35,7 +35,7 @@
 	
 	<xsl:template match='/Database/Tables' mode='summary'>
 		<div class='panel panel-info'>
-			<div class='panel-heading'>Database: <strong><xsl:value-of select='@name'/> </strong></div>
+			<div class='panel-heading'>Database: <strong><xsl:value-of select='../@name'/> </strong></div>
 				<table class='table table-hover table-border'>
 				<tr>
 					<th>#</th>
@@ -65,6 +65,15 @@
 						<td><xsl:apply-templates select='Rows' mode='badge'/></td>
 					</tr>
 				</xsl:for-each>
+				<tr>
+					<th colspan='5'>Database Relationships</th>
+				</tr>
+				<tr>
+					<td colspan='5'>
+						<img src="Graphs/db_{../@name}.svg" class='img-responsive'/>
+						<div class='text-right'><a href="Graphs/db_{../@name}.png">Source</a></div>
+					</td>
+				</tr>
 			</table>
 		</div>
 	</xsl:template>
@@ -77,55 +86,52 @@
 				<xsl:apply-templates select='Rows' mode='badge'/>
 			</div>
 			<div class='panel-body'>
-				<div class='container'>
-					<div class='row'>
-						<div class='col-xs-8 col-md-6'>
-							<xsl:call-template name='generate-column-table'/>
-							
-							
-						</div>
-						<div class='col-xs-4 col-md-6'>
-							<p>Relationships</p>
-						</div>
-					</div>
-				</div>
+				<table class='table table-hover table-border'>
+					<tr>
+						<th>#</th>
+						<th>Column</th>
+						<th>DataType</th>
+						<th/>
+						<!--
+						<xsl:if test='$has-keys'>
+							<th>Keys</th>
+						</xsl:if>
+						-->
+					</tr>
+					<xsl:for-each select='Column'>
+						<tr>
+							<td><xsl:value-of select='@columnId'/></td>
+							<td>
+								<xsl:value-of select='@name'/>
+							</td>
+							<td>
+								<xsl:apply-templates select="." mode='data-type'/>
+							</td>
+							<td>
+								<xsl:if test='count(Key | Reference) > 0'>
+									<div class="btn-group-vertical" role="group" >							
+										<xsl:apply-templates select='Key' mode='list-group-link'/>
+										<xsl:apply-templates select='Reference' mode='list-group-link'/>
+									</div>
+								</xsl:if>
+							</td>
+						</tr>
+					</xsl:for-each>
+					<tr>
+						<th colspan='4'>Relationships</th>
+					</tr>
+					<tr>
+						<td colspan='4'>
+							<img src="Graphs/tbl_{@name}.svg" class='img-responsive'/>
+							<div class='text-right'><a href="Graphs/tbl_{@name}.png">Source</a></div>
+						</td>					
+					</tr>
+				</table>
 			</div>
 		</div>
 	</xsl:template>
 	
 	<xsl:template name='generate-column-table'>
-		<table class='table table-hover table-border'>
-			<tr>
-				<th>#</th>
-				<th>Column</th>
-				<th>DataType</th>
-				<th/>
-				<!--
-				<xsl:if test='$has-keys'>
-					<th>Keys</th>
-				</xsl:if>
-				-->
-			</tr>
-			<xsl:for-each select='Column'>
-				<tr>
-					<td><xsl:value-of select='@columnId'/></td>
-					<td>
-						<xsl:value-of select='@name'/>
-					</td>
-					<td>
-						<xsl:apply-templates select="." mode='data-type'/>
-					</td>
-					<td>
-						<xsl:if test='count(Key | Reference) > 0'>
-							<div class="btn-group-vertical" role="group" >							
-								<xsl:apply-templates select='Key' mode='list-group-link'/>
-								<xsl:apply-templates select='Reference' mode='list-group-link'/>
-							</div>
-						</xsl:if>
-					</td>
-				</tr>
-			</xsl:for-each>
-		</table>
 	</xsl:template>
 	
 	<xsl:template match='Column[not(@type)]' mode='data-type'>na</xsl:template>

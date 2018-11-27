@@ -1,4 +1,4 @@
-@echo off
+@echo OFF
 set model=%1
 set output=%2
 
@@ -43,6 +43,17 @@ xcopy "css" %output%\css /E /Y /I
 @echo === HTML Pages ===
 %nxslt% Working\model.xml StyleSheets\render-html.xslt -o "%output%\index.html" 
 @echo   Generated: %output%\index.html
+
+@echo === Graphs ===
+%xsltproc% -o Working\graph.files.xml StyleSheets\generate-graphs-dotml.xslt Working\model.xml
+
+cd Working\Graphs
+for /F "usebackq" %%i in (`dir /b *.cmd`) DO call %%i
+cd ..\..
+
+@echo === Publish Graphs ===
+xcopy "Working\Graphs\*.png" %output%\Graphs /E /Y /I
+xcopy "Working\Graphs\*.svg" %output%\Graphs /E /Y /I
 
 goto end
 
