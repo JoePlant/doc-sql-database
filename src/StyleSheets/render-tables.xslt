@@ -27,6 +27,31 @@
 						</td>
 					</tr>
 				</xsl:for-each>
+				
+				<tr>
+					<th colspan='2' class='info'>Statistics</th>
+				</tr>
+				<tr>
+					<th>Total number of Tables</th>
+					<td><xsl:value-of select='count(//Table)'/></td>
+				</tr>
+				<tr>
+					<th>Total number of Empty Tables</th>
+					<td><xsl:value-of select='count(//Table/Rows[@count=0])'/></td>
+				</tr>
+				<tr>
+					<th>Total number of Rows</th>
+					<td><xsl:value-of select='sum(//Table/Rows/@count)'/></td>
+				</tr>										
+				<tr>
+					<th>Total number of Columns</th>
+					<td><xsl:value-of select='count(//Table/Column)'/></td>
+				</tr>
+				<tr>
+					<th>Total number of Foreign Keys</th>
+					<td><xsl:value-of select='count(//Table/Column/Key)'/></td>
+				</tr>										
+
 			</table>
 
 		</div>
@@ -66,7 +91,7 @@
 					</tr>
 				</xsl:for-each>
 				<tr>
-					<th colspan='5'>Database Relationships</th>
+					<th colspan='5'><a id='relationships' name='relationships'/>Database Relationships</th>
 				</tr>
 				<tr>
 					<td colspan='5'>

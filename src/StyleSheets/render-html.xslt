@@ -37,8 +37,9 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-spy='scroll' data-target='.scrollspy'>
-    
+  <body>
+    <a id='top' name='top'/>
+
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -52,41 +53,41 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#top">Home</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li>
 				<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
 			</li>
-            <li><a href="#adapters">Relationships</a></li>
-			<p class="navbar-text navbar-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
+            <li><a href="#relationships"><xsl:text>Relationships </xsl:text>
+				<xsl:call-template name='count-badge'>
+					<xsl:with-param name='items' select='//Table/Column/Key'/>
+				</xsl:call-template>
+			</a></li>
+			<p class="navbar-text navbar-right text-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
 
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
-  <a id='top' name='top'/>
+ 
   
   <div class="container">
-  	<div  class='col-md-3 scrollspy' role='complimentary' >
-		<ul class="nav hidden-print hidden-xs hidden-sm" data-spy="affix">
+  	<div class='col-md-2' role='complimentary' >
+		<ul class="nav hidden-print hidden-xs hidden-sm" data-spy='affix'>
 			<li>
-				<a href="#summary">Summary</a>
-				<xsl:apply-templates select='/Database/Tables'/>
+				<a href="#">Summary</a>
+			</li>
+			<li>
+				<a href="#relationships">Relationships</a>
 			</li>
 			<li>
 				<a href='#tables'>Tables</a>
-				<ul class="nav">
-					<xsl:for-each select='/Database/Tables/Table[Column/*]'>
-						<xsl:sort select='count(Column/*)' order='descending'/>
-						<li class=''><a href='#{@tableId}'><xsl:value-of select='@name'/></a></li>
-					</xsl:for-each>
-				</ul>
 			</li>
-			</ul>
+		</ul>
 	</div>
-	<div class='col-md-9' role='main' >
+	<div class='col-md-10' role='main' >
 		<a name='summary'/>
 		<xsl:apply-templates select='/Database' mode='summary'/>
+		
 		<h3>Summary</h3>
 			<xsl:apply-templates select='/Database/Tables' mode='summary'/>
 		<a name='tables'/>
@@ -105,8 +106,12 @@
           <ul class="nav navbar-nav">
             <li>
 				<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
-			</li>
-            <li><a href="#adapters">Relationships</a></li>
+			</li> 
+            <li><a href="#relationships"><xsl:text>Relationships </xsl:text>
+				<xsl:call-template name='count-badge'>
+					<xsl:with-param name='items' select='//Table/Column/Key'/>
+				</xsl:call-template>
+			</a></li>
 			<p class="navbar-text navbar-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
           </ul>
         </div>
