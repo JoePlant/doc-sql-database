@@ -12,33 +12,33 @@
 <text text-anchor="middle" x="154" y="-7" font-family="Verdana" font-size="10.00">Table: EmployeeDepartmentHistory</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="#337ab7" points="0.5,-146.5 0.5,-236.5 105.5,-236.5 105.5,-146.5 0.5,-146.5"/>
-<text text-anchor="middle" x="53" y="-225.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: Department</text>
-<polyline fill="none" stroke="#337ab7" points="0.5,-218.5 105.5,-218.5 "/>
-<text text-anchor="middle" x="53" y="-207.3" font-family="Verdana" font-size="9.00" fill="#337ab7">DepartmentID +</text>
-<polyline fill="none" stroke="#337ab7" points="0.5,-200.5 105.5,-200.5 "/>
-<text text-anchor="middle" x="53" y="-189.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Name</text>
-<polyline fill="none" stroke="#337ab7" points="0.5,-182.5 105.5,-182.5 "/>
-<text text-anchor="middle" x="53" y="-171.3" font-family="Verdana" font-size="9.00" fill="#337ab7">GroupName</text>
-<polyline fill="none" stroke="#337ab7" points="0.5,-164.5 105.5,-164.5 "/>
-<text text-anchor="middle" x="53" y="-153.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="0.5,-146.5 0.5,-236.5 105.5,-236.5 105.5,-146.5 0.5,-146.5"/>
+<text text-anchor="middle" x="53" y="-225.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: Department</text>
+<polyline fill="none" stroke="#555555" points="0.5,-218.5 105.5,-218.5 "/>
+<text text-anchor="middle" x="53" y="-207.3" font-family="Verdana" font-size="9.00" fill="#555555">DepartmentID +</text>
+<polyline fill="none" stroke="#555555" points="0.5,-200.5 105.5,-200.5 "/>
+<text text-anchor="middle" x="53" y="-189.3" font-family="Verdana" font-size="9.00" fill="#555555">Name</text>
+<polyline fill="none" stroke="#555555" points="0.5,-182.5 105.5,-182.5 "/>
+<text text-anchor="middle" x="53" y="-171.3" font-family="Verdana" font-size="9.00" fill="#555555">GroupName</text>
+<polyline fill="none" stroke="#555555" points="0.5,-164.5 105.5,-164.5 "/>
+<text text-anchor="middle" x="53" y="-153.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct2 -->
 <g id="node3" class="node"><title>struct2</title>
-<polygon fill="none" stroke="black" points="124,-128.5 124,-254.5 308,-254.5 308,-128.5 124,-128.5"/>
-<text text-anchor="middle" x="216" y="-243.3" font-family="Verdana" font-size="9.00">Table: EmployeeDepartmentHistory</text>
-<polyline fill="none" stroke="black" points="124,-236.5 308,-236.5 "/>
-<text text-anchor="middle" x="216" y="-225.3" font-family="Verdana" font-size="9.00">+ BusinessEntityID</text>
-<polyline fill="none" stroke="black" points="124,-218.5 308,-218.5 "/>
-<text text-anchor="middle" x="216" y="-207.3" font-family="Verdana" font-size="9.00">+ DepartmentID</text>
-<polyline fill="none" stroke="black" points="124,-200.5 308,-200.5 "/>
-<text text-anchor="middle" x="216" y="-189.3" font-family="Verdana" font-size="9.00">+ ShiftID</text>
-<polyline fill="none" stroke="black" points="124,-182.5 308,-182.5 "/>
-<text text-anchor="middle" x="216" y="-171.3" font-family="Verdana" font-size="9.00">StartDate</text>
-<polyline fill="none" stroke="black" points="124,-164.5 308,-164.5 "/>
-<text text-anchor="middle" x="216" y="-153.3" font-family="Verdana" font-size="9.00">EndDate</text>
-<polyline fill="none" stroke="black" points="124,-146.5 308,-146.5 "/>
-<text text-anchor="middle" x="216" y="-135.3" font-family="Verdana" font-size="9.00">ModifiedDate</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="124,-128.5 124,-254.5 308,-254.5 308,-128.5 124,-128.5"/>
+<text text-anchor="middle" x="216" y="-243.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: EmployeeDepartmentHistory</text>
+<polyline fill="none" stroke="#1b809e" points="124,-236.5 308,-236.5 "/>
+<text text-anchor="middle" x="216" y="-225.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ BusinessEntityID</text>
+<polyline fill="none" stroke="#1b809e" points="124,-218.5 308,-218.5 "/>
+<text text-anchor="middle" x="216" y="-207.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ DepartmentID</text>
+<polyline fill="none" stroke="#1b809e" points="124,-200.5 308,-200.5 "/>
+<text text-anchor="middle" x="216" y="-189.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ ShiftID</text>
+<polyline fill="none" stroke="#1b809e" points="124,-182.5 308,-182.5 "/>
+<text text-anchor="middle" x="216" y="-171.3" font-family="Verdana" font-size="9.00" fill="#1b809e">StartDate</text>
+<polyline fill="none" stroke="#1b809e" points="124,-164.5 308,-164.5 "/>
+<text text-anchor="middle" x="216" y="-153.3" font-family="Verdana" font-size="9.00" fill="#1b809e">EndDate</text>
+<polyline fill="none" stroke="#1b809e" points="124,-146.5 308,-146.5 "/>
+<text text-anchor="middle" x="216" y="-135.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ModifiedDate</text>
 </g>
 <!-- struct0&#45;&gt;struct2 -->
 <g id="edge2" class="edge"><title>struct0:c757577737_1&#45;&gt;struct2:c1189579276_2</title>
@@ -47,40 +47,40 @@
 </g>
 <!-- struct1 -->
 <g id="node2" class="node"><title>struct1</title>
-<polygon fill="none" stroke="#337ab7" points="0,-255.5 0,-561.5 106,-561.5 106,-255.5 0,-255.5"/>
-<text text-anchor="middle" x="53" y="-550.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: Employee</text>
-<polyline fill="none" stroke="#337ab7" points="0,-543.5 106,-543.5 "/>
-<text text-anchor="middle" x="53" y="-532.3" font-family="Verdana" font-size="9.00" fill="#337ab7">BusinessEntityID +</text>
-<polyline fill="none" stroke="#337ab7" points="0,-525.5 106,-525.5 "/>
-<text text-anchor="middle" x="53" y="-514.3" font-family="Verdana" font-size="9.00" fill="#337ab7">NationalIDNumber</text>
-<polyline fill="none" stroke="#337ab7" points="0,-507.5 106,-507.5 "/>
-<text text-anchor="middle" x="53" y="-496.3" font-family="Verdana" font-size="9.00" fill="#337ab7">LoginID</text>
-<polyline fill="none" stroke="#337ab7" points="0,-489.5 106,-489.5 "/>
-<text text-anchor="middle" x="53" y="-478.3" font-family="Verdana" font-size="9.00" fill="#337ab7">OrganizationNode</text>
-<polyline fill="none" stroke="#337ab7" points="0,-471.5 106,-471.5 "/>
-<text text-anchor="middle" x="53" y="-460.3" font-family="Verdana" font-size="9.00" fill="#337ab7">OrganizationLevel</text>
-<polyline fill="none" stroke="#337ab7" points="0,-453.5 106,-453.5 "/>
-<text text-anchor="middle" x="53" y="-442.3" font-family="Verdana" font-size="9.00" fill="#337ab7">JobTitle</text>
-<polyline fill="none" stroke="#337ab7" points="0,-435.5 106,-435.5 "/>
-<text text-anchor="middle" x="53" y="-424.3" font-family="Verdana" font-size="9.00" fill="#337ab7">BirthDate</text>
-<polyline fill="none" stroke="#337ab7" points="0,-417.5 106,-417.5 "/>
-<text text-anchor="middle" x="53" y="-406.3" font-family="Verdana" font-size="9.00" fill="#337ab7">MaritalStatus</text>
-<polyline fill="none" stroke="#337ab7" points="0,-399.5 106,-399.5 "/>
-<text text-anchor="middle" x="53" y="-388.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Gender</text>
-<polyline fill="none" stroke="#337ab7" points="0,-381.5 106,-381.5 "/>
-<text text-anchor="middle" x="53" y="-370.3" font-family="Verdana" font-size="9.00" fill="#337ab7">HireDate</text>
-<polyline fill="none" stroke="#337ab7" points="0,-363.5 106,-363.5 "/>
-<text text-anchor="middle" x="53" y="-352.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SalariedFlag</text>
-<polyline fill="none" stroke="#337ab7" points="0,-345.5 106,-345.5 "/>
-<text text-anchor="middle" x="53" y="-334.3" font-family="Verdana" font-size="9.00" fill="#337ab7">VacationHours</text>
-<polyline fill="none" stroke="#337ab7" points="0,-327.5 106,-327.5 "/>
-<text text-anchor="middle" x="53" y="-316.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SickLeaveHours</text>
-<polyline fill="none" stroke="#337ab7" points="0,-309.5 106,-309.5 "/>
-<text text-anchor="middle" x="53" y="-298.3" font-family="Verdana" font-size="9.00" fill="#337ab7">CurrentFlag</text>
-<polyline fill="none" stroke="#337ab7" points="0,-291.5 106,-291.5 "/>
-<text text-anchor="middle" x="53" y="-280.3" font-family="Verdana" font-size="9.00" fill="#337ab7">rowguid</text>
-<polyline fill="none" stroke="#337ab7" points="0,-273.5 106,-273.5 "/>
-<text text-anchor="middle" x="53" y="-262.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="0,-255.5 0,-561.5 106,-561.5 106,-255.5 0,-255.5"/>
+<text text-anchor="middle" x="53" y="-550.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: Employee</text>
+<polyline fill="none" stroke="#555555" points="0,-543.5 106,-543.5 "/>
+<text text-anchor="middle" x="53" y="-532.3" font-family="Verdana" font-size="9.00" fill="#555555">BusinessEntityID +</text>
+<polyline fill="none" stroke="#555555" points="0,-525.5 106,-525.5 "/>
+<text text-anchor="middle" x="53" y="-514.3" font-family="Verdana" font-size="9.00" fill="#555555">NationalIDNumber</text>
+<polyline fill="none" stroke="#555555" points="0,-507.5 106,-507.5 "/>
+<text text-anchor="middle" x="53" y="-496.3" font-family="Verdana" font-size="9.00" fill="#555555">LoginID</text>
+<polyline fill="none" stroke="#555555" points="0,-489.5 106,-489.5 "/>
+<text text-anchor="middle" x="53" y="-478.3" font-family="Verdana" font-size="9.00" fill="#555555">OrganizationNode</text>
+<polyline fill="none" stroke="#555555" points="0,-471.5 106,-471.5 "/>
+<text text-anchor="middle" x="53" y="-460.3" font-family="Verdana" font-size="9.00" fill="#555555">OrganizationLevel</text>
+<polyline fill="none" stroke="#555555" points="0,-453.5 106,-453.5 "/>
+<text text-anchor="middle" x="53" y="-442.3" font-family="Verdana" font-size="9.00" fill="#555555">JobTitle</text>
+<polyline fill="none" stroke="#555555" points="0,-435.5 106,-435.5 "/>
+<text text-anchor="middle" x="53" y="-424.3" font-family="Verdana" font-size="9.00" fill="#555555">BirthDate</text>
+<polyline fill="none" stroke="#555555" points="0,-417.5 106,-417.5 "/>
+<text text-anchor="middle" x="53" y="-406.3" font-family="Verdana" font-size="9.00" fill="#555555">MaritalStatus</text>
+<polyline fill="none" stroke="#555555" points="0,-399.5 106,-399.5 "/>
+<text text-anchor="middle" x="53" y="-388.3" font-family="Verdana" font-size="9.00" fill="#555555">Gender</text>
+<polyline fill="none" stroke="#555555" points="0,-381.5 106,-381.5 "/>
+<text text-anchor="middle" x="53" y="-370.3" font-family="Verdana" font-size="9.00" fill="#555555">HireDate</text>
+<polyline fill="none" stroke="#555555" points="0,-363.5 106,-363.5 "/>
+<text text-anchor="middle" x="53" y="-352.3" font-family="Verdana" font-size="9.00" fill="#555555">SalariedFlag</text>
+<polyline fill="none" stroke="#555555" points="0,-345.5 106,-345.5 "/>
+<text text-anchor="middle" x="53" y="-334.3" font-family="Verdana" font-size="9.00" fill="#555555">VacationHours</text>
+<polyline fill="none" stroke="#555555" points="0,-327.5 106,-327.5 "/>
+<text text-anchor="middle" x="53" y="-316.3" font-family="Verdana" font-size="9.00" fill="#555555">SickLeaveHours</text>
+<polyline fill="none" stroke="#555555" points="0,-309.5 106,-309.5 "/>
+<text text-anchor="middle" x="53" y="-298.3" font-family="Verdana" font-size="9.00" fill="#555555">CurrentFlag</text>
+<polyline fill="none" stroke="#555555" points="0,-291.5 106,-291.5 "/>
+<text text-anchor="middle" x="53" y="-280.3" font-family="Verdana" font-size="9.00" fill="#555555">rowguid</text>
+<polyline fill="none" stroke="#555555" points="0,-273.5 106,-273.5 "/>
+<text text-anchor="middle" x="53" y="-262.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct1&#45;&gt;struct2 -->
 <g id="edge1" class="edge"><title>struct1:c981578535_1&#45;&gt;struct2:c1189579276_1</title>
@@ -89,18 +89,18 @@
 </g>
 <!-- struct3 -->
 <g id="node4" class="node"><title>struct3</title>
-<polygon fill="none" stroke="#337ab7" points="14,-19.5 14,-127.5 92,-127.5 92,-19.5 14,-19.5"/>
-<text text-anchor="middle" x="53" y="-116.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: Shift</text>
-<polyline fill="none" stroke="#337ab7" points="14,-109.5 92,-109.5 "/>
-<text text-anchor="middle" x="53" y="-98.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ShiftID +</text>
-<polyline fill="none" stroke="#337ab7" points="14,-91.5 92,-91.5 "/>
-<text text-anchor="middle" x="53" y="-80.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Name</text>
-<polyline fill="none" stroke="#337ab7" points="14,-73.5 92,-73.5 "/>
-<text text-anchor="middle" x="53" y="-62.3" font-family="Verdana" font-size="9.00" fill="#337ab7">StartTime</text>
-<polyline fill="none" stroke="#337ab7" points="14,-55.5 92,-55.5 "/>
-<text text-anchor="middle" x="53" y="-44.3" font-family="Verdana" font-size="9.00" fill="#337ab7">EndTime</text>
-<polyline fill="none" stroke="#337ab7" points="14,-37.5 92,-37.5 "/>
-<text text-anchor="middle" x="53" y="-26.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="14,-19.5 14,-127.5 92,-127.5 92,-19.5 14,-19.5"/>
+<text text-anchor="middle" x="53" y="-116.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: Shift</text>
+<polyline fill="none" stroke="#555555" points="14,-109.5 92,-109.5 "/>
+<text text-anchor="middle" x="53" y="-98.3" font-family="Verdana" font-size="9.00" fill="#555555">ShiftID +</text>
+<polyline fill="none" stroke="#555555" points="14,-91.5 92,-91.5 "/>
+<text text-anchor="middle" x="53" y="-80.3" font-family="Verdana" font-size="9.00" fill="#555555">Name</text>
+<polyline fill="none" stroke="#555555" points="14,-73.5 92,-73.5 "/>
+<text text-anchor="middle" x="53" y="-62.3" font-family="Verdana" font-size="9.00" fill="#555555">StartTime</text>
+<polyline fill="none" stroke="#555555" points="14,-55.5 92,-55.5 "/>
+<text text-anchor="middle" x="53" y="-44.3" font-family="Verdana" font-size="9.00" fill="#555555">EndTime</text>
+<polyline fill="none" stroke="#555555" points="14,-37.5 92,-37.5 "/>
+<text text-anchor="middle" x="53" y="-26.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct3&#45;&gt;struct2 -->
 <g id="edge3" class="edge"><title>struct3:c1938105945_1&#45;&gt;struct2:c1189579276_3</title>

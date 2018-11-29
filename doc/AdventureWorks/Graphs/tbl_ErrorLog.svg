@@ -12,26 +12,26 @@
 <text text-anchor="middle" x="46" y="-7" font-family="Verdana" font-size="10.00">Table: ErrorLog</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="black" points="1.5,-19.5 1.5,-199.5 90.5,-199.5 90.5,-19.5 1.5,-19.5"/>
-<text text-anchor="middle" x="46" y="-188.3" font-family="Verdana" font-size="9.00">Table: ErrorLog</text>
-<polyline fill="none" stroke="black" points="1.5,-181.5 90.5,-181.5 "/>
-<text text-anchor="middle" x="46" y="-170.3" font-family="Verdana" font-size="9.00">ErrorLogID</text>
-<polyline fill="none" stroke="black" points="1.5,-163.5 90.5,-163.5 "/>
-<text text-anchor="middle" x="46" y="-152.3" font-family="Verdana" font-size="9.00">ErrorTime</text>
-<polyline fill="none" stroke="black" points="1.5,-145.5 90.5,-145.5 "/>
-<text text-anchor="middle" x="46" y="-134.3" font-family="Verdana" font-size="9.00">UserName</text>
-<polyline fill="none" stroke="black" points="1.5,-127.5 90.5,-127.5 "/>
-<text text-anchor="middle" x="46" y="-116.3" font-family="Verdana" font-size="9.00">ErrorNumber</text>
-<polyline fill="none" stroke="black" points="1.5,-109.5 90.5,-109.5 "/>
-<text text-anchor="middle" x="46" y="-98.3" font-family="Verdana" font-size="9.00">ErrorSeverity</text>
-<polyline fill="none" stroke="black" points="1.5,-91.5 90.5,-91.5 "/>
-<text text-anchor="middle" x="46" y="-80.3" font-family="Verdana" font-size="9.00">ErrorState</text>
-<polyline fill="none" stroke="black" points="1.5,-73.5 90.5,-73.5 "/>
-<text text-anchor="middle" x="46" y="-62.3" font-family="Verdana" font-size="9.00">ErrorProcedure</text>
-<polyline fill="none" stroke="black" points="1.5,-55.5 90.5,-55.5 "/>
-<text text-anchor="middle" x="46" y="-44.3" font-family="Verdana" font-size="9.00">ErrorLine</text>
-<polyline fill="none" stroke="black" points="1.5,-37.5 90.5,-37.5 "/>
-<text text-anchor="middle" x="46" y="-26.3" font-family="Verdana" font-size="9.00">ErrorMessage</text>
+<polygon fill="#fcf8e3" stroke="#1b809e" points="1.5,-19.5 1.5,-199.5 90.5,-199.5 90.5,-19.5 1.5,-19.5"/>
+<text text-anchor="middle" x="46" y="-188.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: ErrorLog</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-181.5 90.5,-181.5 "/>
+<text text-anchor="middle" x="46" y="-170.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorLogID</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-163.5 90.5,-163.5 "/>
+<text text-anchor="middle" x="46" y="-152.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorTime</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-145.5 90.5,-145.5 "/>
+<text text-anchor="middle" x="46" y="-134.3" font-family="Verdana" font-size="9.00" fill="#1b809e">UserName</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-127.5 90.5,-127.5 "/>
+<text text-anchor="middle" x="46" y="-116.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorNumber</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-109.5 90.5,-109.5 "/>
+<text text-anchor="middle" x="46" y="-98.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorSeverity</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-91.5 90.5,-91.5 "/>
+<text text-anchor="middle" x="46" y="-80.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorState</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-73.5 90.5,-73.5 "/>
+<text text-anchor="middle" x="46" y="-62.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorProcedure</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-55.5 90.5,-55.5 "/>
+<text text-anchor="middle" x="46" y="-44.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorLine</text>
+<polyline fill="none" stroke="#1b809e" points="1.5,-37.5 90.5,-37.5 "/>
+<text text-anchor="middle" x="46" y="-26.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ErrorMessage</text>
 </g>
 </g>
 </svg>

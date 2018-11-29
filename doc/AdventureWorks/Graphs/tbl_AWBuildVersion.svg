@@ -12,16 +12,16 @@
 <text text-anchor="middle" x="63.5" y="-7" font-family="Verdana" font-size="10.00">Table: AWBuildVersion</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="black" points="2.5,-19.5 2.5,-109.5 124.5,-109.5 124.5,-19.5 2.5,-19.5"/>
-<text text-anchor="middle" x="63.5" y="-98.3" font-family="Verdana" font-size="9.00">Table: AWBuildVersion</text>
-<polyline fill="none" stroke="black" points="2.5,-91.5 124.5,-91.5 "/>
-<text text-anchor="middle" x="63.5" y="-80.3" font-family="Verdana" font-size="9.00">SystemInformationID</text>
-<polyline fill="none" stroke="black" points="2.5,-73.5 124.5,-73.5 "/>
-<text text-anchor="middle" x="63.5" y="-62.3" font-family="Verdana" font-size="9.00">Database Version</text>
-<polyline fill="none" stroke="black" points="2.5,-55.5 124.5,-55.5 "/>
-<text text-anchor="middle" x="63.5" y="-44.3" font-family="Verdana" font-size="9.00">VersionDate</text>
-<polyline fill="none" stroke="black" points="2.5,-37.5 124.5,-37.5 "/>
-<text text-anchor="middle" x="63.5" y="-26.3" font-family="Verdana" font-size="9.00">ModifiedDate</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="2.5,-19.5 2.5,-109.5 124.5,-109.5 124.5,-19.5 2.5,-19.5"/>
+<text text-anchor="middle" x="63.5" y="-98.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: AWBuildVersion</text>
+<polyline fill="none" stroke="#1b809e" points="2.5,-91.5 124.5,-91.5 "/>
+<text text-anchor="middle" x="63.5" y="-80.3" font-family="Verdana" font-size="9.00" fill="#1b809e">SystemInformationID</text>
+<polyline fill="none" stroke="#1b809e" points="2.5,-73.5 124.5,-73.5 "/>
+<text text-anchor="middle" x="63.5" y="-62.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Database Version</text>
+<polyline fill="none" stroke="#1b809e" points="2.5,-55.5 124.5,-55.5 "/>
+<text text-anchor="middle" x="63.5" y="-44.3" font-family="Verdana" font-size="9.00" fill="#1b809e">VersionDate</text>
+<polyline fill="none" stroke="#1b809e" points="2.5,-37.5 124.5,-37.5 "/>
+<text text-anchor="middle" x="63.5" y="-26.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ModifiedDate</text>
 </g>
 </g>
 </svg>

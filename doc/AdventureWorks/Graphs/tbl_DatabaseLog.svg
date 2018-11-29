@@ -12,24 +12,24 @@
 <text text-anchor="middle" x="58" y="-7" font-family="Verdana" font-size="10.00">Table: DatabaseLog</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="black" points="2,-19.5 2,-181.5 114,-181.5 114,-19.5 2,-19.5"/>
-<text text-anchor="middle" x="58" y="-170.3" font-family="Verdana" font-size="9.00">Table: DatabaseLog</text>
-<polyline fill="none" stroke="black" points="2,-163.5 114,-163.5 "/>
-<text text-anchor="middle" x="58" y="-152.3" font-family="Verdana" font-size="9.00">DatabaseLogID</text>
-<polyline fill="none" stroke="black" points="2,-145.5 114,-145.5 "/>
-<text text-anchor="middle" x="58" y="-134.3" font-family="Verdana" font-size="9.00">PostTime</text>
-<polyline fill="none" stroke="black" points="2,-127.5 114,-127.5 "/>
-<text text-anchor="middle" x="58" y="-116.3" font-family="Verdana" font-size="9.00">DatabaseUser</text>
-<polyline fill="none" stroke="black" points="2,-109.5 114,-109.5 "/>
-<text text-anchor="middle" x="58" y="-98.3" font-family="Verdana" font-size="9.00">Event</text>
-<polyline fill="none" stroke="black" points="2,-91.5 114,-91.5 "/>
-<text text-anchor="middle" x="58" y="-80.3" font-family="Verdana" font-size="9.00">Schema</text>
-<polyline fill="none" stroke="black" points="2,-73.5 114,-73.5 "/>
-<text text-anchor="middle" x="58" y="-62.3" font-family="Verdana" font-size="9.00">Object</text>
-<polyline fill="none" stroke="black" points="2,-55.5 114,-55.5 "/>
-<text text-anchor="middle" x="58" y="-44.3" font-family="Verdana" font-size="9.00">TSQL</text>
-<polyline fill="none" stroke="black" points="2,-37.5 114,-37.5 "/>
-<text text-anchor="middle" x="58" y="-26.3" font-family="Verdana" font-size="9.00">XmlEvent</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="2,-19.5 2,-181.5 114,-181.5 114,-19.5 2,-19.5"/>
+<text text-anchor="middle" x="58" y="-170.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: DatabaseLog</text>
+<polyline fill="none" stroke="#1b809e" points="2,-163.5 114,-163.5 "/>
+<text text-anchor="middle" x="58" y="-152.3" font-family="Verdana" font-size="9.00" fill="#1b809e">DatabaseLogID</text>
+<polyline fill="none" stroke="#1b809e" points="2,-145.5 114,-145.5 "/>
+<text text-anchor="middle" x="58" y="-134.3" font-family="Verdana" font-size="9.00" fill="#1b809e">PostTime</text>
+<polyline fill="none" stroke="#1b809e" points="2,-127.5 114,-127.5 "/>
+<text text-anchor="middle" x="58" y="-116.3" font-family="Verdana" font-size="9.00" fill="#1b809e">DatabaseUser</text>
+<polyline fill="none" stroke="#1b809e" points="2,-109.5 114,-109.5 "/>
+<text text-anchor="middle" x="58" y="-98.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Event</text>
+<polyline fill="none" stroke="#1b809e" points="2,-91.5 114,-91.5 "/>
+<text text-anchor="middle" x="58" y="-80.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Schema</text>
+<polyline fill="none" stroke="#1b809e" points="2,-73.5 114,-73.5 "/>
+<text text-anchor="middle" x="58" y="-62.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Object</text>
+<polyline fill="none" stroke="#1b809e" points="2,-55.5 114,-55.5 "/>
+<text text-anchor="middle" x="58" y="-44.3" font-family="Verdana" font-size="9.00" fill="#1b809e">TSQL</text>
+<polyline fill="none" stroke="#1b809e" points="2,-37.5 114,-37.5 "/>
+<text text-anchor="middle" x="58" y="-26.3" font-family="Verdana" font-size="9.00" fill="#1b809e">XmlEvent</text>
 </g>
 </g>
 </svg>

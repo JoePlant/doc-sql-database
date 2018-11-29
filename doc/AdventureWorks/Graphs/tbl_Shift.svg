@@ -12,35 +12,35 @@
 <text text-anchor="middle" x="140" y="-7" font-family="Verdana" font-size="10.00">Table: Shift</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="#337ab7" points="96,-37.5 96,-163.5 280,-163.5 280,-37.5 96,-37.5"/>
-<text text-anchor="middle" x="188" y="-152.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: EmployeeDepartmentHistory</text>
-<polyline fill="none" stroke="#337ab7" points="96,-145.5 280,-145.5 "/>
-<text text-anchor="middle" x="188" y="-134.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ BusinessEntityID</text>
-<polyline fill="none" stroke="#337ab7" points="96,-127.5 280,-127.5 "/>
-<text text-anchor="middle" x="188" y="-116.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ DepartmentID</text>
-<polyline fill="none" stroke="#337ab7" points="96,-109.5 280,-109.5 "/>
-<text text-anchor="middle" x="188" y="-98.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ ShiftID</text>
-<polyline fill="none" stroke="#337ab7" points="96,-91.5 280,-91.5 "/>
-<text text-anchor="middle" x="188" y="-80.3" font-family="Verdana" font-size="9.00" fill="#337ab7">StartDate</text>
-<polyline fill="none" stroke="#337ab7" points="96,-73.5 280,-73.5 "/>
-<text text-anchor="middle" x="188" y="-62.3" font-family="Verdana" font-size="9.00" fill="#337ab7">EndDate</text>
-<polyline fill="none" stroke="#337ab7" points="96,-55.5 280,-55.5 "/>
-<text text-anchor="middle" x="188" y="-44.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="96,-37.5 96,-163.5 280,-163.5 280,-37.5 96,-37.5"/>
+<text text-anchor="middle" x="188" y="-152.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: EmployeeDepartmentHistory</text>
+<polyline fill="none" stroke="#555555" points="96,-145.5 280,-145.5 "/>
+<text text-anchor="middle" x="188" y="-134.3" font-family="Verdana" font-size="9.00" fill="#555555">+ BusinessEntityID</text>
+<polyline fill="none" stroke="#555555" points="96,-127.5 280,-127.5 "/>
+<text text-anchor="middle" x="188" y="-116.3" font-family="Verdana" font-size="9.00" fill="#555555">+ DepartmentID</text>
+<polyline fill="none" stroke="#555555" points="96,-109.5 280,-109.5 "/>
+<text text-anchor="middle" x="188" y="-98.3" font-family="Verdana" font-size="9.00" fill="#555555">+ ShiftID</text>
+<polyline fill="none" stroke="#555555" points="96,-91.5 280,-91.5 "/>
+<text text-anchor="middle" x="188" y="-80.3" font-family="Verdana" font-size="9.00" fill="#555555">StartDate</text>
+<polyline fill="none" stroke="#555555" points="96,-73.5 280,-73.5 "/>
+<text text-anchor="middle" x="188" y="-62.3" font-family="Verdana" font-size="9.00" fill="#555555">EndDate</text>
+<polyline fill="none" stroke="#555555" points="96,-55.5 280,-55.5 "/>
+<text text-anchor="middle" x="188" y="-44.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct1 -->
 <g id="node2" class="node"><title>struct1</title>
-<polygon fill="none" stroke="black" points="0,-19.5 0,-127.5 78,-127.5 78,-19.5 0,-19.5"/>
-<text text-anchor="middle" x="39" y="-116.3" font-family="Verdana" font-size="9.00">Table: Shift</text>
-<polyline fill="none" stroke="black" points="0,-109.5 78,-109.5 "/>
-<text text-anchor="middle" x="39" y="-98.3" font-family="Verdana" font-size="9.00">ShiftID +</text>
-<polyline fill="none" stroke="black" points="0,-91.5 78,-91.5 "/>
-<text text-anchor="middle" x="39" y="-80.3" font-family="Verdana" font-size="9.00">Name</text>
-<polyline fill="none" stroke="black" points="0,-73.5 78,-73.5 "/>
-<text text-anchor="middle" x="39" y="-62.3" font-family="Verdana" font-size="9.00">StartTime</text>
-<polyline fill="none" stroke="black" points="0,-55.5 78,-55.5 "/>
-<text text-anchor="middle" x="39" y="-44.3" font-family="Verdana" font-size="9.00">EndTime</text>
-<polyline fill="none" stroke="black" points="0,-37.5 78,-37.5 "/>
-<text text-anchor="middle" x="39" y="-26.3" font-family="Verdana" font-size="9.00">ModifiedDate</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="0,-19.5 0,-127.5 78,-127.5 78,-19.5 0,-19.5"/>
+<text text-anchor="middle" x="39" y="-116.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: Shift</text>
+<polyline fill="none" stroke="#1b809e" points="0,-109.5 78,-109.5 "/>
+<text text-anchor="middle" x="39" y="-98.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ShiftID +</text>
+<polyline fill="none" stroke="#1b809e" points="0,-91.5 78,-91.5 "/>
+<text text-anchor="middle" x="39" y="-80.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Name</text>
+<polyline fill="none" stroke="#1b809e" points="0,-73.5 78,-73.5 "/>
+<text text-anchor="middle" x="39" y="-62.3" font-family="Verdana" font-size="9.00" fill="#1b809e">StartTime</text>
+<polyline fill="none" stroke="#1b809e" points="0,-55.5 78,-55.5 "/>
+<text text-anchor="middle" x="39" y="-44.3" font-family="Verdana" font-size="9.00" fill="#1b809e">EndTime</text>
+<polyline fill="none" stroke="#1b809e" points="0,-37.5 78,-37.5 "/>
+<text text-anchor="middle" x="39" y="-26.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ModifiedDate</text>
 </g>
 <!-- struct1&#45;&gt;struct0 -->
 <g id="edge1" class="edge"><title>struct1:c1938105945_1&#45;&gt;struct0:c1189579276_3</title>

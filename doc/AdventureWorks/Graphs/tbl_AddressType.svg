@@ -12,31 +12,31 @@
 <text text-anchor="middle" x="142" y="-7" font-family="Verdana" font-size="10.00">Table: AddressType</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="black" points="0,-19.5 0,-109.5 110,-109.5 110,-19.5 0,-19.5"/>
-<text text-anchor="middle" x="55" y="-98.3" font-family="Verdana" font-size="9.00">Table: AddressType</text>
-<polyline fill="none" stroke="black" points="0,-91.5 110,-91.5 "/>
-<text text-anchor="middle" x="55" y="-80.3" font-family="Verdana" font-size="9.00">AddressTypeID +</text>
-<polyline fill="none" stroke="black" points="0,-73.5 110,-73.5 "/>
-<text text-anchor="middle" x="55" y="-62.3" font-family="Verdana" font-size="9.00">Name</text>
-<polyline fill="none" stroke="black" points="0,-55.5 110,-55.5 "/>
-<text text-anchor="middle" x="55" y="-44.3" font-family="Verdana" font-size="9.00">rowguid</text>
-<polyline fill="none" stroke="black" points="0,-37.5 110,-37.5 "/>
-<text text-anchor="middle" x="55" y="-26.3" font-family="Verdana" font-size="9.00">ModifiedDate</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="0,-19.5 0,-109.5 110,-109.5 110,-19.5 0,-19.5"/>
+<text text-anchor="middle" x="55" y="-98.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: AddressType</text>
+<polyline fill="none" stroke="#1b809e" points="0,-91.5 110,-91.5 "/>
+<text text-anchor="middle" x="55" y="-80.3" font-family="Verdana" font-size="9.00" fill="#1b809e">AddressTypeID +</text>
+<polyline fill="none" stroke="#1b809e" points="0,-73.5 110,-73.5 "/>
+<text text-anchor="middle" x="55" y="-62.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Name</text>
+<polyline fill="none" stroke="#1b809e" points="0,-55.5 110,-55.5 "/>
+<text text-anchor="middle" x="55" y="-44.3" font-family="Verdana" font-size="9.00" fill="#1b809e">rowguid</text>
+<polyline fill="none" stroke="#1b809e" points="0,-37.5 110,-37.5 "/>
+<text text-anchor="middle" x="55" y="-26.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ModifiedDate</text>
 </g>
 <!-- struct1 -->
 <g id="node2" class="node"><title>struct1</title>
-<polygon fill="none" stroke="#337ab7" points="128,-37.5 128,-145.5 284,-145.5 284,-37.5 128,-37.5"/>
-<text text-anchor="middle" x="206" y="-134.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: BusinessEntityAddress</text>
-<polyline fill="none" stroke="#337ab7" points="128,-127.5 284,-127.5 "/>
-<text text-anchor="middle" x="206" y="-116.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ BusinessEntityID</text>
-<polyline fill="none" stroke="#337ab7" points="128,-109.5 284,-109.5 "/>
-<text text-anchor="middle" x="206" y="-98.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ AddressID</text>
-<polyline fill="none" stroke="#337ab7" points="128,-91.5 284,-91.5 "/>
-<text text-anchor="middle" x="206" y="-80.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ AddressTypeID</text>
-<polyline fill="none" stroke="#337ab7" points="128,-73.5 284,-73.5 "/>
-<text text-anchor="middle" x="206" y="-62.3" font-family="Verdana" font-size="9.00" fill="#337ab7">rowguid</text>
-<polyline fill="none" stroke="#337ab7" points="128,-55.5 284,-55.5 "/>
-<text text-anchor="middle" x="206" y="-44.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="128,-37.5 128,-145.5 284,-145.5 284,-37.5 128,-37.5"/>
+<text text-anchor="middle" x="206" y="-134.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: BusinessEntityAddress</text>
+<polyline fill="none" stroke="#555555" points="128,-127.5 284,-127.5 "/>
+<text text-anchor="middle" x="206" y="-116.3" font-family="Verdana" font-size="9.00" fill="#555555">+ BusinessEntityID</text>
+<polyline fill="none" stroke="#555555" points="128,-109.5 284,-109.5 "/>
+<text text-anchor="middle" x="206" y="-98.3" font-family="Verdana" font-size="9.00" fill="#555555">+ AddressID</text>
+<polyline fill="none" stroke="#555555" points="128,-91.5 284,-91.5 "/>
+<text text-anchor="middle" x="206" y="-80.3" font-family="Verdana" font-size="9.00" fill="#555555">+ AddressTypeID</text>
+<polyline fill="none" stroke="#555555" points="128,-73.5 284,-73.5 "/>
+<text text-anchor="middle" x="206" y="-62.3" font-family="Verdana" font-size="9.00" fill="#555555">rowguid</text>
+<polyline fill="none" stroke="#555555" points="128,-55.5 284,-55.5 "/>
+<text text-anchor="middle" x="206" y="-44.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct0&#45;&gt;struct1 -->
 <g id="edge1" class="edge"><title>struct0:c133575514_1&#45;&gt;struct1:c389576426_3</title>

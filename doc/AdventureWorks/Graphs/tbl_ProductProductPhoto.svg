@@ -12,71 +12,71 @@
 <text text-anchor="middle" x="155.5" y="-7" font-family="Verdana" font-size="10.00">Table: ProductProductPhoto</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="#337ab7" points="0,-164.5 0,-632.5 144,-632.5 144,-164.5 0,-164.5"/>
-<text text-anchor="middle" x="72" y="-621.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: Product</text>
-<polyline fill="none" stroke="#337ab7" points="0,-614.5 144,-614.5 "/>
-<text text-anchor="middle" x="72" y="-603.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ProductID +</text>
-<polyline fill="none" stroke="#337ab7" points="0,-596.5 144,-596.5 "/>
-<text text-anchor="middle" x="72" y="-585.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Name</text>
-<polyline fill="none" stroke="#337ab7" points="0,-578.5 144,-578.5 "/>
-<text text-anchor="middle" x="72" y="-567.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ProductNumber</text>
-<polyline fill="none" stroke="#337ab7" points="0,-560.5 144,-560.5 "/>
-<text text-anchor="middle" x="72" y="-549.3" font-family="Verdana" font-size="9.00" fill="#337ab7">MakeFlag</text>
-<polyline fill="none" stroke="#337ab7" points="0,-542.5 144,-542.5 "/>
-<text text-anchor="middle" x="72" y="-531.3" font-family="Verdana" font-size="9.00" fill="#337ab7">FinishedGoodsFlag</text>
-<polyline fill="none" stroke="#337ab7" points="0,-524.5 144,-524.5 "/>
-<text text-anchor="middle" x="72" y="-513.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Color</text>
-<polyline fill="none" stroke="#337ab7" points="0,-506.5 144,-506.5 "/>
-<text text-anchor="middle" x="72" y="-495.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SafetyStockLevel</text>
-<polyline fill="none" stroke="#337ab7" points="0,-488.5 144,-488.5 "/>
-<text text-anchor="middle" x="72" y="-477.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ReorderPoint</text>
-<polyline fill="none" stroke="#337ab7" points="0,-470.5 144,-470.5 "/>
-<text text-anchor="middle" x="72" y="-459.3" font-family="Verdana" font-size="9.00" fill="#337ab7">StandardCost</text>
-<polyline fill="none" stroke="#337ab7" points="0,-452.5 144,-452.5 "/>
-<text text-anchor="middle" x="72" y="-441.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ListPrice</text>
-<polyline fill="none" stroke="#337ab7" points="0,-434.5 144,-434.5 "/>
-<text text-anchor="middle" x="72" y="-423.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Size</text>
-<polyline fill="none" stroke="#337ab7" points="0,-416.5 144,-416.5 "/>
-<text text-anchor="middle" x="72" y="-405.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ SizeUnitMeasureCode</text>
-<polyline fill="none" stroke="#337ab7" points="0,-398.5 144,-398.5 "/>
-<text text-anchor="middle" x="72" y="-387.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ WeightUnitMeasureCode</text>
-<polyline fill="none" stroke="#337ab7" points="0,-380.5 144,-380.5 "/>
-<text text-anchor="middle" x="72" y="-369.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Weight</text>
-<polyline fill="none" stroke="#337ab7" points="0,-362.5 144,-362.5 "/>
-<text text-anchor="middle" x="72" y="-351.3" font-family="Verdana" font-size="9.00" fill="#337ab7">DaysToManufacture</text>
-<polyline fill="none" stroke="#337ab7" points="0,-344.5 144,-344.5 "/>
-<text text-anchor="middle" x="72" y="-333.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ProductLine</text>
-<polyline fill="none" stroke="#337ab7" points="0,-326.5 144,-326.5 "/>
-<text text-anchor="middle" x="72" y="-315.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Class</text>
-<polyline fill="none" stroke="#337ab7" points="0,-308.5 144,-308.5 "/>
-<text text-anchor="middle" x="72" y="-297.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Style</text>
-<polyline fill="none" stroke="#337ab7" points="0,-290.5 144,-290.5 "/>
-<text text-anchor="middle" x="72" y="-279.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ ProductSubcategoryID</text>
-<polyline fill="none" stroke="#337ab7" points="0,-272.5 144,-272.5 "/>
-<text text-anchor="middle" x="72" y="-261.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ ProductModelID</text>
-<polyline fill="none" stroke="#337ab7" points="0,-254.5 144,-254.5 "/>
-<text text-anchor="middle" x="72" y="-243.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SellStartDate</text>
-<polyline fill="none" stroke="#337ab7" points="0,-236.5 144,-236.5 "/>
-<text text-anchor="middle" x="72" y="-225.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SellEndDate</text>
-<polyline fill="none" stroke="#337ab7" points="0,-218.5 144,-218.5 "/>
-<text text-anchor="middle" x="72" y="-207.3" font-family="Verdana" font-size="9.00" fill="#337ab7">DiscontinuedDate</text>
-<polyline fill="none" stroke="#337ab7" points="0,-200.5 144,-200.5 "/>
-<text text-anchor="middle" x="72" y="-189.3" font-family="Verdana" font-size="9.00" fill="#337ab7">rowguid</text>
-<polyline fill="none" stroke="#337ab7" points="0,-182.5 144,-182.5 "/>
-<text text-anchor="middle" x="72" y="-171.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="0,-164.5 0,-632.5 144,-632.5 144,-164.5 0,-164.5"/>
+<text text-anchor="middle" x="72" y="-621.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: Product</text>
+<polyline fill="none" stroke="#555555" points="0,-614.5 144,-614.5 "/>
+<text text-anchor="middle" x="72" y="-603.3" font-family="Verdana" font-size="9.00" fill="#555555">ProductID +</text>
+<polyline fill="none" stroke="#555555" points="0,-596.5 144,-596.5 "/>
+<text text-anchor="middle" x="72" y="-585.3" font-family="Verdana" font-size="9.00" fill="#555555">Name</text>
+<polyline fill="none" stroke="#555555" points="0,-578.5 144,-578.5 "/>
+<text text-anchor="middle" x="72" y="-567.3" font-family="Verdana" font-size="9.00" fill="#555555">ProductNumber</text>
+<polyline fill="none" stroke="#555555" points="0,-560.5 144,-560.5 "/>
+<text text-anchor="middle" x="72" y="-549.3" font-family="Verdana" font-size="9.00" fill="#555555">MakeFlag</text>
+<polyline fill="none" stroke="#555555" points="0,-542.5 144,-542.5 "/>
+<text text-anchor="middle" x="72" y="-531.3" font-family="Verdana" font-size="9.00" fill="#555555">FinishedGoodsFlag</text>
+<polyline fill="none" stroke="#555555" points="0,-524.5 144,-524.5 "/>
+<text text-anchor="middle" x="72" y="-513.3" font-family="Verdana" font-size="9.00" fill="#555555">Color</text>
+<polyline fill="none" stroke="#555555" points="0,-506.5 144,-506.5 "/>
+<text text-anchor="middle" x="72" y="-495.3" font-family="Verdana" font-size="9.00" fill="#555555">SafetyStockLevel</text>
+<polyline fill="none" stroke="#555555" points="0,-488.5 144,-488.5 "/>
+<text text-anchor="middle" x="72" y="-477.3" font-family="Verdana" font-size="9.00" fill="#555555">ReorderPoint</text>
+<polyline fill="none" stroke="#555555" points="0,-470.5 144,-470.5 "/>
+<text text-anchor="middle" x="72" y="-459.3" font-family="Verdana" font-size="9.00" fill="#555555">StandardCost</text>
+<polyline fill="none" stroke="#555555" points="0,-452.5 144,-452.5 "/>
+<text text-anchor="middle" x="72" y="-441.3" font-family="Verdana" font-size="9.00" fill="#555555">ListPrice</text>
+<polyline fill="none" stroke="#555555" points="0,-434.5 144,-434.5 "/>
+<text text-anchor="middle" x="72" y="-423.3" font-family="Verdana" font-size="9.00" fill="#555555">Size</text>
+<polyline fill="none" stroke="#555555" points="0,-416.5 144,-416.5 "/>
+<text text-anchor="middle" x="72" y="-405.3" font-family="Verdana" font-size="9.00" fill="#555555">+ SizeUnitMeasureCode</text>
+<polyline fill="none" stroke="#555555" points="0,-398.5 144,-398.5 "/>
+<text text-anchor="middle" x="72" y="-387.3" font-family="Verdana" font-size="9.00" fill="#555555">+ WeightUnitMeasureCode</text>
+<polyline fill="none" stroke="#555555" points="0,-380.5 144,-380.5 "/>
+<text text-anchor="middle" x="72" y="-369.3" font-family="Verdana" font-size="9.00" fill="#555555">Weight</text>
+<polyline fill="none" stroke="#555555" points="0,-362.5 144,-362.5 "/>
+<text text-anchor="middle" x="72" y="-351.3" font-family="Verdana" font-size="9.00" fill="#555555">DaysToManufacture</text>
+<polyline fill="none" stroke="#555555" points="0,-344.5 144,-344.5 "/>
+<text text-anchor="middle" x="72" y="-333.3" font-family="Verdana" font-size="9.00" fill="#555555">ProductLine</text>
+<polyline fill="none" stroke="#555555" points="0,-326.5 144,-326.5 "/>
+<text text-anchor="middle" x="72" y="-315.3" font-family="Verdana" font-size="9.00" fill="#555555">Class</text>
+<polyline fill="none" stroke="#555555" points="0,-308.5 144,-308.5 "/>
+<text text-anchor="middle" x="72" y="-297.3" font-family="Verdana" font-size="9.00" fill="#555555">Style</text>
+<polyline fill="none" stroke="#555555" points="0,-290.5 144,-290.5 "/>
+<text text-anchor="middle" x="72" y="-279.3" font-family="Verdana" font-size="9.00" fill="#555555">+ ProductSubcategoryID</text>
+<polyline fill="none" stroke="#555555" points="0,-272.5 144,-272.5 "/>
+<text text-anchor="middle" x="72" y="-261.3" font-family="Verdana" font-size="9.00" fill="#555555">+ ProductModelID</text>
+<polyline fill="none" stroke="#555555" points="0,-254.5 144,-254.5 "/>
+<text text-anchor="middle" x="72" y="-243.3" font-family="Verdana" font-size="9.00" fill="#555555">SellStartDate</text>
+<polyline fill="none" stroke="#555555" points="0,-236.5 144,-236.5 "/>
+<text text-anchor="middle" x="72" y="-225.3" font-family="Verdana" font-size="9.00" fill="#555555">SellEndDate</text>
+<polyline fill="none" stroke="#555555" points="0,-218.5 144,-218.5 "/>
+<text text-anchor="middle" x="72" y="-207.3" font-family="Verdana" font-size="9.00" fill="#555555">DiscontinuedDate</text>
+<polyline fill="none" stroke="#555555" points="0,-200.5 144,-200.5 "/>
+<text text-anchor="middle" x="72" y="-189.3" font-family="Verdana" font-size="9.00" fill="#555555">rowguid</text>
+<polyline fill="none" stroke="#555555" points="0,-182.5 144,-182.5 "/>
+<text text-anchor="middle" x="72" y="-171.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct2 -->
 <g id="node3" class="node"><title>struct2</title>
-<polygon fill="none" stroke="black" points="162,-307.5 162,-397.5 311,-397.5 311,-307.5 162,-307.5"/>
-<text text-anchor="middle" x="236.5" y="-386.3" font-family="Verdana" font-size="9.00">Table: ProductProductPhoto</text>
-<polyline fill="none" stroke="black" points="162,-379.5 311,-379.5 "/>
-<text text-anchor="middle" x="236.5" y="-368.3" font-family="Verdana" font-size="9.00">+ ProductID</text>
-<polyline fill="none" stroke="black" points="162,-361.5 311,-361.5 "/>
-<text text-anchor="middle" x="236.5" y="-350.3" font-family="Verdana" font-size="9.00">+ ProductPhotoID</text>
-<polyline fill="none" stroke="black" points="162,-343.5 311,-343.5 "/>
-<text text-anchor="middle" x="236.5" y="-332.3" font-family="Verdana" font-size="9.00">Primary</text>
-<polyline fill="none" stroke="black" points="162,-325.5 311,-325.5 "/>
-<text text-anchor="middle" x="236.5" y="-314.3" font-family="Verdana" font-size="9.00">ModifiedDate</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="162,-307.5 162,-397.5 311,-397.5 311,-307.5 162,-307.5"/>
+<text text-anchor="middle" x="236.5" y="-386.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: ProductProductPhoto</text>
+<polyline fill="none" stroke="#1b809e" points="162,-379.5 311,-379.5 "/>
+<text text-anchor="middle" x="236.5" y="-368.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ ProductID</text>
+<polyline fill="none" stroke="#1b809e" points="162,-361.5 311,-361.5 "/>
+<text text-anchor="middle" x="236.5" y="-350.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ ProductPhotoID</text>
+<polyline fill="none" stroke="#1b809e" points="162,-343.5 311,-343.5 "/>
+<text text-anchor="middle" x="236.5" y="-332.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Primary</text>
+<polyline fill="none" stroke="#1b809e" points="162,-325.5 311,-325.5 "/>
+<text text-anchor="middle" x="236.5" y="-314.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ModifiedDate</text>
 </g>
 <!-- struct0&#45;&gt;struct2 -->
 <g id="edge1" class="edge"><title>struct0:c1717581157_1&#45;&gt;struct2:c306100131_1</title>
@@ -85,20 +85,20 @@
 </g>
 <!-- struct1 -->
 <g id="node2" class="node"><title>struct1</title>
-<polygon fill="none" stroke="#337ab7" points="4.5,-19.5 4.5,-145.5 139.5,-145.5 139.5,-19.5 4.5,-19.5"/>
-<text text-anchor="middle" x="72" y="-134.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: ProductPhoto</text>
-<polyline fill="none" stroke="#337ab7" points="4.5,-127.5 139.5,-127.5 "/>
-<text text-anchor="middle" x="72" y="-116.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ProductPhotoID +</text>
-<polyline fill="none" stroke="#337ab7" points="4.5,-109.5 139.5,-109.5 "/>
-<text text-anchor="middle" x="72" y="-98.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ThumbNailPhoto</text>
-<polyline fill="none" stroke="#337ab7" points="4.5,-91.5 139.5,-91.5 "/>
-<text text-anchor="middle" x="72" y="-80.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ThumbnailPhotoFileName</text>
-<polyline fill="none" stroke="#337ab7" points="4.5,-73.5 139.5,-73.5 "/>
-<text text-anchor="middle" x="72" y="-62.3" font-family="Verdana" font-size="9.00" fill="#337ab7">LargePhoto</text>
-<polyline fill="none" stroke="#337ab7" points="4.5,-55.5 139.5,-55.5 "/>
-<text text-anchor="middle" x="72" y="-44.3" font-family="Verdana" font-size="9.00" fill="#337ab7">LargePhotoFileName</text>
-<polyline fill="none" stroke="#337ab7" points="4.5,-37.5 139.5,-37.5 "/>
-<text text-anchor="middle" x="72" y="-26.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="4.5,-19.5 4.5,-145.5 139.5,-145.5 139.5,-19.5 4.5,-19.5"/>
+<text text-anchor="middle" x="72" y="-134.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: ProductPhoto</text>
+<polyline fill="none" stroke="#555555" points="4.5,-127.5 139.5,-127.5 "/>
+<text text-anchor="middle" x="72" y="-116.3" font-family="Verdana" font-size="9.00" fill="#555555">ProductPhotoID +</text>
+<polyline fill="none" stroke="#555555" points="4.5,-109.5 139.5,-109.5 "/>
+<text text-anchor="middle" x="72" y="-98.3" font-family="Verdana" font-size="9.00" fill="#555555">ThumbNailPhoto</text>
+<polyline fill="none" stroke="#555555" points="4.5,-91.5 139.5,-91.5 "/>
+<text text-anchor="middle" x="72" y="-80.3" font-family="Verdana" font-size="9.00" fill="#555555">ThumbnailPhotoFileName</text>
+<polyline fill="none" stroke="#555555" points="4.5,-73.5 139.5,-73.5 "/>
+<text text-anchor="middle" x="72" y="-62.3" font-family="Verdana" font-size="9.00" fill="#555555">LargePhoto</text>
+<polyline fill="none" stroke="#555555" points="4.5,-55.5 139.5,-55.5 "/>
+<text text-anchor="middle" x="72" y="-44.3" font-family="Verdana" font-size="9.00" fill="#555555">LargePhotoFileName</text>
+<polyline fill="none" stroke="#555555" points="4.5,-37.5 139.5,-37.5 "/>
+<text text-anchor="middle" x="72" y="-26.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct1&#45;&gt;struct2 -->
 <g id="edge2" class="edge"><title>struct1:c274100017_1&#45;&gt;struct2:c306100131_2</title>

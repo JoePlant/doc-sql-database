@@ -12,71 +12,71 @@
 <text text-anchor="middle" x="239" y="-7" font-family="Verdana" font-size="10.00">Table: PurchaseOrderHeader</text>
 <!-- struct0 -->
 <g id="node1" class="node"><title>struct0</title>
-<polygon fill="none" stroke="#337ab7" points="18,-345.5 18,-651.5 124,-651.5 124,-345.5 18,-345.5"/>
-<text text-anchor="middle" x="71" y="-640.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: Employee</text>
-<polyline fill="none" stroke="#337ab7" points="18,-633.5 124,-633.5 "/>
-<text text-anchor="middle" x="71" y="-622.3" font-family="Verdana" font-size="9.00" fill="#337ab7">BusinessEntityID +</text>
-<polyline fill="none" stroke="#337ab7" points="18,-615.5 124,-615.5 "/>
-<text text-anchor="middle" x="71" y="-604.3" font-family="Verdana" font-size="9.00" fill="#337ab7">NationalIDNumber</text>
-<polyline fill="none" stroke="#337ab7" points="18,-597.5 124,-597.5 "/>
-<text text-anchor="middle" x="71" y="-586.3" font-family="Verdana" font-size="9.00" fill="#337ab7">LoginID</text>
-<polyline fill="none" stroke="#337ab7" points="18,-579.5 124,-579.5 "/>
-<text text-anchor="middle" x="71" y="-568.3" font-family="Verdana" font-size="9.00" fill="#337ab7">OrganizationNode</text>
-<polyline fill="none" stroke="#337ab7" points="18,-561.5 124,-561.5 "/>
-<text text-anchor="middle" x="71" y="-550.3" font-family="Verdana" font-size="9.00" fill="#337ab7">OrganizationLevel</text>
-<polyline fill="none" stroke="#337ab7" points="18,-543.5 124,-543.5 "/>
-<text text-anchor="middle" x="71" y="-532.3" font-family="Verdana" font-size="9.00" fill="#337ab7">JobTitle</text>
-<polyline fill="none" stroke="#337ab7" points="18,-525.5 124,-525.5 "/>
-<text text-anchor="middle" x="71" y="-514.3" font-family="Verdana" font-size="9.00" fill="#337ab7">BirthDate</text>
-<polyline fill="none" stroke="#337ab7" points="18,-507.5 124,-507.5 "/>
-<text text-anchor="middle" x="71" y="-496.3" font-family="Verdana" font-size="9.00" fill="#337ab7">MaritalStatus</text>
-<polyline fill="none" stroke="#337ab7" points="18,-489.5 124,-489.5 "/>
-<text text-anchor="middle" x="71" y="-478.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Gender</text>
-<polyline fill="none" stroke="#337ab7" points="18,-471.5 124,-471.5 "/>
-<text text-anchor="middle" x="71" y="-460.3" font-family="Verdana" font-size="9.00" fill="#337ab7">HireDate</text>
-<polyline fill="none" stroke="#337ab7" points="18,-453.5 124,-453.5 "/>
-<text text-anchor="middle" x="71" y="-442.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SalariedFlag</text>
-<polyline fill="none" stroke="#337ab7" points="18,-435.5 124,-435.5 "/>
-<text text-anchor="middle" x="71" y="-424.3" font-family="Verdana" font-size="9.00" fill="#337ab7">VacationHours</text>
-<polyline fill="none" stroke="#337ab7" points="18,-417.5 124,-417.5 "/>
-<text text-anchor="middle" x="71" y="-406.3" font-family="Verdana" font-size="9.00" fill="#337ab7">SickLeaveHours</text>
-<polyline fill="none" stroke="#337ab7" points="18,-399.5 124,-399.5 "/>
-<text text-anchor="middle" x="71" y="-388.3" font-family="Verdana" font-size="9.00" fill="#337ab7">CurrentFlag</text>
-<polyline fill="none" stroke="#337ab7" points="18,-381.5 124,-381.5 "/>
-<text text-anchor="middle" x="71" y="-370.3" font-family="Verdana" font-size="9.00" fill="#337ab7">rowguid</text>
-<polyline fill="none" stroke="#337ab7" points="18,-363.5 124,-363.5 "/>
-<text text-anchor="middle" x="71" y="-352.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="18,-345.5 18,-651.5 124,-651.5 124,-345.5 18,-345.5"/>
+<text text-anchor="middle" x="71" y="-640.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: Employee</text>
+<polyline fill="none" stroke="#555555" points="18,-633.5 124,-633.5 "/>
+<text text-anchor="middle" x="71" y="-622.3" font-family="Verdana" font-size="9.00" fill="#555555">BusinessEntityID +</text>
+<polyline fill="none" stroke="#555555" points="18,-615.5 124,-615.5 "/>
+<text text-anchor="middle" x="71" y="-604.3" font-family="Verdana" font-size="9.00" fill="#555555">NationalIDNumber</text>
+<polyline fill="none" stroke="#555555" points="18,-597.5 124,-597.5 "/>
+<text text-anchor="middle" x="71" y="-586.3" font-family="Verdana" font-size="9.00" fill="#555555">LoginID</text>
+<polyline fill="none" stroke="#555555" points="18,-579.5 124,-579.5 "/>
+<text text-anchor="middle" x="71" y="-568.3" font-family="Verdana" font-size="9.00" fill="#555555">OrganizationNode</text>
+<polyline fill="none" stroke="#555555" points="18,-561.5 124,-561.5 "/>
+<text text-anchor="middle" x="71" y="-550.3" font-family="Verdana" font-size="9.00" fill="#555555">OrganizationLevel</text>
+<polyline fill="none" stroke="#555555" points="18,-543.5 124,-543.5 "/>
+<text text-anchor="middle" x="71" y="-532.3" font-family="Verdana" font-size="9.00" fill="#555555">JobTitle</text>
+<polyline fill="none" stroke="#555555" points="18,-525.5 124,-525.5 "/>
+<text text-anchor="middle" x="71" y="-514.3" font-family="Verdana" font-size="9.00" fill="#555555">BirthDate</text>
+<polyline fill="none" stroke="#555555" points="18,-507.5 124,-507.5 "/>
+<text text-anchor="middle" x="71" y="-496.3" font-family="Verdana" font-size="9.00" fill="#555555">MaritalStatus</text>
+<polyline fill="none" stroke="#555555" points="18,-489.5 124,-489.5 "/>
+<text text-anchor="middle" x="71" y="-478.3" font-family="Verdana" font-size="9.00" fill="#555555">Gender</text>
+<polyline fill="none" stroke="#555555" points="18,-471.5 124,-471.5 "/>
+<text text-anchor="middle" x="71" y="-460.3" font-family="Verdana" font-size="9.00" fill="#555555">HireDate</text>
+<polyline fill="none" stroke="#555555" points="18,-453.5 124,-453.5 "/>
+<text text-anchor="middle" x="71" y="-442.3" font-family="Verdana" font-size="9.00" fill="#555555">SalariedFlag</text>
+<polyline fill="none" stroke="#555555" points="18,-435.5 124,-435.5 "/>
+<text text-anchor="middle" x="71" y="-424.3" font-family="Verdana" font-size="9.00" fill="#555555">VacationHours</text>
+<polyline fill="none" stroke="#555555" points="18,-417.5 124,-417.5 "/>
+<text text-anchor="middle" x="71" y="-406.3" font-family="Verdana" font-size="9.00" fill="#555555">SickLeaveHours</text>
+<polyline fill="none" stroke="#555555" points="18,-399.5 124,-399.5 "/>
+<text text-anchor="middle" x="71" y="-388.3" font-family="Verdana" font-size="9.00" fill="#555555">CurrentFlag</text>
+<polyline fill="none" stroke="#555555" points="18,-381.5 124,-381.5 "/>
+<text text-anchor="middle" x="71" y="-370.3" font-family="Verdana" font-size="9.00" fill="#555555">rowguid</text>
+<polyline fill="none" stroke="#555555" points="18,-363.5 124,-363.5 "/>
+<text text-anchor="middle" x="71" y="-352.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct2 -->
 <g id="node3" class="node"><title>struct2</title>
-<polygon fill="none" stroke="black" points="160,-146.5 160,-398.5 314,-398.5 314,-146.5 160,-146.5"/>
-<text text-anchor="middle" x="237" y="-387.3" font-family="Verdana" font-size="9.00">Table: PurchaseOrderHeader</text>
-<polyline fill="none" stroke="black" points="160,-380.5 314,-380.5 "/>
-<text text-anchor="middle" x="237" y="-369.3" font-family="Verdana" font-size="9.00">PurchaseOrderID +</text>
-<polyline fill="none" stroke="black" points="160,-362.5 314,-362.5 "/>
-<text text-anchor="middle" x="237" y="-351.3" font-family="Verdana" font-size="9.00">RevisionNumber</text>
-<polyline fill="none" stroke="black" points="160,-344.5 314,-344.5 "/>
-<text text-anchor="middle" x="237" y="-333.3" font-family="Verdana" font-size="9.00">Status</text>
-<polyline fill="none" stroke="black" points="160,-326.5 314,-326.5 "/>
-<text text-anchor="middle" x="237" y="-315.3" font-family="Verdana" font-size="9.00">+ EmployeeID</text>
-<polyline fill="none" stroke="black" points="160,-308.5 314,-308.5 "/>
-<text text-anchor="middle" x="237" y="-297.3" font-family="Verdana" font-size="9.00">+ VendorID</text>
-<polyline fill="none" stroke="black" points="160,-290.5 314,-290.5 "/>
-<text text-anchor="middle" x="237" y="-279.3" font-family="Verdana" font-size="9.00">+ ShipMethodID</text>
-<polyline fill="none" stroke="black" points="160,-272.5 314,-272.5 "/>
-<text text-anchor="middle" x="237" y="-261.3" font-family="Verdana" font-size="9.00">OrderDate</text>
-<polyline fill="none" stroke="black" points="160,-254.5 314,-254.5 "/>
-<text text-anchor="middle" x="237" y="-243.3" font-family="Verdana" font-size="9.00">ShipDate</text>
-<polyline fill="none" stroke="black" points="160,-236.5 314,-236.5 "/>
-<text text-anchor="middle" x="237" y="-225.3" font-family="Verdana" font-size="9.00">SubTotal</text>
-<polyline fill="none" stroke="black" points="160,-218.5 314,-218.5 "/>
-<text text-anchor="middle" x="237" y="-207.3" font-family="Verdana" font-size="9.00">TaxAmt</text>
-<polyline fill="none" stroke="black" points="160,-200.5 314,-200.5 "/>
-<text text-anchor="middle" x="237" y="-189.3" font-family="Verdana" font-size="9.00">Freight</text>
-<polyline fill="none" stroke="black" points="160,-182.5 314,-182.5 "/>
-<text text-anchor="middle" x="237" y="-171.3" font-family="Verdana" font-size="9.00">TotalDue</text>
-<polyline fill="none" stroke="black" points="160,-164.5 314,-164.5 "/>
-<text text-anchor="middle" x="237" y="-153.3" font-family="Verdana" font-size="9.00">ModifiedDate</text>
+<polygon fill="#d9edf7" stroke="#1b809e" points="160,-146.5 160,-398.5 314,-398.5 314,-146.5 160,-146.5"/>
+<text text-anchor="middle" x="237" y="-387.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Table: PurchaseOrderHeader</text>
+<polyline fill="none" stroke="#1b809e" points="160,-380.5 314,-380.5 "/>
+<text text-anchor="middle" x="237" y="-369.3" font-family="Verdana" font-size="9.00" fill="#1b809e">PurchaseOrderID +</text>
+<polyline fill="none" stroke="#1b809e" points="160,-362.5 314,-362.5 "/>
+<text text-anchor="middle" x="237" y="-351.3" font-family="Verdana" font-size="9.00" fill="#1b809e">RevisionNumber</text>
+<polyline fill="none" stroke="#1b809e" points="160,-344.5 314,-344.5 "/>
+<text text-anchor="middle" x="237" y="-333.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Status</text>
+<polyline fill="none" stroke="#1b809e" points="160,-326.5 314,-326.5 "/>
+<text text-anchor="middle" x="237" y="-315.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ EmployeeID</text>
+<polyline fill="none" stroke="#1b809e" points="160,-308.5 314,-308.5 "/>
+<text text-anchor="middle" x="237" y="-297.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ VendorID</text>
+<polyline fill="none" stroke="#1b809e" points="160,-290.5 314,-290.5 "/>
+<text text-anchor="middle" x="237" y="-279.3" font-family="Verdana" font-size="9.00" fill="#1b809e">+ ShipMethodID</text>
+<polyline fill="none" stroke="#1b809e" points="160,-272.5 314,-272.5 "/>
+<text text-anchor="middle" x="237" y="-261.3" font-family="Verdana" font-size="9.00" fill="#1b809e">OrderDate</text>
+<polyline fill="none" stroke="#1b809e" points="160,-254.5 314,-254.5 "/>
+<text text-anchor="middle" x="237" y="-243.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ShipDate</text>
+<polyline fill="none" stroke="#1b809e" points="160,-236.5 314,-236.5 "/>
+<text text-anchor="middle" x="237" y="-225.3" font-family="Verdana" font-size="9.00" fill="#1b809e">SubTotal</text>
+<polyline fill="none" stroke="#1b809e" points="160,-218.5 314,-218.5 "/>
+<text text-anchor="middle" x="237" y="-207.3" font-family="Verdana" font-size="9.00" fill="#1b809e">TaxAmt</text>
+<polyline fill="none" stroke="#1b809e" points="160,-200.5 314,-200.5 "/>
+<text text-anchor="middle" x="237" y="-189.3" font-family="Verdana" font-size="9.00" fill="#1b809e">Freight</text>
+<polyline fill="none" stroke="#1b809e" points="160,-182.5 314,-182.5 "/>
+<text text-anchor="middle" x="237" y="-171.3" font-family="Verdana" font-size="9.00" fill="#1b809e">TotalDue</text>
+<polyline fill="none" stroke="#1b809e" points="160,-164.5 314,-164.5 "/>
+<text text-anchor="middle" x="237" y="-153.3" font-family="Verdana" font-size="9.00" fill="#1b809e">ModifiedDate</text>
 </g>
 <!-- struct0&#45;&gt;struct2 -->
 <g id="edge2" class="edge"><title>struct0:c981578535_1&#45;&gt;struct2:c690101499_4</title>
@@ -85,30 +85,30 @@
 </g>
 <!-- struct1 -->
 <g id="node2" class="node"><title>struct1</title>
-<polygon fill="none" stroke="#337ab7" points="332,-182.5 332,-398.5 478,-398.5 478,-182.5 332,-182.5"/>
-<text text-anchor="middle" x="405" y="-387.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: PurchaseOrderDetail</text>
-<polyline fill="none" stroke="#337ab7" points="332,-380.5 478,-380.5 "/>
-<text text-anchor="middle" x="405" y="-369.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ PurchaseOrderID</text>
-<polyline fill="none" stroke="#337ab7" points="332,-362.5 478,-362.5 "/>
-<text text-anchor="middle" x="405" y="-351.3" font-family="Verdana" font-size="9.00" fill="#337ab7">PurchaseOrderDetailID</text>
-<polyline fill="none" stroke="#337ab7" points="332,-344.5 478,-344.5 "/>
-<text text-anchor="middle" x="405" y="-333.3" font-family="Verdana" font-size="9.00" fill="#337ab7">DueDate</text>
-<polyline fill="none" stroke="#337ab7" points="332,-326.5 478,-326.5 "/>
-<text text-anchor="middle" x="405" y="-315.3" font-family="Verdana" font-size="9.00" fill="#337ab7">OrderQty</text>
-<polyline fill="none" stroke="#337ab7" points="332,-308.5 478,-308.5 "/>
-<text text-anchor="middle" x="405" y="-297.3" font-family="Verdana" font-size="9.00" fill="#337ab7">+ ProductID</text>
-<polyline fill="none" stroke="#337ab7" points="332,-290.5 478,-290.5 "/>
-<text text-anchor="middle" x="405" y="-279.3" font-family="Verdana" font-size="9.00" fill="#337ab7">UnitPrice</text>
-<polyline fill="none" stroke="#337ab7" points="332,-272.5 478,-272.5 "/>
-<text text-anchor="middle" x="405" y="-261.3" font-family="Verdana" font-size="9.00" fill="#337ab7">LineTotal</text>
-<polyline fill="none" stroke="#337ab7" points="332,-254.5 478,-254.5 "/>
-<text text-anchor="middle" x="405" y="-243.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ReceivedQty</text>
-<polyline fill="none" stroke="#337ab7" points="332,-236.5 478,-236.5 "/>
-<text text-anchor="middle" x="405" y="-225.3" font-family="Verdana" font-size="9.00" fill="#337ab7">RejectedQty</text>
-<polyline fill="none" stroke="#337ab7" points="332,-218.5 478,-218.5 "/>
-<text text-anchor="middle" x="405" y="-207.3" font-family="Verdana" font-size="9.00" fill="#337ab7">StockedQty</text>
-<polyline fill="none" stroke="#337ab7" points="332,-200.5 478,-200.5 "/>
-<text text-anchor="middle" x="405" y="-189.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="332,-182.5 332,-398.5 478,-398.5 478,-182.5 332,-182.5"/>
+<text text-anchor="middle" x="405" y="-387.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: PurchaseOrderDetail</text>
+<polyline fill="none" stroke="#555555" points="332,-380.5 478,-380.5 "/>
+<text text-anchor="middle" x="405" y="-369.3" font-family="Verdana" font-size="9.00" fill="#555555">+ PurchaseOrderID</text>
+<polyline fill="none" stroke="#555555" points="332,-362.5 478,-362.5 "/>
+<text text-anchor="middle" x="405" y="-351.3" font-family="Verdana" font-size="9.00" fill="#555555">PurchaseOrderDetailID</text>
+<polyline fill="none" stroke="#555555" points="332,-344.5 478,-344.5 "/>
+<text text-anchor="middle" x="405" y="-333.3" font-family="Verdana" font-size="9.00" fill="#555555">DueDate</text>
+<polyline fill="none" stroke="#555555" points="332,-326.5 478,-326.5 "/>
+<text text-anchor="middle" x="405" y="-315.3" font-family="Verdana" font-size="9.00" fill="#555555">OrderQty</text>
+<polyline fill="none" stroke="#555555" points="332,-308.5 478,-308.5 "/>
+<text text-anchor="middle" x="405" y="-297.3" font-family="Verdana" font-size="9.00" fill="#555555">+ ProductID</text>
+<polyline fill="none" stroke="#555555" points="332,-290.5 478,-290.5 "/>
+<text text-anchor="middle" x="405" y="-279.3" font-family="Verdana" font-size="9.00" fill="#555555">UnitPrice</text>
+<polyline fill="none" stroke="#555555" points="332,-272.5 478,-272.5 "/>
+<text text-anchor="middle" x="405" y="-261.3" font-family="Verdana" font-size="9.00" fill="#555555">LineTotal</text>
+<polyline fill="none" stroke="#555555" points="332,-254.5 478,-254.5 "/>
+<text text-anchor="middle" x="405" y="-243.3" font-family="Verdana" font-size="9.00" fill="#555555">ReceivedQty</text>
+<polyline fill="none" stroke="#555555" points="332,-236.5 478,-236.5 "/>
+<text text-anchor="middle" x="405" y="-225.3" font-family="Verdana" font-size="9.00" fill="#555555">RejectedQty</text>
+<polyline fill="none" stroke="#555555" points="332,-218.5 478,-218.5 "/>
+<text text-anchor="middle" x="405" y="-207.3" font-family="Verdana" font-size="9.00" fill="#555555">StockedQty</text>
+<polyline fill="none" stroke="#555555" points="332,-200.5 478,-200.5 "/>
+<text text-anchor="middle" x="405" y="-189.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct2&#45;&gt;struct1 -->
 <g id="edge1" class="edge"><title>struct2:c690101499_1&#45;&gt;struct1:c594101157_1</title>
@@ -117,20 +117,20 @@
 </g>
 <!-- struct3 -->
 <g id="node4" class="node"><title>struct3</title>
-<polygon fill="none" stroke="#337ab7" points="19,-19.5 19,-145.5 123,-145.5 123,-19.5 19,-19.5"/>
-<text text-anchor="middle" x="71" y="-134.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: ShipMethod</text>
-<polyline fill="none" stroke="#337ab7" points="19,-127.5 123,-127.5 "/>
-<text text-anchor="middle" x="71" y="-116.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ShipMethodID +</text>
-<polyline fill="none" stroke="#337ab7" points="19,-109.5 123,-109.5 "/>
-<text text-anchor="middle" x="71" y="-98.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Name</text>
-<polyline fill="none" stroke="#337ab7" points="19,-91.5 123,-91.5 "/>
-<text text-anchor="middle" x="71" y="-80.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ShipBase</text>
-<polyline fill="none" stroke="#337ab7" points="19,-73.5 123,-73.5 "/>
-<text text-anchor="middle" x="71" y="-62.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ShipRate</text>
-<polyline fill="none" stroke="#337ab7" points="19,-55.5 123,-55.5 "/>
-<text text-anchor="middle" x="71" y="-44.3" font-family="Verdana" font-size="9.00" fill="#337ab7">rowguid</text>
-<polyline fill="none" stroke="#337ab7" points="19,-37.5 123,-37.5 "/>
-<text text-anchor="middle" x="71" y="-26.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="19,-19.5 19,-145.5 123,-145.5 123,-19.5 19,-19.5"/>
+<text text-anchor="middle" x="71" y="-134.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: ShipMethod</text>
+<polyline fill="none" stroke="#555555" points="19,-127.5 123,-127.5 "/>
+<text text-anchor="middle" x="71" y="-116.3" font-family="Verdana" font-size="9.00" fill="#555555">ShipMethodID +</text>
+<polyline fill="none" stroke="#555555" points="19,-109.5 123,-109.5 "/>
+<text text-anchor="middle" x="71" y="-98.3" font-family="Verdana" font-size="9.00" fill="#555555">Name</text>
+<polyline fill="none" stroke="#555555" points="19,-91.5 123,-91.5 "/>
+<text text-anchor="middle" x="71" y="-80.3" font-family="Verdana" font-size="9.00" fill="#555555">ShipBase</text>
+<polyline fill="none" stroke="#555555" points="19,-73.5 123,-73.5 "/>
+<text text-anchor="middle" x="71" y="-62.3" font-family="Verdana" font-size="9.00" fill="#555555">ShipRate</text>
+<polyline fill="none" stroke="#555555" points="19,-55.5 123,-55.5 "/>
+<text text-anchor="middle" x="71" y="-44.3" font-family="Verdana" font-size="9.00" fill="#555555">rowguid</text>
+<polyline fill="none" stroke="#555555" points="19,-37.5 123,-37.5 "/>
+<text text-anchor="middle" x="71" y="-26.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct3&#45;&gt;struct2 -->
 <g id="edge4" class="edge"><title>struct3:c1970106059_1&#45;&gt;struct2:c690101499_6</title>
@@ -139,24 +139,24 @@
 </g>
 <!-- struct4 -->
 <g id="node5" class="node"><title>struct4</title>
-<polygon fill="none" stroke="#337ab7" points="0,-164.5 0,-326.5 142,-326.5 142,-164.5 0,-164.5"/>
-<text text-anchor="middle" x="71" y="-315.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Table: Vendor</text>
-<polyline fill="none" stroke="#337ab7" points="0,-308.5 142,-308.5 "/>
-<text text-anchor="middle" x="71" y="-297.3" font-family="Verdana" font-size="9.00" fill="#337ab7">BusinessEntityID +</text>
-<polyline fill="none" stroke="#337ab7" points="0,-290.5 142,-290.5 "/>
-<text text-anchor="middle" x="71" y="-279.3" font-family="Verdana" font-size="9.00" fill="#337ab7">AccountNumber</text>
-<polyline fill="none" stroke="#337ab7" points="0,-272.5 142,-272.5 "/>
-<text text-anchor="middle" x="71" y="-261.3" font-family="Verdana" font-size="9.00" fill="#337ab7">Name</text>
-<polyline fill="none" stroke="#337ab7" points="0,-254.5 142,-254.5 "/>
-<text text-anchor="middle" x="71" y="-243.3" font-family="Verdana" font-size="9.00" fill="#337ab7">CreditRating</text>
-<polyline fill="none" stroke="#337ab7" points="0,-236.5 142,-236.5 "/>
-<text text-anchor="middle" x="71" y="-225.3" font-family="Verdana" font-size="9.00" fill="#337ab7">PreferredVendorStatus</text>
-<polyline fill="none" stroke="#337ab7" points="0,-218.5 142,-218.5 "/>
-<text text-anchor="middle" x="71" y="-207.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ActiveFlag</text>
-<polyline fill="none" stroke="#337ab7" points="0,-200.5 142,-200.5 "/>
-<text text-anchor="middle" x="71" y="-189.3" font-family="Verdana" font-size="9.00" fill="#337ab7">PurchasingWebServiceURL</text>
-<polyline fill="none" stroke="#337ab7" points="0,-182.5 142,-182.5 "/>
-<text text-anchor="middle" x="71" y="-171.3" font-family="Verdana" font-size="9.00" fill="#337ab7">ModifiedDate</text>
+<polygon fill="#f7f7f9" stroke="#555555" points="0,-164.5 0,-326.5 142,-326.5 142,-164.5 0,-164.5"/>
+<text text-anchor="middle" x="71" y="-315.3" font-family="Verdana" font-size="9.00" fill="#555555">Table: Vendor</text>
+<polyline fill="none" stroke="#555555" points="0,-308.5 142,-308.5 "/>
+<text text-anchor="middle" x="71" y="-297.3" font-family="Verdana" font-size="9.00" fill="#555555">BusinessEntityID +</text>
+<polyline fill="none" stroke="#555555" points="0,-290.5 142,-290.5 "/>
+<text text-anchor="middle" x="71" y="-279.3" font-family="Verdana" font-size="9.00" fill="#555555">AccountNumber</text>
+<polyline fill="none" stroke="#555555" points="0,-272.5 142,-272.5 "/>
+<text text-anchor="middle" x="71" y="-261.3" font-family="Verdana" font-size="9.00" fill="#555555">Name</text>
+<polyline fill="none" stroke="#555555" points="0,-254.5 142,-254.5 "/>
+<text text-anchor="middle" x="71" y="-243.3" font-family="Verdana" font-size="9.00" fill="#555555">CreditRating</text>
+<polyline fill="none" stroke="#555555" points="0,-236.5 142,-236.5 "/>
+<text text-anchor="middle" x="71" y="-225.3" font-family="Verdana" font-size="9.00" fill="#555555">PreferredVendorStatus</text>
+<polyline fill="none" stroke="#555555" points="0,-218.5 142,-218.5 "/>
+<text text-anchor="middle" x="71" y="-207.3" font-family="Verdana" font-size="9.00" fill="#555555">ActiveFlag</text>
+<polyline fill="none" stroke="#555555" points="0,-200.5 142,-200.5 "/>
+<text text-anchor="middle" x="71" y="-189.3" font-family="Verdana" font-size="9.00" fill="#555555">PurchasingWebServiceURL</text>
+<polyline fill="none" stroke="#555555" points="0,-182.5 142,-182.5 "/>
+<text text-anchor="middle" x="71" y="-171.3" font-family="Verdana" font-size="9.00" fill="#555555">ModifiedDate</text>
 </g>
 <!-- struct4&#45;&gt;struct2 -->
 <g id="edge3" class="edge"><title>struct4:c510624862_1&#45;&gt;struct2:c690101499_5</title>
