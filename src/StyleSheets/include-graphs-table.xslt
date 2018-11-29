@@ -69,12 +69,22 @@
 		
 		<xsl:variable name='color'>
 			<xsl:choose>
-				<xsl:when test='$table-id = $highlight-table'>black</xsl:when>
-				<xsl:otherwise><xsl:value-of select='$focus-color'/></xsl:otherwise>
+				<xsl:when test='$table-id = $highlight-table'><xsl:value-of select='$focus-table-color'/></xsl:when>
+				<xsl:when test='Rows/@count = 0'><xsl:value-of select='$empty-table-color'/></xsl:when>
+				<xsl:otherwise><xsl:value-of select='$default-table-color'/></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+
+		<xsl:variable name='bgcolor'>
+			<xsl:choose>
+				<xsl:when test='Rows/@count = 0'><xsl:value-of select='$empty-table-bgcolor'/></xsl:when>
+				<xsl:when test='$table-id = $highlight-table'><xsl:value-of select='$focus-table-bgcolor'/></xsl:when>
+				<xsl:otherwise><xsl:value-of select='$default-table-bgcolor'/></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
 		
-		<dotml:record fillcolor='{$focus-bgcolor}' color="{$color}" 
+		<dotml:record fillcolor='{$bgcolor}' color="{$color}" style='filled'
 					fontname="{$fontname}" fontsize="{$font-size-h2}" fontcolor="{$color}">
 			<dotml:node id='t{$table-id}'  label='Table: {@name}' />
 			<xsl:for-each select='Column'>

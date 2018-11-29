@@ -3,10 +3,18 @@
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 				>
 	
+	<xsl:variable name='default-table-color'>#555555</xsl:variable>
+	<xsl:variable name='empty-table-color'>#f0ad4e</xsl:variable>
+	<xsl:variable name='focus-table-color'>#1b809e</xsl:variable>
+	
+	<xsl:variable name='default-table-bgcolor'>#f7f7f9</xsl:variable>
+	<xsl:variable name='empty-table-bgcolor'>#fcf8e3</xsl:variable>
+	<xsl:variable name='focus-table-bgcolor'>#d9edf7</xsl:variable>
+
+	
 	<xsl:variable name="record-color">#EEEEEE</xsl:variable>
 	<xsl:variable name="border-color">#AAAAAA</xsl:variable>
 	<xsl:variable name="background-color">#FFFFFF</xsl:variable>
-	<xsl:variable name="message-color">#87D200</xsl:variable>
 	
 	<xsl:variable name="focus-color">#337ab7</xsl:variable>
 	<xsl:variable name="focus-bgcolor">#EEEEEE</xsl:variable>
