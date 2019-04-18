@@ -2,6 +2,9 @@
 	generate-table-xml.sql will document the Tables, Columns and Foreign keys from a database as an Xmldocument.
 */
 
+
+
+
 select 
 	tableXml
 from 
@@ -108,6 +111,58 @@ from
 			sys.foreign_keys fk
 		on 
 			fk.object_id = fkc.constraint_object_id
+/*
+
+	UNION ALL	
+		select 
+			'    <View viewId="' + cast(object_id as varchar) 
+			+ '" schema="' + s.name COLLATE DATABASE_DEFAULT
+			+ '" name="' + v.name COLLATE DATABASE_DEFAULT
+			+ '">' as [tableXml],
+			cast(object_id as varchar) + '.0' as [sort_order]
+		from 
+			sys.views v
+		inner join
+			sys.schemas s on s.schema_id = v.schema_id
+	UNION ALL
+		select 
+			'    </View>' as [tableXml],
+			cast(object_id as varchar) + '.999' as [sort_order]
+		from 
+			sys.views v
+-- other interesting view queries
+
+select 
+	* 
+from
+	sys.views v
+inner join sys.schemas s on s.schema_id = v.schema_id
+inner join sys.columns c on v.object_id = c.object_id
+
+
+select
+	sed.referencing_id,
+	OBJECT_NAME(sed.referencing_id) as referencing_name,
+	 o.type_desc AS referencing_desciption,
+	*
+from 
+	sys.sql_expression_dependencies sed
+inner join 
+	sys.objects o on sed.referencing_id = o.object_id
+
+SELECT  
+	v.name,
+    m.definition    
+FROM sys.views v
+INNER JOIN sys.sql_modules m ON m.object_id = v.object_id
+
+
+SELECT *
+FROM INFORMATION_SCHEMA.VIEW_TABLE_USAGE
+ORDER BY view_name, table_name
+
+*/
+
 
 	) qry
 order by qry.sort_order

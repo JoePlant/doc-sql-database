@@ -44,6 +44,11 @@ xcopy "css" %output%\css /E /Y /I
 %nxslt% Working\model.xml StyleSheets\render-html.xslt -o "%output%\index.html" 
 @echo   Generated: %output%\index.html
 
+@echo === Excel Files ===
+%nxslt% Working\model.xml StyleSheets\excel-schema.xslt -o "%output%\schema.xls" 
+@echo   Generated: %output%\schema.xls
+
+
 @echo === Graphs ===
 %xsltproc% -o Working\graph.files.xml StyleSheets\generate-graphs-dotml.xslt Working\model.xml
 
