@@ -33,25 +33,36 @@
 				</tr>
 				<tr>
 					<th>Total number of Tables</th>
-					<td><xsl:value-of select='count(//Table)'/></td>
+					<td><xsl:value-of select='count(//Tables/Table)'/></td>
 				</tr>
 				<tr>
 					<th>Total number of Empty Tables</th>
-					<td><xsl:value-of select='count(//Table/Rows[@count=0])'/></td>
+					<td><xsl:value-of select='count(//Tables/Table/Rows[@count=0])'/></td>
 				</tr>
 				<tr>
 					<th>Total number of Rows</th>
-					<td><xsl:value-of select='sum(//Table/Rows/@count)'/></td>
+					<td><xsl:value-of select='sum(//Tables/Table/Rows/@count)'/></td>
 				</tr>										
 				<tr>
 					<th>Total number of Columns</th>
-					<td><xsl:value-of select='count(//Table/Column)'/></td>
+					<td><xsl:value-of select='count(//Tables/Table/Column)'/></td>
 				</tr>
 				<tr>
 					<th>Total number of Foreign Keys</th>
-					<td><xsl:value-of select='count(//Table/Column/Key)'/></td>
+					<td><xsl:value-of select='count(//Tables/Table/Column/Key)'/></td>
 				</tr>										
-
+				<tr>
+					<th>Total number of Views</th>
+					<td><xsl:value-of select='count(//Views/View)'/></td>
+				</tr>
+				<tr>
+					<th>Total number of Stored Procedures</th>
+					<td><xsl:value-of select='count(//Procedures/Procedure)'/></td>
+				</tr>
+				<tr>
+					<th>Total number of Functions</th>
+					<td><xsl:value-of select='count(//Functions/Function)'/></td>
+				</tr>
 			</table>
 
 		</div>
@@ -85,7 +96,7 @@
 							<xsl:value-of select='count(Column)'/>
 						</td>
 						<td>
-							<xsl:value-of select='count(Column/Key | Column/Reference)'/>
+							<xsl:value-of select='count(Column/Key | Column/ForeignKey)'/>
 						</td>
 						<td><xsl:apply-templates select='Rows' mode='badge'/></td>
 					</tr>
@@ -95,14 +106,15 @@
 				</tr>
 				<tr>
 					<td colspan='5'>
-						<img src="Graphs/db_{../@name}.svg" class='img-responsive'/>
-						<div class='text-right'><a href="Graphs/db_{../@name}.png">Source</a></div>
+						<img src="Graphs/db_Relationships.svg" class='img-responsive'/>
+						<div class='text-right'><a href="Graphs/db_Relationships.png">Source</a></div>
 					</td>
 				</tr>
 			</table>
 		</div>
 	</xsl:template>
-	
+
+	<!-- Tables -->	
  	<xsl:template match='/Database/Tables/Table' mode='table'>
 		<xsl:variable name='has-keys' select='count(Column/*) &gt; 0'/>
 		<a id='{@tableId}' name='{@tableId}'/>
@@ -117,6 +129,64 @@
 						<th>Column</th>
 						<th>DataType</th>
 						<th/>
+					</tr>
+					<xsl:for-each select='Column'>
+						<tr>
+							<td><xsl:value-of select='@columnId'/></td>
+							<td>
+								<xsl:value-of select='@name'/>
+							</td>
+							<td>
+								<xsl:apply-templates select="." mode='data-type'/>
+							</td>
+							<td>
+								<xsl:if test='count(Key | ForeignKey) > 0'>
+									<div class="btn-group-vertical" role="group" >							
+										<xsl:apply-templates select='Key' mode='list-group-link'/>
+										<xsl:apply-templates select='ForeignKey' mode='list-group-link'/>
+									</div>
+								</xsl:if>
+							</td>
+						</tr>
+					</xsl:for-each>
+					<tr>
+						<th colspan='4'>Relationships</th>
+					</tr>
+					<xsl:if test='Uses'>
+						<tr>
+							<td colspan='4'>
+								<div class="btn-group-vertical" role="group" >							
+									<xsl:apply-templates select='Uses/*' mode='list-group-link'/>
+								</div>
+							</td>
+						</tr>
+					</xsl:if>
+					<tr>
+						<td colspan='4'>
+							<img src="Graphs/tbl_{@name}.svg" class='img-responsive'/>
+							<div class='text-right'><a href="Graphs/tbl_{@name}.png">Source</a></div>
+						</td>					
+					</tr>
+				</table>
+			</div>
+		</div>
+	</xsl:template>
+	
+	<!-- Views -->
+
+ 	<xsl:template match='/Database/Views/View' mode='table'>
+		<xsl:variable name='has-keys' select='count(Column/*) &gt; 0'/>
+		<a id='{@tableId}' name='{@tableId}'/>
+		<div class='panel panel-primary'>
+			<div class='panel-heading'>View: <strong><xsl:value-of select='@name'/> </strong>
+			</div>
+			<div class='panel-body'>
+				<table class='table table-hover table-border'>
+					<tr>
+						<th>#</th>
+						<th>Column</th>
+						<th>DataType</th>
+						<th></th>
 						<!--
 						<xsl:if test='$has-keys'>
 							<th>Keys</th>
@@ -133,10 +203,10 @@
 								<xsl:apply-templates select="." mode='data-type'/>
 							</td>
 							<td>
-								<xsl:if test='count(Key | Reference) > 0'>
+								<xsl:if test='count(Key | ForeignKey) > 0'>
 									<div class="btn-group-vertical" role="group" >							
 										<xsl:apply-templates select='Key' mode='list-group-link'/>
-										<xsl:apply-templates select='Reference' mode='list-group-link'/>
+										<xsl:apply-templates select='ForeignKey' mode='list-group-link'/>
 									</div>
 								</xsl:if>
 							</td>
@@ -145,17 +215,69 @@
 					<tr>
 						<th colspan='4'>Relationships</th>
 					</tr>
+					<xsl:if test='Uses'>
+						<tr>
+							<td colspan='4'>
+								<div class="btn-group-vertical" role="group" >							
+									<xsl:apply-templates select='Uses/*' mode='list-group-link'/>
+								</div>
+							</td>
+						</tr>
+					</xsl:if>
 					<tr>
 						<td colspan='4'>
-							<img src="Graphs/tbl_{@name}.svg" class='img-responsive'/>
-							<div class='text-right'><a href="Graphs/tbl_{@name}.png">Source</a></div>
+							<img src="Graphs/vw_{@name}.svg" class='img-responsive'/>
+							<div class='text-right'><a href="Graphs/vw_{@name}.png">Source</a></div>
 						</td>					
 					</tr>
 				</table>
 			</div>
 		</div>
 	</xsl:template>
-	
+
+	<xsl:template match='/Database/Views' mode='summary'>
+		<div class='panel panel-info'>
+			<div class='panel-heading'>Database: <strong><xsl:value-of select='../@name'/> </strong></div>
+				<table class='table table-hover table-border'>
+				<tr>
+					<th>#</th>
+					<th>View</th>
+					<th>Columns</th>
+					<th>References</th>
+				</tr>
+				<xsl:for-each select='Table'>
+					<xsl:sort select='@schema'/>
+					<xsl:sort select='@name'/>
+					<tr>
+						<td><xsl:value-of select='position()'/></td>
+						<td>
+							<a href='#{@viewId}' title='{@name}'>
+								<xsl:value-of select='@schema'/>
+								<xsl:text>.</xsl:text>
+								<xsl:value-of select='@name'/>
+							</a>
+						</td>
+						<td>
+							<xsl:value-of select='count(Column)'/>
+						</td>
+						<td>
+							<xsl:value-of select='count(UsedBy/* | Uses/*)'/>
+						</td>
+					</tr>
+				</xsl:for-each>
+				<tr>
+					<th colspan='4'><a id='view-relationships' name='relationships'/>View Relationships</th>
+				</tr>
+				<tr>
+					<td colspan='4'>
+						<img src="Graphs/db_views.svg" class='img-responsive'/>
+						<div class='text-right'><a href="Graphs/db_views.png">Source</a></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</xsl:template>
+
 	<xsl:template name='generate-column-table'>
 	</xsl:template>
 	
@@ -191,7 +313,7 @@
 	</xsl:template>
 
 	
-	<xsl:template match='Reference' mode='list-group-link'>	
+	<xsl:template match='ForeignKey' mode='list-group-link'>	
 		<a href='#{@tableId}' title='{@name}' class='btn btn-default btn-sm'>
 			<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/> 
 			<xsl:text> </xsl:text>
@@ -206,5 +328,38 @@
 			<xsl:value-of select='@table'/>
 		</a>
 	</xsl:template>
+
+	<xsl:template match='Uses/Table' mode='list-group-link'>	
+		<a href='#{@tableId}' title='Table: {@name}' class='btn btn-primary btn-sm'>
+			<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/> 
+			<xsl:text> </xsl:text>
+			<xsl:value-of select='@name'/>
+		</a>
+	</xsl:template>
+
+	<xsl:template match='Uses/View' mode='list-group-link'>	
+		<a href='#{@viewId}' title='View: {@name}' class='btn btn-primary btn-sm'>
+			<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/> 
+			<xsl:text> </xsl:text>
+			<xsl:value-of select='@name'/>
+		</a>
+	</xsl:template>
+
+	<xsl:template match='Uses/Procedure' mode='list-group-link'>	
+		<a href='#{@procedureId}' title='Procedure: {@name}' class='btn btn-primary btn-sm'>
+			<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/> 
+			<xsl:text> </xsl:text>
+			<xsl:value-of select='@name'/>
+		</a>
+	</xsl:template>
+
+	<xsl:template match='Uses/Function' mode='list-group-link'>	
+		<a href='#{@procedureId}' title='Function: {@name}' class='btn btn-primary btn-sm'>
+			<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/> 
+			<xsl:text> </xsl:text>
+			<xsl:value-of select='@name'/>
+		</a>
+	</xsl:template>
+
 
 </xsl:stylesheet>

@@ -10,9 +10,7 @@
      indent="yes" />
 
 	<xsl:include href='render-tables.xslt' />
-<!--	<xsl:include href='render-tables.xslt'/>
-	<xsl:include href='render-columns.xslt'/>
--->	
+
 	<xsl:variable name='crlf'>
 </xsl:variable>
 
@@ -55,15 +53,19 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li>
-				<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
-			</li>
-            <li><a href="#relationships"><xsl:text>Relationships </xsl:text>
-				<xsl:call-template name='count-badge'>
-					<xsl:with-param name='items' select='//Table/Column/Key'/>
-				</xsl:call-template>
-			</a></li>
-			<p class="navbar-text navbar-right text-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
-
+        			<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
+            </li>
+            <li>
+				      <a href="#views"><xsl:text>Views </xsl:text><xsl:apply-templates select='/Database/Views' mode='count-badge'/></a>
+			      </li>
+            <li>
+              <a href="#relationships"><xsl:text>Relationships </xsl:text>
+				        <xsl:call-template name='count-badge'>
+                  <xsl:with-param name='items' select='//Table/Column/Key'/>
+                </xsl:call-template>
+              </a>
+            </li>
+			      <p class="navbar-text navbar-right text-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -82,6 +84,15 @@
 			<li>
 				<a href='#tables'>Tables</a>
 			</li>
+			<li>
+				<a href='#views'>Views</a>
+			</li>
+			<li>
+				<a href='#procedures'>Stored Procedures</a>
+			</li>
+			<li>
+				<a href='#functions'>Functions</a>
+			</li>
 		</ul>
 	</div>
 	<div class='col-md-10' role='main' >
@@ -93,6 +104,11 @@
 		<a name='tables'/>
 		<h3>Tables</h3>
 		<xsl:apply-templates select='/Database/Tables/Table' mode='table'/>
+
+		<a name='views'/>
+		<h3>Views</h3>
+		<xsl:apply-templates select='/Database/Views/View' mode='table'/>
+
 	</div>
 
 	<hr/>
@@ -105,14 +121,19 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li>
-				<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
-			</li> 
-            <li><a href="#relationships"><xsl:text>Relationships </xsl:text>
-				<xsl:call-template name='count-badge'>
-					<xsl:with-param name='items' select='//Table/Column/Key'/>
-				</xsl:call-template>
-			</a></li>
-			<p class="navbar-text navbar-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
+        			<a href="#tables"><xsl:text>Tables </xsl:text><xsl:apply-templates select='/Database/Tables' mode='count-badge'/></a>
+            </li>
+            <li>
+				      <a href="#views"><xsl:text>Views </xsl:text><xsl:apply-templates select='/Database/Views' mode='count-badge'/></a>
+			      </li>
+            <li>
+              <a href="#relationships"><xsl:text>Relationships </xsl:text>
+                <xsl:call-template name='count-badge'>
+                  <xsl:with-param name='items' select='//Table/Column/Key'/>
+                </xsl:call-template>
+              </a>
+            </li>
+			      <p class="navbar-text navbar-right">Built using <a href="https://joeplant.github.io/doc-sql-database" class="navbar-link">doc-sql-database</a></p>
           </ul>
         </div>
       </div>
